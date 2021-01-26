@@ -12,7 +12,7 @@ Install this theme with the following plugin: WP Pusher
 1. Download Here: https://wppusher.com/
 2. Install Theme from Github Repo Link in WP Pusher Settings: https://github.com/Blue-Apple-Education/EduCreate.git
 3. Activate the theme in Appearance > Themes
-4. Install Required PLugins (This will pop-up on screen)
+4. Click the button "Install All Required Plugins" (This will pop-up on screen)
 5. Edit Theme Settings Page to configure Header/Footer
 6. Add Content and Publish!
 
