@@ -103,8 +103,9 @@ function require_these_plugins_register_required_plugins()
 			'force_deactivation' => true,
 		),
 
-		// TODO - Include acf pro from github
-		// // ACF PRO local plugin from lib/Plugins folder
+		// TODO - Add ADMIN 2020 Pro Plugin
+
+		// From Github Repo
 		array(
 			'name'      => 'Advanced Custom Fields Pro', // The plugin name.
 			'slug'      => 'advanced-custom-fields-pro',
@@ -113,7 +114,6 @@ function require_these_plugins_register_required_plugins()
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
-
 
 		array(
 			'name'      => 'Advanced Custom Fields: Table Field',
@@ -140,14 +140,6 @@ function require_these_plugins_register_required_plugins()
 		),
 
 		array(
-			'name'      => 'GDPR Cookie Consent (CCPA Ready)',
-			'slug'      => 'cookie-law-info',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => true,
-		),
-
-		array(
 			'name'      => 'Custom Post Type UI',
 			'slug'      => 'custom-post-type-ui',
 			'required'  => true,
@@ -156,13 +148,12 @@ function require_these_plugins_register_required_plugins()
 		),
 
 		array(
-			'name'      => 'Yoast Duplicate Post',
-			'slug'      => 'duplicate-post',
+			'name'      => 'GDPR Cookie Consent (CCPA Ready)',
+			'slug'      => 'cookie-law-info',
 			'required'  => true,
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
-
 
 		array(
 			'name'      => 'FileBird – WordPress Media Library Folders & File Manager',
@@ -172,11 +163,10 @@ function require_these_plugins_register_required_plugins()
 			'force_deactivation' => true,
 		),
 
-		// WP Pusher
 		array(
-			'name'      => 'WPPusher', // The plugin name.
-			'slug'      => 'wppusher', get_stylesheet_directory() . '/plugins/wppusher.zip',
-			'required'           => true,
+			'name'      => 'Timber Library',
+			'slug'      => 'timber-library',
+			'required'  => true,
 			'force_activation'   => true,
 			'force_deactivation' => true,
 		),
@@ -192,6 +182,23 @@ function require_these_plugins_register_required_plugins()
 		array(
 			'name'      => 'Simple History',
 			'slug'      => 'simple-history',
+			'required'  => true,
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
+
+		// WP Pusher
+		array(
+			'name'      => 'WPPusher', // The plugin name.
+			'slug'      => 'wppusher', get_stylesheet_directory() . '/plugins/wppusher.zip',
+			'required'           => true,
+			'force_activation'   => true,
+			'force_deactivation' => true,
+		),
+
+		array(
+			'name'      => 'Yoast Duplicate Post',
+			'slug'      => 'duplicate-post',
 			'required'  => true,
 			'force_activation'   => true,
 			'force_deactivation' => true,
