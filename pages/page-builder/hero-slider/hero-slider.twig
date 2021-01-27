@@ -7,11 +7,11 @@
   <ul class="uk-slider-items uk-grid">
     {% for item in item.hero_slider %} 
             <li class="uk-width-1 slide slide">
-                <div class="uk-panel">
+                <div class="uk-panel uk-animation-slide-top">
                     <img src="{{ item.background_image }}" alt="" />
                     <div class="uk-position-center uk-panel">
-                    <h1>{{ item.heading }} Title</h1>
-                    <p>{{ item.paragraph }} paragraph</p>
+                    <h1 class="uk-animation-slide-left" >{{ item.heading }}</h1>
+                    <p class="uk-animation-fade">{{ item.paragraph }}</p>
                     </div>
                 </div>
             </li>
