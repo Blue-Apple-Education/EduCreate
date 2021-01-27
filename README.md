@@ -1,9 +1,12 @@
 # The EduCreate Theme
 
-Built and maintained by Blue Apple Education
-https://blueappleeducation.com/
-Author: Blue Apple Education
-Year: 2021
+## Built and maintained by Blue Apple Education
+##
+## https://blueappleeducation.com/
+##
+## Author: Blue Apple Education
+##
+## Year: 2021
 
 ## Installing the Theme
 
