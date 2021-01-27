@@ -8,7 +8,7 @@
     {% for item in item.hero_slider %} 
             <li class="uk-width-1 slide slide">
                 <div class="uk-panel">
-                    <img src="https://educreatetheme.local/wp-content/uploads/2021/01/ASC_4271-homepage-hero-slider-01.png" alt="" />
+                    <img src="{{ item.background_image }}" alt="" />
                     <div class="uk-position-center uk-panel">
                     <h1>{{ item.heading }} Title</h1>
                     <p>{{ item.paragraph }} paragraph</p>
@@ -19,13 +19,13 @@
   </ul>
 
   <a
-    class="uk-position-center-left uk-position-small uk-hidden-hover"
+    class="uk-position-center-left uk-position-small"
     href="#"
     uk-slidenav-previous
     uk-slider-item="previous"
   ></a>
   <a
-    class="uk-position-center-right uk-position-small uk-hidden-hover"
+    class="uk-position-center-right uk-position-small"
     href="#"
     uk-slidenav-next
     uk-slider-item="next"
