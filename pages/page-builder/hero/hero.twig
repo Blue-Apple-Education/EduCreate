@@ -1,0 +1,20 @@
+{% if item.acf_fc_layout == 'hero' %}
+<div class="uk-cover-background uk-position-relative">
+  <img
+    class="uk-visible"
+    src="{{ item.background_image }}"
+    width="100%"
+    height="auto"
+    alt=""
+  />
+  <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+    <h1>{{ item.heading }}</h1>
+    <p>{{ item.content }}</p>
+  </div>
+</div>
+{% endif %}
+
+<!-- Include Style for Module-->
+<style>
+  {{ source('/pages/page-builder/hero/hero.css') }}
+</style>

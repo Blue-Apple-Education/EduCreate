@@ -6,8 +6,9 @@
 
 {% block content %}
     {% for item in post.get_field('content') %}
-        {# {% include 'pages/page-builder/hero-home/hero-home.twig' %} #}
+        {% include 'pages/page-builder/hero/hero.twig' %}
         {% include 'pages/page-builder/columns/columns.twig' %}
+        {% include 'pages/page-builder/hero-slider/hero-slider.twig' %}
     {% endfor %}
 {% endblock %}
 
@@ -18,5 +19,4 @@
 
 {# Bootrap JS #}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 {% endblock html_body_js_bottom %}

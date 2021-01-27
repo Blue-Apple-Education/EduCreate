@@ -66,7 +66,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'acf-better-search',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -74,7 +74,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'acf-extended',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -82,7 +82,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'acf-restrict-color-picker',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -90,7 +90,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'acf-rgba-color-picker',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		// From Github Repo
@@ -100,7 +100,7 @@ function require_these_plugins_register_required_plugins()
 			'source'    => 'https://github.com/cyberwani/ACF-Image-Select/archive/master.zip',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		// TODO - Add ADMIN 2020 Pro Plugin
@@ -112,7 +112,7 @@ function require_these_plugins_register_required_plugins()
 			'source'    => 'https://github.com/Blue-Apple-Education/advanced-custom-fields-pro/archive/master.zip',
 			'required'           => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -120,7 +120,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'advanced-custom-fields-table-field',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -128,7 +128,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'classic-editor',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -136,7 +136,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'contact-form-7',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -144,7 +144,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'custom-post-type-ui',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -152,23 +152,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'cookie-law-info',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
-		),
-
-		array(
-			'name'      => 'FileBird – WordPress Media Library Folders & File Manager',
-			'slug'      => 'filebird',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => true,
-		),
-
-		array(
-			'name'      => 'Timber Library',
-			'slug'      => 'timber-library',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -176,7 +160,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'login-ip-country-restriction',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -184,16 +168,15 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'simple-history',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
-		// WP Pusher
 		array(
-			'name'      => 'WPPusher', // The plugin name.
-			'slug'      => 'wppusher', get_stylesheet_directory() . '/plugins/wppusher.zip',
-			'required'           => true,
+			'name'      => 'Timber Library',
+			'slug'      => 'timber-library',
+			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -201,7 +184,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'duplicate-post',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		array(
@@ -209,7 +192,7 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'wordpress-seo',
 			'required'  => true,
 			'force_activation'   => true,
-			'force_deactivation' => true,
+			'force_deactivation' => false,
 		),
 
 		// External Source Plugin

@@ -108,41 +108,41 @@ $args = [
 
 register_post_type( "cpt_staff", $args );
 
-/**
- * Post Type: Page Content.
- */
+// /**
+//  * Post Type: Page Content.
+//  */
 
-$labels = [
-    "name" => __( "Page Content", "custom-post-type-ui" ),
-    "singular_name" => __( "Page Content", "custom-post-type-ui" ),
-];
+// $labels = [
+//     "name" => __( "Page Content", "custom-post-type-ui" ),
+//     "singular_name" => __( "Page Content", "custom-post-type-ui" ),
+// ];
 
-$args = [
-    "label" => __( "Page Content", "custom-post-type-ui" ),
-    "labels" => $labels,
-    "description" => "",
-    "public" => false,
-    "publicly_queryable" => false,
-    "show_ui" => true,
-    "show_in_rest" => true,
-    "rest_base" => "",
-    "rest_controller_class" => "WP_REST_Posts_Controller",
-    "has_archive" => false,
-    "show_in_menu" => true,
-    "show_in_nav_menus" => true,
-    "delete_with_user" => false,
-    "exclude_from_search" => true,
-    "capability_type" => "post",
-    "map_meta_cap" => true,
-    "hierarchical" => false,
-    "rewrite" => false,
-    "query_var" => true,
-    "menu_position" => 22,
-    "menu_icon" => "dashicons-format-gallery",
-    "supports" => [ "title" ],
-];
+// $args = [
+//     "label" => __( "Page Content", "custom-post-type-ui" ),
+//     "labels" => $labels,
+//     "description" => "",
+//     "public" => false,
+//     "publicly_queryable" => false,
+//     "show_ui" => true,
+//     "show_in_rest" => true,
+//     "rest_base" => "",
+//     "rest_controller_class" => "WP_REST_Posts_Controller",
+//     "has_archive" => false,
+//     "show_in_menu" => true,
+//     "show_in_nav_menus" => true,
+//     "delete_with_user" => false,
+//     "exclude_from_search" => true,
+//     "capability_type" => "post",
+//     "map_meta_cap" => true,
+//     "hierarchical" => false,
+//     "rewrite" => false,
+//     "query_var" => true,
+//     "menu_position" => 22,
+//     "menu_icon" => "dashicons-format-gallery",
+//     "supports" => [ "title" ],
+// ];
 
-register_post_type( "cpt_page_content", $args );
+// register_post_type( "cpt_page_content", $args );
 
 /**
  * Post Type: Policies.
@@ -290,42 +290,41 @@ $args = [
 
 register_post_type( "cpt_cta_content", $args );
 
-/**
- * Post Type: Sidebar Content.
- */
+// /**
+//  * Post Type: Sidebar Content.
+//  */
 
-$labels = [
-    "name" => __( "Sidebar Content", "custom-post-type-ui" ),
-    "singular_name" => __( "Sidebar Content", "custom-post-type-ui" ),
-];
+// $labels = [
+//     "name" => __( "Sidebar Content", "custom-post-type-ui" ),
+//     "singular_name" => __( "Sidebar Content", "custom-post-type-ui" ),
+// ];
 
-$args = [
-    "label" => __( "Sidebar Content", "custom-post-type-ui" ),
-    "labels" => $labels,
-    "description" => "",
-    "public" => false,
-    "publicly_queryable" => false,
-    "show_ui" => true,
-    "show_in_rest" => true,
-    "rest_base" => "",
-    "rest_controller_class" => "WP_REST_Posts_Controller",
-    "has_archive" => false,
-    "show_in_menu" => true,
-    "show_in_nav_menus" => true,
-    "delete_with_user" => false,
-    "exclude_from_search" => true,
-    "capability_type" => "post",
-    "map_meta_cap" => true,
-    "hierarchical" => false,
-    "rewrite" => false,
-    "query_var" => true,
-    "menu_position" => 22,
-    "menu_icon" => "dashicons-format-gallery",
-    "supports" => [ "title" ],
-];
+// $args = [
+//     "label" => __( "Sidebar Content", "custom-post-type-ui" ),
+//     "labels" => $labels,
+//     "description" => "",
+//     "public" => false,
+//     "publicly_queryable" => false,
+//     "show_ui" => true,
+//     "show_in_rest" => true,
+//     "rest_base" => "",
+//     "rest_controller_class" => "WP_REST_Posts_Controller",
+//     "has_archive" => false,
+//     "show_in_menu" => true,
+//     "show_in_nav_menus" => true,
+//     "delete_with_user" => false,
+//     "exclude_from_search" => true,
+//     "capability_type" => "post",
+//     "map_meta_cap" => true,
+//     "hierarchical" => false,
+//     "rewrite" => false,
+//     "query_var" => true,
+//     "menu_position" => 22,
+//     "menu_icon" => "dashicons-format-gallery",
+//     "supports" => [ "title" ],
+// ];
 
-register_post_type( "cpt_sidebar_content", $args );
+// register_post_type( "cpt_sidebar_content", $args );
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );
-?>

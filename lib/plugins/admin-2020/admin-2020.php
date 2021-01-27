@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Admin 2020 Lite
+Plugin Name: Admin 2020 Pro
 Plugin URI: https://admintwentytwenty.com
-Description: Powerful WordPress admin theme with a streamlined dashboard, global search, dark mode and much more.
+Description: Powerful WordPress admin extension with a streamlined dashboard, Google Analytics & WooCommerce Integration, intuitive media library, dark mode and much more.
 Version: 2.0.6
 Author: Admin 2020
 Text Domain: admin2020
@@ -14,11 +14,11 @@ Author URI: https://admintwentytwenty.com
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 ////PRODUCT ID
-$productid = "5fb144db00b05d1058a9d3cc";///LITE 
+$productid = "5ebe7e0d701f5d079480905e";///MULTI USE
 ////VERSION
 $version = '2.0.6'; 
 ////NAME
-$pluginName = 'Admin 2020 Lite';
+$pluginName = 'Admin 2020 Pro';
 ///PATH
 $plugin_path = plugin_dir_url( __FILE__ );
 

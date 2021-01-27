@@ -59,6 +59,13 @@ Timber::$autoescape = false;
 // Plugin Activator
 require_once get_template_directory() . '/lib/educreate-plugins.php';
 
+// CPTUI Fields
+require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
+
+/* Admin Menu Settings */
+require_once(get_stylesheet_directory() . "/config/admin-menu.php");
+// require_once(get_stylesheet_directory() . "/config/dashboard.php");
+
 /**
  * We're going to configure our theme inside of a subclass of Timber\Site
  * You can move this to its own file and include here via php's include("MySite.php")
@@ -96,28 +103,6 @@ class StarterSite extends Timber\Site
 		$context['menu']  = new Timber\Menu();
 		$context['site']  = $this;
 		return $context;
-	}
-
-	// Require Admin Settings
-	public function add_admin_menu_settings()
-	{
-		/* Admin Menu Settings */
-		require_once(get_stylesheet_directory() . "/config/admin-menu.php");
-		// require_once(get_stylesheet_directory() . "/config/dashboard.php");
-	}
-
-	// Require ACF Settings
-	public function add_acf_settings()
-	{
-		/* Acf-folder */
-		require_once(get_stylesheet_directory() . "/config/acf-settings.php");
-	}
-
-	// Require CPTUI Settings
-	public function add_cptui_settings()
-	{
-		// Custom Post Types Settings
-		require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
 	}
 
 	public function theme_supports()

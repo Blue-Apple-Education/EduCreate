@@ -1,42 +1,42 @@
 <!-- 1 COLUMN -->
-{% if item.acf_fc_layout == 'one_column' %}
+{% if item.acf_fc_layout == 'column_1' %}
 <section class="uk-section">
   <div class="uk-container">
     <div class="uk-column-1">
-        {{ item.column_1 }}
+        {{ item.text_content }}
     </div>
   </div>
 </section>
 {% endif %}
 
 <!-- 2 COLUMNS -->
-{% if item.acf_fc_layout == 'two_columns' %}
+{% if item.acf_fc_layout == 'column_2' %}
 <section class="uk-section">
   <div class="uk-container">
     <div class="uk-column-1-2">
-        {{ item.column_2 }}
+        {{ item.text_content }}
      </div>
   </div>
 </section>
 {% endif %}
 
 <!-- 3 COLUMNS -->
-{% if item.acf_fc_layout == 'three_columns' %}
+{% if item.acf_fc_layout == 'column_3' %}
 <section class="uk-section">
   <div class="uk-container">
     <div class="uk-column-1-3">
-        {{ item.column_3 }}
+        {{ item.text_content }}
    </div>
   </div>
 </section>
 {% endif %}
 
 <!-- 4 COLUMNS -->
-{% if item.acf_fc_layout == 'four_columns' %}
+{% if item.acf_fc_layout == 'column_4' %}
 <section class="uk-section">
   <div class="uk-container">
     <div class="uk-column-1-4">
-        {{ item.column_4 }}
+        {{ item.text_content }}
     </div>
   </div>
 </section>
@@ -45,5 +45,4 @@
 
 <!-- Include Style for Module-->
 <style>{{ source('/pages/page-builder/columns/columns.css') }}</style>
-<script>{{ source('/pages/page-builder/columns/columns.js') }}</script>
 
