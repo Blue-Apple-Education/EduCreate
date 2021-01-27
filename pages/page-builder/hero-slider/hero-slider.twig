@@ -3,18 +3,42 @@
   class="uk-position-relative uk-visible-toggle uk-light"
   tabindex="-1"
   uk-slider="center: true"
+  uk-slider="autoplay: true"
 >
   <ul class="uk-slider-items uk-grid">
-    {% for item in item.hero_slider %} 
-            <li class="uk-width-1 slide slide">
-                <div class="uk-panel uk-animation-slide-top">
-                    <img src="{{ item.background_image }}" alt="" />
-                    <div class="uk-position-center uk-panel">
-                    <h1 class="uk-animation-slide-left" >{{ item.heading }}</h1>
-                    <p class="uk-animation-fade">{{ item.paragraph }}</p>
-                    </div>
-                </div>
-            </li>
+    {% for item in item.hero_slider %}
+    <li class="uk-width-1 slide slide">
+      <div class="uk-panel uk-animation-fade" style="animation-delay: 100ms">
+        {# IF Image is present => render Image #} {% if item.background_image %}
+        <img src="{{ item.background_image }}" alt="" />
+        {# IF Video is present => render Video #} {% elseif
+        item.background_video %}
+        <video
+          src="{{ item.background_video }}"
+          autoplay
+          controls
+          automute
+          uk-video
+        ></video>
+        {% endif %} {# Inner Slider Content #}
+        <div
+          class="uk-position-{{ item.content_position }} uk-panel uk-padding"
+        >
+          <h1
+            class="uk-animation-{{ item.heading_animation }}"
+            style="animation-delay:{{ item.heading_animation_delay }}ms;"
+          >
+            {{ item.heading }}
+          </h1>
+          <p
+            class="uk-animation-{{ item.paragraph_animation }}"
+            style="animation-delay:{{ item.paragraph_animation_delay }}ms;"
+          >
+            {{ item.paragraph }}
+          </p>
+        </div>
+      </div>
+    </li>
     {% endfor %}
   </ul>
 
