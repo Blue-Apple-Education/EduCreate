@@ -1,0 +1,5 @@
+/* Place all GLOBAL STYLES in this file */
+/* These styles wil be automatically loaded throughout the site, so use this file sparingly to reduce page load times */
+html {
+  overflow-x: hidden;
+}
