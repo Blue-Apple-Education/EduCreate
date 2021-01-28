@@ -417,8 +417,8 @@
                                     "acfe_validate": ""
                                 },
                                 {
-                                    "key": "field_6011989054c9b",
-                                    "label": "Content Position",
+                                    "key": "field_6012906ec3d1a",
+                                    "label": "Content  Position",
                                     "name": "content_position",
                                     "type": "select",
                                     "instructions": "",
@@ -431,15 +431,15 @@
                                     },
                                     "acfe_permissions": "",
                                     "choices": {
-                                        "top-left": "Top Left",
-                                        "top-center": "Top Center",
-                                        "top-right": "Top Right",
-                                        "center-left": "Middle Left",
-                                        "center": "Middle",
-                                        "center-right": "Middle Right",
-                                        "bottom-left": "Bottom Left",
-                                        "bottom-center": "Bottom Center",
-                                        "bottom-right": "Bottom Right"
+                                        "uk-hero-slider-top-left": "Top Left",
+                                        "uk-hero-slider-top-middle": "Top Center",
+                                        "uk-hero-slider-top-right": "Top Right",
+                                        "uk-hero-slider-middle-left": "Middle Left",
+                                        "uk-hero-slider-middle-middle": "Centered",
+                                        "uk-hero-slider-middle-right": "Middle Right",
+                                        "uk-hero-slider-bottom-left": "Bottom Left",
+                                        "uk-hero-slider-bottom-middle": "Bottom Center",
+                                        "uk-hero-slider-bottom-right": "Bottom Right"
                                     },
                                     "default_value": false,
                                     "allow_null": 0,
@@ -749,5 +749,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1611769764
+    "modified": 1611834669
 }
