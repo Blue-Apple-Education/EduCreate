@@ -189,15 +189,6 @@ function require_these_plugins_register_required_plugins()
 			'force_deactivation' => false,
 		),
 
-
-		array(
-			'name'      => 'Yoast Duplicate Post',
-			'slug'      => 'duplicate-post',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
-
 		array(
 			'name'      => 'Yoast SEO',
 			'slug'      => 'wordpress-seo',
