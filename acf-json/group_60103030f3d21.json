@@ -638,58 +638,22 @@
                             ]
                         },
                         {
-                            "key": "field_6011a6f986dd3",
-                            "label": "Page Load Animation",
-                            "name": "page_load_animation",
-                            "type": "select",
-                            "instructions": "Animation to display when the page has loaded",
-                            "required": 0,
+                            "key": "field_6012f4149b6e7",
+                            "label": "Background Overlay",
+                            "name": "background_overlay",
+                            "type": "extended-color-picker",
+                            "instructions": "",
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
                             "acfe_permissions": "",
-                            "choices": {
-                                "fade": "Fade",
-                                "scale-up": "Fade & Scale Up",
-                                "scale-down": "Fade & Scale Down",
-                                "slide-top": "Slide Top",
-                                "slide-bottom": "Slide Bottom",
-                                "slide-left": "Slide Left",
-                                "slide-right": "Slide Right",
-                                "kenburns": "Scale Slowly No Fade"
-                            },
-                            "default_value": false,
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "acfe_settings": "",
-                            "acfe_validate": "",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_60119b8c54c9e",
-                            "label": "Animation Delay",
-                            "name": "page_load_animation_delay",
-                            "type": "text",
-                            "instructions": "1000 = 1 Second",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "default_value": 500,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
+                            "default_value": "",
+                            "color_palette": "",
+                            "hide_palette": 1,
                             "acfe_settings": "",
                             "acfe_validate": ""
                         }
@@ -749,5 +713,5 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1611834669
+    "modified": 1611855616
 }

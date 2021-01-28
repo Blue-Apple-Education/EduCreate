@@ -2,15 +2,16 @@
 <div
   class="uk-position-relative uk-visible-toggle uk-light"
   tabindex="-1"
-  uk-slider="autoplay: true; autoplay-interval: 8000;"
+  uk-slider="autoplay:true; autoplay-interval: 8000;"
 >
-  <ul class="uk-slider-items uk-grid">
+  <ul class="uk-slider-items uk-grid" style="">
     {% for item in item.hero_slider %}
-    <li class="uk-width-1 slide slide" style="max-height: 900px;">
+    <li class="uk-width-1 slide slide" style="padding-left: 0px!important; max-height: 900px;">
       <div class="uk-panel uk-animation-fade" style="animation-delay: 100ms; max-height: 900px;">
         {# IF Image is present => render Image #} {% if item.background_image %}
         <img src="{{ item.background_image }}" alt="" style="height: fit-content;
     object-fit: cover;"/>
+    <div class="uk-overlay-primary uk-position-cover hero-slider-overlay" style="background-color:"></div>
         {# IF Video is present => render Video #} {% elseif
         item.background_video %}
         <video
@@ -60,6 +61,11 @@
 
 <!-- Include Style for Module-->
 <style>
+
+  .hero-slider-overlay{
+    background-color: {{ item.background_overlay }};
+
+  }
   .uk-hero-slider{
     padding: 30px 50px!important;
   }
@@ -67,6 +73,7 @@
     left: 25%;
     max-width: 50%;
     top: 25%;
+    margin-left: 50px;
   }
   .uk-hero-slider-top-middle{
     left: 50%;
@@ -83,6 +90,7 @@
     left: 25%;
     max-width: 50%;
     top: 50%;
+    margin-left: 50px;
   }
   .uk-hero-slider-middle-middle {
     left: 50%;
@@ -99,6 +107,7 @@
     left: 25%;
     max-width: 50%;
     top: 75%;
+    margin-left: 50px;
   }
   .uk-hero-slider-bottom-middle {
     left: 50%;
