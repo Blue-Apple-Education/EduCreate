@@ -55,9 +55,9 @@ Timber::$dirname = array('templates', 'views');
  */
 Timber::$autoescape = false;
 
-
+/* Custom EDUCREATE Includes */
 // Plugin Activator
-require_once get_template_directory() . '/lib/educreate-plugins.php';
+require_once(get_template_directory() . '/lib/educreate-plugins.php');
 
 // CPTUI Fields
 require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
@@ -65,6 +65,10 @@ require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
 /* Admin Menu Settings */
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
+
+// Remove automatic <p> generation in ACF WYSIWYG fields
+
+
 
 /**
  * We're going to configure our theme inside of a subclass of Timber\Site

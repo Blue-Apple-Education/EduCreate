@@ -66,6 +66,8 @@ function require_these_plugins_register_required_plugins()
 			'slug'      => 'acf-better-search',
 			'required'  => true,
 			'force_activation'   => true,
+			// Normally I would force the plugins to be de-activated when the theme is deselected, but in this particular use case, it will be better for us to keep the plugin active as we will only be using the EduCreate theme on our websites.
+			// This helps to ensure all required plugins are active no matter what theme/state the website is in
 			'force_deactivation' => false,
 		),
 
@@ -93,7 +95,7 @@ function require_these_plugins_register_required_plugins()
 			'force_deactivation' => false,
 		),
 
-		// From Github Repo
+		// Github Repo
 		array(
 			'name'      => 'ACF Image Select',
 			'slug'      => 'ACF-Image-Select',
@@ -180,6 +182,15 @@ function require_these_plugins_register_required_plugins()
 		),
 
 		array(
+			'name'      => 'WP Smart Preloader',
+			'slug'      => 'wp-smart-preloader',
+			'required'  => true,
+			'force_activation'   => true,
+			'force_deactivation' => false,
+		),
+
+
+		array(
 			'name'      => 'Yoast Duplicate Post',
 			'slug'      => 'duplicate-post',
 			'required'  => true,
@@ -256,7 +267,7 @@ function require_these_plugins_register_required_plugins()
 		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 		'dismiss_msg'  => 'Please ensure all plugins are installed and activated. If you are experiencing issues, please contact the Developer at stefan@blueappleuk.com',                      // If 'dismissable' is false, this message will be output at top of nag.
 		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
-		'message'      => '',                      // Message to output right before the plugins table.
+		'message'      => 'Thank You for installing the EduCreate theme by Blue Apple Education',                      // Message to output right before the plugins table.
 
 		/*
 		'strings'      => array(
