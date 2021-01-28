@@ -77,26 +77,8 @@ require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
-// TODO
-// // RGBA Color Picker
-// function set_acf_rgba_color_picker_palette()
-// {
-
-// 	$primary_color = get_field('', 'option');
-// 	$secondary_color = get_field('', 'option');
-// 	$tertiary_color = get_field('', 'option');
-// 	$quaternary_color = get_field('', 'option');
-
-// 	$palette = array(
-// 		'#FFF',
-// 		'#0018ff',
-// 		'#00FF36',
-// 		'rgba(255,168,0,0.7)'
-// 	);
-
-// 	return $palette;
-// }
-// add_filter('acf/rgba_color_picker/palette', 'set_acf_rgba_color_picker_palette');
+/* RGBA Overlay/Color/Opacity Picker */
+require_once(get_stylesheet_directory() . "/config/hex2rgbaColorPicker.php");
 
 /**
  * We're going to configure our theme inside of a subclass of Timber\Site
