@@ -56,6 +56,17 @@ Timber::$dirname = array('templates', 'views');
 Timber::$autoescape = false;
 
 /* Custom EDUCREATE Includes */
+
+// Link Global Styles
+function my_custom_css_styles()
+{
+	wp_enqueue_style(
+		'global-styles',
+		get_template_directory_uri() . ('/assets/css/global-styles.css')
+	);
+}
+add_action('wp_enqueue_scripts', 'my_custom_css_styles');
+
 // Plugin Activator
 require_once(get_template_directory() . '/lib/educreate-plugins.php');
 
