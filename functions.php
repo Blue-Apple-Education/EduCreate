@@ -77,8 +77,6 @@ require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
-/* RGBA Overlay/Color/Opacity Picker */
-require_once(get_stylesheet_directory() . "/config/hex2rgbaColorPicker.php");
 
 /**
  * We're going to configure our theme inside of a subclass of Timber\Site

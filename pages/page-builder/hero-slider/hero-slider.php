@@ -1,59 +1,48 @@
-<?php
+<?php if (get_field('field_6012f4149b6e7')) :
+    function hex2rgba($color, $opacity = false)
+    {
 
-if (get_field('field_6012f4149b6e7')) :
+        $default = 'rgb(0,0,0)';
 
-  function hex2rgba($color, $opacity = false)
-  {
+        if (empty($color))
+            return $default;
 
-    $default = 'rgb(0,0,0)';
+        if ($color[0] == '#') {
+            $color = substr($color, 1);
+        }
 
-    //Return default if no color provided
-    if (empty($color))
-      return $default;
+        if (strlen($color) == 6) {
+            $hex = array($color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5]);
+        } elseif (strlen($color) == 3) {
+            $hex = array($color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2]);
+        } else {
+            return $default;
+        }
 
-    //Sanitize $color if "#" is provided 
-    if ($color[0] == '#') {
-      $color = substr($color, 1);
+        $rgb =  array_map('hexdec', $hex);
+
+        if ($opacity) {
+            if (abs($opacity) > 1)
+                $opacity = 1.0;
+            $output = 'rgba(' . implode(",", $rgb) . ',' . $opacity . ')';
+        } else {
+            $output = 'rgb(' . implode(",", $rgb) . ')';
+        }
+
+        return $output;
     }
 
-    //Check if color has 6 or 3 characters and get values
-    if (strlen($color) == 6) {
-      $hex = array($color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5]);
-    } elseif (strlen($color) == 3) {
-      $hex = array($color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2]);
-    } else {
-      return $default;
-    }
+    /* Here's a usage example how to use this function for dynamically created CSS */
+    $setColor =  get_field('field_6012f4149b6e7');
+    $color = $setColor;
+    $rgb = hex2rgba($color);
+    $rgba = hex2rgba($color, 0.8);
 
-    //Convert hexadec to rgb
-    $rgb =  array_map('hexdec', $hex);
-
-    //Check if opacity is set(rgba or rgb)
-    if ($opacity) {
-      if (abs($opacity) > 1)
-        $opacity = 1.0;
-      $output = 'rgba(' . implode(",", $rgb) . ',' . $opacity . ')';
-    } else {
-      $output = 'rgb(' . implode(",", $rgb) . ')';
-    }
-
-    //Return rgb(a) color string
-    return $output;
-  }
-
-  /* Here's a usage example how to use this function for dynamicaly created CSS */
-  $setColor =  get_field('field_6012f4149b6e7');
-  $color = $setColor;
-  $rgb = hex2rgba($color);
-  $rgba = hex2rgba($color, 0.8);
-
-endif;
-?>
-
+endif; ?>
 
 <style>
 .hero-slider-overlay {
-    background: linear-gradient($overlay_direction, rgba(<?php echo $rgba; ?>, ) 0%, rgba(<?php echo $rgba; ?>, ) 0%);
+    background: linear-gradient($overlay_direction, rgba(<?php echo $rgba; ?>, ) 0%, rgba(<?php echo $rgba; ?>, ) 100%);
 }
 
 .uk-hero-slider {
