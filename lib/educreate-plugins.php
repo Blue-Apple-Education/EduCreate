@@ -111,7 +111,7 @@ function require_these_plugins_register_required_plugins()
 		array(
 			'name'      => 'Advanced Custom Fields Pro', // The plugin name.
 			'slug'      => 'advanced-custom-fields-pro',
-			'source'    => 'https://github.com/Blue-Apple-Education/advanced-custom-fields-pro/archive/master.zip',
+			'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro/archive/master.zip',
 			'required'           => true,
 			'force_activation'   => true,
 			'force_deactivation' => false,
