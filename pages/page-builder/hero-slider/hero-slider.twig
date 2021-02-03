@@ -11,9 +11,11 @@
         {# IF Image is present => render Image #} {% if item.background_image %}
         <img src="{{ item.background_image }}" alt="" style="height: fit-content;
     object-fit: cover;"/>
+    {% if item.overlay_direction %}
     <div class="uk-overlay-primary uk-position-cover hero-slider-overlay"></div>
-        {# IF Video is present => render Video #} {% elseif
-        item.background_video %}
+    {% endif %}
+        {# IF Video is present => render Video #} 
+        {% elseif item.background_video %}
         <video
           src="{{ item.background_video }}"
           autoplay
@@ -38,6 +40,7 @@
             }}ms;"
           >
             {{ item.paragraph | striptags }}
+            <p>{{ post.get_field('solid_colour') }}</p>
           </p>
         </div>
       </div>
@@ -58,9 +61,140 @@
     uk-slider-item="next"
   ></a>
 </div>
-{% endif %}
 
 <!-- Include Style for Module-->
 <style>
-  {{ source('/pages/page-builder/hero-slider/hero-slider.php') }}
+.slider-custom-acf{
+    background: linear-gradient({{ item.overlay_direction }}deg, rgba({{ item.fade_colour }}) 0%, rgba({{ item.solid_colour }}) 100%)!important;
+}
+.uk-hero-slider {
+    padding: 30px 50px !important;
+}
+
+.uk-hero-slider-top-left {
+    left: 25%;
+    max-width: 50%;
+    top: 25%;
+    margin-left: 50px;
+}
+
+.uk-hero-slider-top-middle {
+    left: 50%;
+    max-width: 50%;
+    text-align: center;
+    top: 25%;
+}
+
+.uk-hero-slider-top-right {
+    left: 75%;
+    max-width: 50%;
+    top: 25%;
+}
+
+.uk-hero-slider-middle-left {
+    left: 25%;
+    max-width: 50%;
+    top: 50%;
+    margin-left: 50px;
+}
+
+.uk-hero-slider-middle-middle {
+    left: 50%;
+    text-align: center;
+    max-width: 50%;
+    top: 50%;
+}
+
+.uk-hero-slider-middle-right {
+    left: 75%;
+    max-width: 50%;
+    top: 50%;
+}
+
+.uk-hero-slider-bottom-left {
+    left: 25%;
+    max-width: 50%;
+    top: 75%;
+    margin-left: 50px;
+}
+
+.uk-hero-slider-bottom-middle {
+    left: 50%;
+    max-width: 50%;
+    text-align: center;
+    top: 75%;
+}
+
+.uk-hero-slider-bottom-right {
+    left: 75%;
+    max-width: 50%;
+    top: 75%;
+}
+
+
+@media screen and (max-width:768px) {
+    .uk-hero-slider {
+        padding: 20px !important;
+    }
+
+    .uk-hero-slider-top-left {
+        left: 35%;
+        max-width: 70%;
+        top: 25%;
+    }
+
+    .uk-hero-slider-top-middle {
+        left: 50%;
+        max-width: 50%;
+        text-align: center;
+        top: 25%;
+    }
+
+    .uk-hero-slider-top-right {
+        left: 75%;
+        max-width: 50%;
+        top: 25%;
+    }
+
+    .uk-hero-slider-middle-left {
+        left: 35%;
+        max-width: 70%;
+        top: 50%;
+    }
+
+    .uk-hero-slider-middle-middle {
+        left: 50%;
+        text-align: center;
+        max-width: 50%;
+        top: 50%;
+    }
+
+    .uk-hero-slider-middle-right {
+        left: 75%;
+        max-width: 50%;
+        top: 50%;
+    }
+
+    .uk-hero-slider-bottom-left {
+        left: 35%;
+        max-width: 70%;
+        top: 75%;
+    }
+
+    .uk-hero-slider-bottom-middle {
+        left: 50%;
+        max-width: 50%;
+        text-align: center;
+        top: 75%;
+    }
+
+    .uk-hero-slider-bottom-right {
+        left: 75%;
+        max-width: 50%;
+        top: 75%;
+    }
+}
 </style>
+
+{# Close IF Statement after style to ensure style is loaded #}
+{% endif %}
