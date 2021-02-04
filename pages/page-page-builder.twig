@@ -1,14 +1,11 @@
 {% extends "base.twig" %}
-
 {# Adds custom page class names to the body element for each page that way you can limit the scope of my CSS for each page. #}
 {% set page_class = 'page-builder' %}
 {##}
-
 {% block content %}
-    {% for item in post.get_field('content') %}
-        {% include 'pages/page-builder/hero/hero.twig' %}
-        {% include 'pages/page-builder/columns/columns.twig' %}
-        {% include 'pages/page-builder/hero-slider/hero-slider.twig' %}
-    {% endfor %}
+	{% for item in post.get_field('content') %}
+		{% include 'pages/page-builder/hero/hero.twig' %}
+		{% include 'pages/page-builder/hero-slider/hero-slider.twig' %}
+		{% include 'pages/page-builder/columns/columns.twig' %}
+	{% endfor %}
 {% endblock %}
-
