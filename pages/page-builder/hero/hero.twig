@@ -2,14 +2,12 @@
 	<div class="uk-cover-background uk-position-relative">
 		<img class="uk-visible" {#NOTE Must pull images from acf using this method#} src="{{ Image(item.background_image).src }}" {#END#} width="100%" height="auto" alt=""/>
 		<div class="uk-position-cover uk-flex uk-flex-center {{ item.content_position }} uk-flex-middle">
-			<h1 class="uk-animation-{{ item.heading_animation }}" style="animation-delay:{{ item.heading_animation_delay }}ms;">
-				{{ item.heading }}
-			</h1>
+			<h1 class="uk-animation-{{ item.heading_animation }}" style="animation-delay:{{ item.heading_animation_delay }}ms;">{{ item.heading }}</h1>
 			<p class="uk-animation-{{ item.paragraph_animation }}" style="animation-delay:{{item.paragraph_animation_delay}}ms;">{{ item.paragraph }}</p>
 		</div>
 	</div>
 
-	<!-- Include Style for Module-->
+	{# Include Style for Module #}
 	<style>
 		.slider-custom-acf {
 			background: linear-gradient({{ item.overlay_direction }}deg, rgba({{ item.fade_colour }}) 0%, rgba({{ item.solid_colour }}) 100%) !important;
@@ -141,4 +139,6 @@
 				top: 75%;
 			}
 		}
-	</style>{# Close IF Statement after style to ensure style is loaded #}{% endif %}
+	</style>
+	{# Close IF Statement after style to ensure style is loaded in template #}
+{% endif %}

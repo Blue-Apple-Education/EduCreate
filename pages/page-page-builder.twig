@@ -4,6 +4,7 @@
 {##}
 {% block content %}
 	{% for item in post.get_field('content') %}
+		{# Add New Modules Here #}
 		{% include 'pages/page-builder/hero/hero.twig' %}
 		{% include 'pages/page-builder/hero-slider/hero-slider.twig' %}
 		{% include 'pages/page-builder/columns/columns.twig' %}
