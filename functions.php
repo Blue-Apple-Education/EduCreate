@@ -60,6 +60,7 @@ Timber::$autoescape = false;
 // Link Global Styles
 function my_custom_css_styles()
 {
+	/* Global Styles */
 	wp_enqueue_style(
 		'global-styles',
 		get_template_directory_uri() . ('/assets/css/global-styles.css')
@@ -67,11 +68,12 @@ function my_custom_css_styles()
 }
 add_action('wp_enqueue_scripts', 'my_custom_css_styles');
 
-// Plugin Activator
+// Plugin Installation and Activaton
 require_once(get_template_directory() . '/lib/educreate-plugins.php');
 
-// CPTUI Fields
-require_once(get_stylesheet_directory() . "/config/cptui-settings.php");
+// GET CPTUI Fields
+require(get_stylesheet_directory() . "/config/cptui-settings.php");
+// Add CPTUI Fields
 
 /* Admin Menu Settings */
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");
@@ -87,17 +89,32 @@ class StarterSite extends Timber\Site
 	/** Add timber support. */
 	public function __construct()
 	{
+		add_theme_support('post-thumbnails');
+		add_theme_support(
+			'post-formats',
+			array(
+				'image',
+				'gallery',
+				'video',
+				'quote',
+				'link'
+			)
+		);
 		add_action('after_setup_theme', array($this, 'theme_supports'));
 		add_filter('timber/context', array($this, 'add_to_context'));
 		add_filter('timber/twig', array($this, 'add_to_twig'));
 		add_action('init', array($this, 'register_post_types'));
 		add_action('init', array($this, 'register_taxonomies'));
+
 		parent::__construct();
 	}
-	/** This is where you can register custom post types. */
+	/* This is where you can register custom post types. */
 	public function register_post_types()
 	{
+		// GET CPTUI Fields
+		require("config/cptui-settings.php");
 	}
+
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies()
 	{

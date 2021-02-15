@@ -403,6 +403,53 @@ acf_add_local_field_group(array(
 					'acfe_flexible_settings' => '',
 					'acfe_flexible_settings_size' => 'medium',
 				),
+				'layout_60216424f8b51' => array(
+					'key' => 'layout_60216424f8b51',
+					'name' => 'cta',
+					'label' => 'cta',
+					'display' => 'row',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_6021643ef8b52',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'post_object',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'acfe_permissions' => '',
+							'post_type' => array(
+								0 => 'cptcta',
+							),
+							'taxonomy' => '',
+							'allow_null' => 0,
+							'multiple' => 0,
+							'return_format' => 'id',
+							'save_custom' => 0,
+							'save_post_status' => 'publish',
+							'acfe_bidirectional' => array(
+								'acfe_bidirectional_enabled' => '0',
+							),
+							'acfe_settings' => '',
+							'acfe_validate' => '',
+							'ui' => 1,
+						),
+					),
+					'min' => '',
+					'max' => '',
+					'acfe_flexible_thumbnail' => '',
+					'acfe_flexible_category' => '',
+					'acfe_flexible_render_template' => false,
+					'acfe_flexible_render_style' => false,
+					'acfe_flexible_render_script' => false,
+					'acfe_flexible_settings' => '',
+					'acfe_flexible_settings_size' => 'medium',
+				),
 			),
 			'button_label' => 'Add Module',
 			'min' => '',
@@ -449,7 +496,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1612524367,
+	'modified' => 1613132586,
 ));
 
 endif;

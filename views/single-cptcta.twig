@@ -1,0 +1,8 @@
+{% if item.acf_fc_layout == 'cta' %}
+	{# ACF Layout LOOP #}
+	{% block content %}
+		<p>cta</p>
+		<h2>{{ post.get_field('field_60215f9e041a6')}}</h2>
+		(other markup goes here)
+	{% endblock %}
+{% endif %}

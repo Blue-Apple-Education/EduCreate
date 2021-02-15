@@ -1,18 +1,16 @@
-<?php 
-function cptui_register_my_cpts() {
+<?php
 
 /**
  * Post Type: Newsfeed.
  */
-
-$labels = [
-    "name" => __( "Newsfeed", "custom-post-type-ui" ),
-    "singular_name" => __( "Newsfeed", "custom-post-type-ui" ),
+$newsfeed_labels = [
+    "name" => __("Newsfeed", "custom-post-type-ui"),
+    "singular_name" => __("Newsfeed", "custom-post-type-ui"),
 ];
 
-$args = [
-    "label" => __( "Newsfeed", "custom-post-type-ui" ),
-    "labels" => $labels,
+$newsfeed_args = [
+    "label" => __("Newsfeed", "custom-post-type-ui"),
+    "labels" => $newsfeed_labels,
     "description" => "",
     "public" => true,
     "publicly_queryable" => true,
@@ -28,28 +26,27 @@ $args = [
     "capability_type" => "post",
     "map_meta_cap" => true,
     "hierarchical" => false,
-    "rewrite" => [ "slug" => "news/newsfeed", "with_front" => true ],
+    "rewrite" => ["slug" => "news/newsfeed", "with_front" => true],
     "query_var" => true,
     "menu_position" => 35,
     "menu_icon" => "dashicons-format-aside",
-    "supports" => [ "title" ],
+    "supports" => ["title"],
 ];
 
-register_post_type( "cpt_newsevents", $args );
+register_post_type("cptnewsevents", $newsfeed_args);
 
 
 /**
  * Post Type: Careers.
  */
-
-$labels = [
-    "name" => __( "Careers", "custom-post-type-ui" ),
-    "singular_name" => __( "Career", "custom-post-type-ui" ),
+$careers_labels = [
+    "name" => __("Careers", "custom-post-type-ui"),
+    "singular_name" => __("Career", "custom-post-type-ui"),
 ];
 
-$args = [
-    "label" => __( "Careers", "custom-post-type-ui" ),
-    "labels" => $labels,
+$careers_args = [
+    "label" => __("Careers", "custom-post-type-ui"),
+    "labels" => $careers_labels,
     "description" => "",
     "public" => true,
     "publicly_queryable" => true,
@@ -65,26 +62,25 @@ $args = [
     "capability_type" => "post",
     "map_meta_cap" => true,
     "hierarchical" => true,
-    "rewrite" => [ "slug" => "careers", "with_front" => true ],
+    "rewrite" => ["slug" => "careers", "with_front" => true],
     "query_var" => true,
     "menu_icon" => "dashicons-admin-users",
-    "supports" => [ "title" ],
+    "supports" => ["title"],
 ];
 
-register_post_type( "cpt_careers", $args );
+register_post_type("cptcareers", $careers_args);
 
 /**
  * Post Type: Staff.
  */
 
-$labels = [
-    "name" => __( "Staff", "custom-post-type-ui" ),
-    "singular_name" => __( "Staff", "custom-post-type-ui" ),
+$staff_labels = [
+    "name" => __("Staff", "custom-post-type-ui"),
+    "singular_name" => __("Staff", "custom-post-type-ui"),
 ];
-
-$args = [
-    "label" => __( "Staff", "custom-post-type-ui" ),
-    "labels" => $labels,
+$staff_args = [
+    "label" => __("Staff", "custom-post-type-ui"),
+    "labels" => $staff_labels,
     "description" => "",
     "public" => true,
     "publicly_queryable" => false,
@@ -100,62 +96,25 @@ $args = [
     "capability_type" => "post",
     "map_meta_cap" => true,
     "hierarchical" => false,
-    "rewrite" => [ "slug" => "our-staff", "with_front" => true ],
+    "rewrite" => ["slug" => "our-staff", "with_front" => true],
     "query_var" => true,
     "menu_icon" => "dashicons-admin-users",
-    "supports" => [ "title" ],
+    "supports" => ["title"],
 ];
 
-register_post_type( "cpt_staff", $args );
-
-// /**
-//  * Post Type: Page Content.
-//  */
-
-// $labels = [
-//     "name" => __( "Page Content", "custom-post-type-ui" ),
-//     "singular_name" => __( "Page Content", "custom-post-type-ui" ),
-// ];
-
-// $args = [
-//     "label" => __( "Page Content", "custom-post-type-ui" ),
-//     "labels" => $labels,
-//     "description" => "",
-//     "public" => false,
-//     "publicly_queryable" => false,
-//     "show_ui" => true,
-//     "show_in_rest" => true,
-//     "rest_base" => "",
-//     "rest_controller_class" => "WP_REST_Posts_Controller",
-//     "has_archive" => false,
-//     "show_in_menu" => true,
-//     "show_in_nav_menus" => true,
-//     "delete_with_user" => false,
-//     "exclude_from_search" => true,
-//     "capability_type" => "post",
-//     "map_meta_cap" => true,
-//     "hierarchical" => false,
-//     "rewrite" => false,
-//     "query_var" => true,
-//     "menu_position" => 22,
-//     "menu_icon" => "dashicons-format-gallery",
-//     "supports" => [ "title" ],
-// ];
-
-// register_post_type( "cpt_page_content", $args );
+register_post_type("cptstaff", $staff_args);
 
 /**
  * Post Type: Policies.
  */
-
-$labels = [
-    "name" => __( "Policies", "custom-post-type-ui" ),
-    "singular_name" => __( "Policy", "custom-post-type-ui" ),
+$policies_labels = [
+    "name" => __("Policies", "custom-post-type-ui"),
+    "singular_name" => __("Policy", "custom-post-type-ui"),
 ];
 
-$args = [
-    "label" => __( "Policies", "custom-post-type-ui" ),
-    "labels" => $labels,
+$policies_args = [
+    "label" => __("Policies", "custom-post-type-ui"),
+    "labels" => $policies_labels,
     "description" => "",
     "public" => true,
     "publicly_queryable" => false,
@@ -171,160 +130,72 @@ $args = [
     "capability_type" => "post",
     "map_meta_cap" => true,
     "hierarchical" => false,
-    "rewrite" => [ "slug" => "policies", "with_front" => true ],
+    "rewrite" => ["slug" => "policies", "with_front" => true],
     "query_var" => true,
     "menu_icon" => "dashicons-media-default",
-    "supports" => [ "title" ],
+    "supports" => ["title"],
 ];
 
-register_post_type( "cpt_policies", $args );
+register_post_type("cptpolicies", $policies_args);
 
-
-// Newsletters removed in favour of Newsfeed Posts with "Newsletter" Category
-// This will eradicate the need to edit the current newsletter configuration
-// Newletters CPTUI ACF Fields have also been removed
-// /**
-//  * Post Type: Newsletters.
-//  */
-
-// $labels = [
-//     "name" => __( "Newsletters", "custom-post-type-ui" ),
-//     "singular_name" => __( "Newsletter", "custom-post-type-ui" ),
-// ];
-
-// $args = [
-//     "label" => __( "Newsletters", "custom-post-type-ui" ),
-//     "labels" => $labels,
-//     "description" => "",
-//     "public" => true,
-//     "publicly_queryable" => true,
-//     "show_ui" => true,
-//     "show_in_rest" => true,
-//     "rest_base" => "",
-//     "rest_controller_class" => "WP_REST_Posts_Controller",
-//     "has_archive" => false,
-//     "show_in_menu" => true,
-//     "show_in_nav_menus" => true,
-//     "delete_with_user" => false,
-//     "exclude_from_search" => false,
-//     "capability_type" => "post",
-//     "map_meta_cap" => true,
-//     "hierarchical" => false,
-//     "rewrite" => [ "slug" => "news/newsletters", "with_front" => true ],
-//     "query_var" => true,
-//     "menu_position" => 31,
-//     "menu_icon" => "dashicons-format-aside",
-//     "supports" => [ "title" ],
-// ];
-
-// register_post_type( "cpt_newsletter", $args );
-
-// /**
-//  * Post Type: Schools.
-//  */
-
-// $labels = [
-//     "name" => __( "Schools", "custom-post-type-ui" ),
-//     "singular_name" => __( "School", "custom-post-type-ui" ),
-// ];
-
-// $args = [
-//     "label" => __( "Schools", "custom-post-type-ui" ),
-//     "labels" => $labels,
-//     "description" => "",
-//     "public" => true,
-//     "publicly_queryable" => false,
-//     "show_ui" => true,
-//     "show_in_rest" => true,
-//     "rest_base" => "",
-//     "rest_controller_class" => "WP_REST_Posts_Controller",
-//     "has_archive" => false,
-//     "show_in_menu" => true,
-//     "show_in_nav_menus" => true,
-//     "delete_with_user" => false,
-//     "exclude_from_search" => true,
-//     "capability_type" => "post",
-//     "map_meta_cap" => true,
-//     "hierarchical" => false,
-//     "rewrite" => [ "slug" => "cpt_schools", "with_front" => true ],
-//     "query_var" => true,
-//     "menu_icon" => "dashicons-groups",
-//     "supports" => [ "title" ],
-// ];
-
-// register_post_type( "cpt_schools", $args );
 
 /**
  * Post Type: CTA's.
  */
-
-$labels = [
-    "name" => __( "CTA's", "custom-post-type-ui" ),
-    "singular_name" => __( "CTA", "custom-post-type-ui" ),
-];
-
-$args = [
-    "label" => __( "CTA's", "custom-post-type-ui" ),
-    "labels" => $labels,
-    "description" => "",
-    "public" => false,
-    "publicly_queryable" => false,
-    "show_ui" => true,
-    "show_in_rest" => true,
-    "rest_base" => "",
-    "rest_controller_class" => "WP_REST_Posts_Controller",
-    "has_archive" => false,
-    "show_in_menu" => true,
-    "show_in_nav_menus" => true,
-    "delete_with_user" => false,
-    "exclude_from_search" => false,
-    "capability_type" => "post",
-    "map_meta_cap" => true,
-    "hierarchical" => false,
-    "rewrite" => [ "slug" => "cpt_cta_content", "with_front" => true ],
-    "query_var" => true,
-    "menu_position" => 18,
-    "menu_icon" => "dashicons-format-gallery",
-    "supports" => [ "title" ],
-];
-
-register_post_type( "cpt_cta_content", $args );
-
-// /**
-//  * Post Type: Sidebar Content.
-//  */
-
-// $labels = [
-//     "name" => __( "Sidebar Content", "custom-post-type-ui" ),
-//     "singular_name" => __( "Sidebar Content", "custom-post-type-ui" ),
-// ];
-
-// $args = [
-//     "label" => __( "Sidebar Content", "custom-post-type-ui" ),
-//     "labels" => $labels,
-//     "description" => "",
-//     "public" => false,
-//     "publicly_queryable" => false,
-//     "show_ui" => true,
-//     "show_in_rest" => true,
-//     "rest_base" => "",
-//     "rest_controller_class" => "WP_REST_Posts_Controller",
-//     "has_archive" => false,
-//     "show_in_menu" => true,
-//     "show_in_nav_menus" => true,
-//     "delete_with_user" => false,
-//     "exclude_from_search" => true,
-//     "capability_type" => "post",
-//     "map_meta_cap" => true,
-//     "hierarchical" => false,
-//     "rewrite" => false,
-//     "query_var" => true,
-//     "menu_position" => 22,
-//     "menu_icon" => "dashicons-format-gallery",
-//     "supports" => [ "title" ],
-// ];
-
-// register_post_type( "cpt_sidebar_content", $args );
-}
-
-add_action( 'init', 'cptui_register_my_cpts' );
+$cta_labels = array(
+    'name'                  => _x('cta', 'Post Type General Name', 'educreate'),
+    'singular_name'         => _x('cta', 'Post Type Singular Name', 'educreate'),
+    'menu_name'             => __('CTAs', 'educreate'),
+    'name_admin_bar'        => __('CTAs', 'educreate'),
+    'archives'              => __('Item Archives', 'educreate'),
+    'attributes'            => __('CTA Attributes', 'educreate'),
+    'parent_item_colon'     => __('Parent CTA:', 'educreate'),
+    'all_items'             => __('All CTAs', 'educreate'),
+    'add_new_item'          => __('Add New Item', 'educreate'),
+    'add_new'               => __('Add CTA', 'educreate'),
+    'new_item'              => __('New CTA', 'educreate'),
+    'edit_item'             => __('Edit CTA', 'educreate'),
+    'update_item'           => __('Update CTA', 'educreate'),
+    'view_item'             => __('View CTA', 'educreate'),
+    'view_items'            => __('View CTAs', 'educreate'),
+    'search_items'          => __('Search CTA', 'educreate'),
+    'not_found'             => __('Not found', 'educreate'),
+    'not_found_in_trash'    => __('Not found in Trash', 'educreate'),
+    'featured_image'        => __('Featured Image', 'educreate'),
+    'set_featured_image'    => __('Set featured image', 'educreate'),
+    'remove_featured_image' => __('Remove featured image', 'educreate'),
+    'use_featured_image'    => __('Use as featured image', 'educreate'),
+    'insert_into_item'      => __('Insert into item', 'educreate'),
+    'uploaded_to_this_item' => __('Uploaded to this item', 'educreate'),
+    'items_list'            => __('Items list', 'educreate'),
+    'items_list_navigation' => __('Items list navigation', 'educreate'),
+    'filter_items_list'     => __('Filter items list', 'educreate'),
+);
+$cta_rewrite = array(
+    'slug'                  => 'post_type',
+    'with_front'            => false,
+    'pages'                 => false,
+    'feeds'                 => true,
+);
+$cta_args = array(
+    'label'                 => __('cta', 'educreate'),
+    'description'           => __('Call To Action', 'educreate'),
+    'labels'                => $cta_labels,
+    'supports'              => array('title', 'thumbnail', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes', 'post-formats'),
+    'taxonomies'            => array('category', 'post_tag'),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-megaphone',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => false,
+    'can_export'            => true,
+    'has_archive'           => false,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'rewrite'               => $cta_rewrite,
+    'capability_type'       => 'post',
+);
+register_post_type('cptcta', $cta_args);

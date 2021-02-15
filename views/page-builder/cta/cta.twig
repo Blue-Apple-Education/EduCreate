@@ -1,0 +1,10 @@
+{% extends "base.twig" %}
+{% for post in cta %}
+	{# ACF Layout LOOP #}
+	{% block content %}
+
+		<h2>{{ post.heading }}</h2>
+		(other markup goes here)
+
+	{% endblock %}
+{% endfor %}

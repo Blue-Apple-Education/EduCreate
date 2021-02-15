@@ -15,4 +15,4 @@ $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
 
-Timber::render('pages/page-page-builder.twig', $context);
+Timber::render('views/page-builder.twig', $context);

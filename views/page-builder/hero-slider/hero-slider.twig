@@ -31,7 +31,9 @@
 	</ul>
 	<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
 	<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-</div><!-- Include Style for Module--><style>
+</div>
+{# Include Style for Module #}
+<style>
 	.slider-custom-acf {
 		background: linear-gradient({{ item.overlay_direction }}deg, rgba({{ item.fade_colour }}) 0%, rgba({{ item.solid_colour }}) 100%) !important;
 	}
@@ -158,4 +160,5 @@
 			top: 75%;
 		}
 	}
-</style>{# Close IF Statement after style to ensure style is loaded #}{% endif %}
+</style>
+{# Close IF Statement after style to ensure style is loaded #}{% endif %}
