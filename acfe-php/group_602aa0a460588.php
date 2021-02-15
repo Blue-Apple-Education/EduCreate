@@ -3,39 +3,35 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_5fff11b955bef',
-	'title' => 'Footer Settings',
+	'key' => 'group_602aa0a460588',
+	'title' => 'Module: 2 Column',
 	'fields' => array(
 		array(
-			'key' => 'field_5fff11cb3d363',
-			'label' => 'Select Footer',
-			'name' => 'footer_select',
-			'type' => 'image_select',
+			'key' => 'field_602aa0a4699e9',
+			'label' => 'Text Content',
+			'name' => 'text_content',
+			'type' => 'wysiwyg',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '100',
+				'width' => '',
 				'class' => '',
 				'id' => '',
 			),
-			'choices' => array(
-				'footer01' => 'Footer 01',
-				'footer02' => 'Footer 02',
-			),
-			'default_value' => array(
-			),
-			'multiple' => 0,
-			'image_path' => '/wp-content/themes/EduCreate/acf-image-select/footer/',
-			'image_extension' => 'jpg',
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
 		),
 	),
 	'location' => array(
 		array(
 			array(
-				'param' => 'options_page',
+				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'acf-options-footer',
+				'value' => 'post',
 			),
 		),
 	),
@@ -55,7 +51,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1613406002,
+	'acfe_categories' => array(
+		'page-building' => 'Page Building',
+		'text-column' => 'Text Column',
+	),
+	'modified' => 1613406386,
 ));
 
 endif;

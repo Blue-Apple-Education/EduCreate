@@ -35,7 +35,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": ""
+                "value": "acf-options-header"
             }
         ]
     ],
@@ -55,5 +55,9 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1611740649
+    "modified": 1613406062,
+    "acfe_categories": {
+        "header": "Header",
+        "settings": "Settings"
+    }
 }

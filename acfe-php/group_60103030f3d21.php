@@ -141,10 +141,10 @@ acf_add_local_field_group(array(
 					'display' => 'row',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_60103b49d7be1',
-							'label' => 'Text Content',
-							'name' => 'text_content',
-							'type' => 'wysiwyg',
+							'key' => 'field_602aa06315050',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'clone',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -154,13 +154,14 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'acfe_permissions' => '',
-							'default_value' => '',
-							'tabs' => 'all',
-							'toolbar' => 'full',
-							'media_upload' => 0,
-							'delay' => 0,
+							'clone' => array(
+								0 => 'group_602aa00c223e6',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
 							'acfe_settings' => '',
-							'acfe_validate' => '',
 						),
 					),
 					'min' => '',
@@ -180,10 +181,10 @@ acf_add_local_field_group(array(
 					'display' => 'row',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_60103c86d7be4',
-							'label' => 'Text Content',
-							'name' => 'text_content',
-							'type' => 'wysiwyg',
+							'key' => 'field_602aa0c715051',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'clone',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -193,13 +194,14 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'acfe_permissions' => '',
-							'default_value' => '',
-							'tabs' => 'all',
-							'toolbar' => 'full',
-							'media_upload' => 1,
-							'delay' => 0,
+							'clone' => array(
+								0 => 'group_602aa0a460588',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
 							'acfe_settings' => '',
-							'acfe_validate' => '',
 						),
 					),
 					'min' => '',
@@ -219,10 +221,10 @@ acf_add_local_field_group(array(
 					'display' => 'row',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_60104135e8144',
-							'label' => 'Text Content',
-							'name' => 'text_content',
-							'type' => 'wysiwyg',
+							'key' => 'field_602aa0ff15052',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'clone',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -232,37 +234,14 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'acfe_permissions' => '',
-							'default_value' => '',
-							'tabs' => 'all',
-							'toolbar' => 'full',
-							'media_upload' => 1,
-							'delay' => 0,
-							'acfe_settings' => array(
-								'acfcloneindex' => array(
-									'acfe_settings_location' => '',
-									'acfe_settings_settings' => array(
-										'acfcloneindex' => array(
-											'acfe_settings_setting_type' => 'required',
-											'acfe_settings_setting_name' => '',
-											'acfe_settings_setting_operator' => 'true',
-											'acfe_settings_setting_value' => '',
-										),
-									),
-								),
+							'clone' => array(
+								0 => 'group_602aa0db96b64',
 							),
-							'acfe_validate' => array(
-								'acfcloneindex' => array(
-									'acfe_validate_location' => '',
-									'acfe_validate_rules_and' => array(
-										'acfcloneindex' => array(
-											'acfe_validate_function' => 'value',
-											'acfe_validate_operator' => '==',
-											'acfe_validate_match' => '',
-										),
-									),
-									'acfe_validate_error' => '',
-								),
-							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_settings' => '',
 						),
 					),
 					'min' => '',
@@ -282,10 +261,10 @@ acf_add_local_field_group(array(
 					'display' => 'row',
 					'sub_fields' => array(
 						array(
-							'key' => 'field_6010413ee8146',
-							'label' => 'Text Content',
-							'name' => 'text_content',
-							'type' => 'wysiwyg',
+							'key' => 'field_602aa11315053',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'clone',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -295,37 +274,14 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'acfe_permissions' => '',
-							'default_value' => '',
-							'tabs' => 'all',
-							'toolbar' => 'full',
-							'media_upload' => 1,
-							'delay' => 0,
-							'acfe_settings' => array(
-								'acfcloneindex' => array(
-									'acfe_settings_location' => '',
-									'acfe_settings_settings' => array(
-										'acfcloneindex' => array(
-											'acfe_settings_setting_type' => 'required',
-											'acfe_settings_setting_name' => '',
-											'acfe_settings_setting_operator' => 'true',
-											'acfe_settings_setting_value' => '',
-										),
-									),
-								),
+							'clone' => array(
+								0 => 'group_602aa0eb0a1d9',
 							),
-							'acfe_validate' => array(
-								'acfcloneindex' => array(
-									'acfe_validate_location' => '',
-									'acfe_validate_rules_and' => array(
-										'acfcloneindex' => array(
-											'acfe_validate_function' => 'value',
-											'acfe_validate_operator' => '==',
-											'acfe_validate_match' => '',
-										),
-									),
-									'acfe_validate_error' => '',
-								),
-							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_settings' => '',
 						),
 					),
 					'min' => '',
@@ -431,7 +387,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1613398194,
+	'modified' => 1613406580,
 ));
 
 endif;

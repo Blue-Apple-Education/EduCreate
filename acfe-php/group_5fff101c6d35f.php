@@ -39,7 +39,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'options_page',
 				'operator' => '==',
-				'value' => '',
+				'value' => 'acf-options-header',
 			),
 		),
 	),
@@ -59,7 +59,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1611740649,
+	'acfe_categories' => array(
+		'header' => 'Header',
+		'settings' => 'Settings',
+	),
+	'modified' => 1613406062,
 ));
 
 endif;
