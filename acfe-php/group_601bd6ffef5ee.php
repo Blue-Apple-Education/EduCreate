@@ -352,7 +352,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'hero' => 'Hero',
 	),
-	'modified' => 1612437835,
+	'modified' => 1613396487,
 ));
 
 endif;

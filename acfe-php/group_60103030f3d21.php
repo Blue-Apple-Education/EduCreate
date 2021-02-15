@@ -124,7 +124,7 @@ acf_add_local_field_group(array(
 					),
 					'min' => '',
 					'max' => '',
-					'acfe_flexible_thumbnail' => '',
+					'acfe_flexible_thumbnail' => '67',
 					'acfe_flexible_category' => array(
 						0 => 'Hero',
 					),
@@ -136,7 +136,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60103ae3d7be0' => array(
 					'key' => 'layout_60103ae3d7be0',
-					'name' => 'column-1',
+					'name' => 'column01',
 					'label' => '1 Text Column',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -157,7 +157,7 @@ acf_add_local_field_group(array(
 							'default_value' => '',
 							'tabs' => 'all',
 							'toolbar' => 'full',
-							'media_upload' => 1,
+							'media_upload' => 0,
 							'delay' => 0,
 							'acfe_settings' => '',
 							'acfe_validate' => '',
@@ -175,7 +175,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60103c86d7be3' => array(
 					'key' => 'layout_60103c86d7be3',
-					'name' => 'column-2',
+					'name' => 'column02',
 					'label' => '2 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -214,7 +214,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60104135e8143' => array(
 					'key' => 'layout_60104135e8143',
-					'name' => 'column-3',
+					'name' => 'column03',
 					'label' => '3 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -277,7 +277,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_6010413ee8145' => array(
 					'key' => 'layout_6010413ee8145',
-					'name' => 'column-4',
+					'name' => 'column04',
 					'label' => '4 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -431,7 +431,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1613389239,
+	'modified' => 1613398194,
 ));
 
 endif;

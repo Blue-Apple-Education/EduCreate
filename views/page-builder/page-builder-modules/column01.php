@@ -1,7 +1,13 @@
-<section class="uk-section">
-    <div class="uk-container">
-        <div class="uk-column-1">
-            <?php $get_field('content'); ?>
+<?php
+
+
+$text_content = the_sub_field('text_content');
+?>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <?php echo $text_content; ?>
         </div>
     </div>
-</section>
+</div>

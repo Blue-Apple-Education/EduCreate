@@ -22,7 +22,6 @@ $paragraph_animation_delay = get_sub_field('paragraph_animation_delay');
     </div>
 </div>
 
-{# Include Style for Module #}
 <style>
 .slider-custom-acf {
     background: linear-gradient(<?php echo $overlay_direction; ?> deg, rgba(<?php echo $fade_colour; ?>) 0%, rgba(<?php echo $solid_colour; ?>) 100%) !important;
