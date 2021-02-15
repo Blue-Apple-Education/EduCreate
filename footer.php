@@ -1,21 +1,39 @@
 <?php
-/**
- * Third party plugins that hijack the theme will call wp_footer() to get the footer template.
- * We use this to end our output buffer (started in header.php) and render into the view/page-plugin.twig template.
- *
- * If you're not using a plugin that requries this behavior (ones that do include Events Calendar Pro and
- * WooCommerce) you can delete this file and header.php
- *
- * @package  WordPress
- * @subpackage  Timber
- * @since   Timber 0.1
- */
+/* $social_title = get_field('social_title', 'option');
+    if ( $social_title == '' ) {
+        $social_title = 'CONNECT WITH US';
+    }
 
-$timberContext = $GLOBALS['timberContext']; // @codingStandardsIgnoreFile
-if ( ! isset( $timberContext ) ) {
-	throw new \Exception( 'Timber context not set in footer.' );
-}
-$timberContext['content'] = ob_get_contents();
-ob_end_clean();
-$templates = array( 'page-plugin.twig' );
-Timber::render( $templates, $timberContext );
+    $site_logo = get_field('footer_image', 'option');
+
+    $email_address = get_field('email_address', 'option');
+    $email_footer =  get_field('email_footer', 'option');
+    
+    $telephone = get_field('telephone', 'option');
+    $telephone_footer =  get_field('telephone_footer', 'option');
+
+    $footer_legal_link = get_field('footer_legal_link', 'option');
+    $address = get_field('address_details', 'option')['address'];
+    $footer_build_text = get_field('footer_build_text', 'option');*/
+?>
+</main>
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>

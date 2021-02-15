@@ -52,7 +52,7 @@ acf_add_local_field_group(array(
 			'layouts' => array(
 				'layout_601bd8fddec76' => array(
 					'key' => 'layout_601bd8fddec76',
-					'name' => 'hero_slider',
+					'name' => 'hero-slider',
 					'label' => 'Hero Slider',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -136,7 +136,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60103ae3d7be0' => array(
 					'key' => 'layout_60103ae3d7be0',
-					'name' => 'column_1',
+					'name' => 'column-1',
 					'label' => '1 Text Column',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -175,7 +175,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60103c86d7be3' => array(
 					'key' => 'layout_60103c86d7be3',
-					'name' => 'column_2',
+					'name' => 'column-2',
 					'label' => '2 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -214,7 +214,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_60104135e8143' => array(
 					'key' => 'layout_60104135e8143',
-					'name' => 'column_3',
+					'name' => 'column-3',
 					'label' => '3 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -277,7 +277,7 @@ acf_add_local_field_group(array(
 				),
 				'layout_6010413ee8145' => array(
 					'key' => 'layout_6010413ee8145',
-					'name' => 'column_4',
+					'name' => 'column-4',
 					'label' => '4 Text Columns',
 					'display' => 'row',
 					'sub_fields' => array(
@@ -332,71 +332,6 @@ acf_add_local_field_group(array(
 					'max' => '',
 					'acfe_flexible_thumbnail' => '',
 					'acfe_flexible_category' => '',
-					'acfe_flexible_render_template' => false,
-					'acfe_flexible_render_style' => false,
-					'acfe_flexible_render_script' => false,
-					'acfe_flexible_settings' => '',
-					'acfe_flexible_settings_size' => 'medium',
-				),
-				'layout_601d2adaf7958' => array(
-					'key' => 'layout_601d2adaf7958',
-					'name' => '2_column_layout',
-					'label' => '2 Column Layout',
-					'display' => 'row',
-					'sub_fields' => array(
-						array(
-							'key' => 'field_601d2b1ef7959',
-							'label' => 'Clone',
-							'name' => 'clone',
-							'type' => 'clone',
-							'instructions' => '',
-							'required' => 0,
-							'conditional_logic' => 0,
-							'wrapper' => array(
-								'width' => '',
-								'class' => '',
-								'id' => '',
-							),
-							'acfe_permissions' => '',
-							'clone' => array(
-								0 => 'group_601bd977c1cde',
-							),
-							'display' => 'seamless',
-							'layout' => 'block',
-							'prefix_label' => 0,
-							'prefix_name' => 0,
-							'acfe_settings' => '',
-						),
-						array(
-							'key' => 'field_601d2b41f795a',
-							'label' => 'Clone',
-							'name' => 'clone',
-							'type' => 'clone',
-							'instructions' => '',
-							'required' => 0,
-							'conditional_logic' => 0,
-							'wrapper' => array(
-								'width' => '',
-								'class' => '',
-								'id' => '',
-							),
-							'acfe_permissions' => '',
-							'clone' => array(
-								0 => 'group_601bd6ffef5ee',
-							),
-							'display' => 'seamless',
-							'layout' => 'block',
-							'prefix_label' => 0,
-							'prefix_name' => 0,
-							'acfe_settings' => '',
-						),
-					),
-					'min' => '',
-					'max' => '',
-					'acfe_flexible_thumbnail' => '147',
-					'acfe_flexible_category' => array(
-						0 => '2-Columns',
-					),
 					'acfe_flexible_render_template' => false,
 					'acfe_flexible_render_style' => false,
 					'acfe_flexible_render_script' => false,
@@ -462,7 +397,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'page_template',
 				'operator' => '==',
-				'value' => 'template-page-builder.php',
+				'value' => 'index.php',
 			),
 		),
 	),
@@ -496,7 +431,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1613132586,
+	'modified' => 1613389239,
 ));
 
 endif;

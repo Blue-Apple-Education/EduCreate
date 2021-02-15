@@ -104,12 +104,12 @@ function add_default_value_to_image_field($field)
 }
 
 
-add_filter('acf/load_value/type=image', 'reset_default_image', 10, 3);
-function reset_default_image($value, $post_id, $field)
-{
-    if (!$value) {
-        $value = $field['default_value'];
-    }
+// add_filter('acf/load_value/type=image', 'reset_default_image', 10, 3);
+// function reset_default_image($value, $post_id, $field)
+// {
+//     if (!$value) {
+//         $value = $field['default_value'];
+//     }
 
-    return $value;
-}
+//     return $value;
+// }

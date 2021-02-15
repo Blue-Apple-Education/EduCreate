@@ -174,14 +174,6 @@ function require_these_plugins_register_required_plugins()
 		),
 
 		array(
-			'name'      => 'Timber Library',
-			'slug'      => 'timber-library',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
-
-		array(
 			'name'      => 'WP Smart Preloader',
 			'slug'      => 'wp-smart-preloader',
 			'required'  => true,

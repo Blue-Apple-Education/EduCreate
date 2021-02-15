@@ -33,7 +33,7 @@ $newsfeed_args = [
     "supports" => ["title"],
 ];
 
-register_post_type("cptnewsevents", $newsfeed_args);
+register_post_type("cpt_newsevents", $newsfeed_args);
 
 
 /**
@@ -68,7 +68,7 @@ $careers_args = [
     "supports" => ["title"],
 ];
 
-register_post_type("cptcareers", $careers_args);
+register_post_type("cpt_careers", $careers_args);
 
 /**
  * Post Type: Staff.
@@ -102,7 +102,7 @@ $staff_args = [
     "supports" => ["title"],
 ];
 
-register_post_type("cptstaff", $staff_args);
+register_post_type("cpt_staff", $staff_args);
 
 /**
  * Post Type: Policies.
@@ -136,7 +136,7 @@ $policies_args = [
     "supports" => ["title"],
 ];
 
-register_post_type("cptpolicies", $policies_args);
+register_post_type("cpt_policies", $policies_args);
 
 
 /**
@@ -198,4 +198,4 @@ $cta_args = array(
     'rewrite'               => $cta_rewrite,
     'capability_type'       => 'post',
 );
-register_post_type('cptcta', $cta_args);
+register_post_type('cpt_cta', $cta_args);
