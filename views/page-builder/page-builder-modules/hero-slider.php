@@ -1,31 +1,37 @@
 <?php
-// Main Hero Slider for use on Homepage Only
-$background_image = the_sub_field('background_image');
-$overlay_direction  = the_sub_field('overlay_direction');
-$background_video  = the_sub_field('background_video');
-$content_position  = the_sub_field('content_position');
-$heading_animation  = the_sub_field('heading_animation');
-$heading_animation_delay  = the_sub_field('heading_animation_delay');
-$heading  = the_sub_field('heading');
+// Main Hero Slider 
+// This is best used on the Homepage Only
+
+/* SP */
+// Heading
+$heading = get_sub_field('heading');
+$heading = strip_tags($heading, null);
+// Paragraph
 $paragraph = get_sub_field('paragraph');
 $paragraph = strip_tags($paragraph, null);
 
 ?>
+<!-- Outer Div -->
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
     uk-slider="autoplay:true; autoplay-interval: 8000;">
+
+    <!-- List Outer -->
     <ul class="uk-slider-items uk-grid">
         <?php if (have_rows('hero_slider')) : ?>
         <?php while (have_rows('hero_slider')) : the_row(); ?>
+
+        <!-- Single List element -->
         <li class="uk-width-1 slide slide" style="padding-left: 0px!important; max-height: 100vh;height:90vh;">
             <div class="uk-panel uk-animation-fade" style="animation-delay: 100ms; max-height: 90vh;height:90vh;">
 
+                <!-- Image -->
                 <img src="<?php the_sub_field('background_image'); ?>" alt=""
                     style="height: fit-content;object-fit: cover;width: 100%; height:100%;" />
 
-
+                <!-- Overlay -->
                 <div class="uk-overlay-primary uk-position-cover hero-slider-overlay slider-custom-acf"></div>
 
-
+                <!-- Video -->
                 <video src="<?php the_sub_field('background_video'); ?>" autoplay controls automute uk-video></video>
 
                 <!-- Inner Slider Content -->

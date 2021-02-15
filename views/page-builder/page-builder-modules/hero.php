@@ -1,29 +1,46 @@
 <?php
+/* Hero */
+// This can be used on any page
 
-$background_image = get_sub_field('background_image');
-$background_video = get_sub_field('background_video');
-$background_overlay = get_sub_field('background_overlay');
-$content_position = get_sub_field('content_position');
+/* SP */
+// Heading
 $heading = get_sub_field('heading');
-$heading_animation = get_sub_field('heading_animation');
-$heading_animation_delay = get_sub_field('heading_animation_delay');
+$heading = strip_tags($heading, null);
+// Paragraph
 $paragraph = get_sub_field('paragraph');
-$paragraph_animation = get_sub_field('paragraph_animation');
-$paragraph_animation_delay = get_sub_field('paragraph_animation_delay');
+$paragraph = strip_tags($paragraph, null);
+/* END */
 ?>
 
+<!-- Outer Div -->
 <div class="uk-cover-background uk-position-relative">
-    <img class="uk-visible" src="<?php echo $background_image; ?>" width="100%" height="auto" alt="" />
-    <div class="uk-position-cover uk-flex uk-flex-center <?php echo $content_position; ?> uk-flex-middle">
-        <h1 class="uk-animation-<?php echo $heading_animation; ?>"
-            style="animation-delay:{{ item.heading_animation_delay }}ms;"><?php echo $heading; ?></h1>
-        <p class="uk-animation-<?php echo $paragraph_animation; ?>"
-            style="animation-delay:<?php echo $paragraph_animation_delay; ?>ms;"><?php echo $paragraph; ?></p>
+
+    <!-- Image -->
+    <img class="uk-visible" src="<?php the_sub_field('background_image'); ?>" width="100%" height="auto" alt="" />
+
+    <!-- Overlay -->
+    <div class="uk-overlay-primary uk-position-cover hero-bg-overlay-acf"></div>
+
+    <!-- Main Content -->
+    <div class="uk-position-cover uk-flex uk-flex-center <?php get_sub_field('content_position'); ?> uk-flex-middle">
+
+        <!-- Heading -->
+        <h1 class="uk-animation-<?php get_sub_field('heading_animation'); ?>"
+            style="animation-delay:<?php get_sub_field('heading_animation_delay'); ?>ms;">
+            <?php the_sub_field('heading'); ?></h1>
+
+        <!-- Paragraph  -->
+        <p class="uk-animation-<?php get_sub_field('paragraph_animation'); ?>"
+            style="animation-delay:<?php get_sub_field('paragraph_animation_delay'); ?>ms;">
+            <?php the_sub_field('paragraph'); ?>
+        </p>
+
     </div>
 </div>
 
+<!-- Styles for module -->
 <style>
-.slider-custom-acf {
+.hero-bg-overlay-acf {
     background: linear-gradient(<?php echo $overlay_direction; ?> deg, rgba(<?php echo $fade_colour; ?>) 0%, rgba(<?php echo $solid_colour; ?>) 100%) !important;
 }
 

@@ -1,13 +1,11 @@
 <?php
-
-
-$text_content = the_sub_field('text_content');
+$text_content = get_sub_field('text_content');
+$text_content = strip_tags($text_content, null);
 ?>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
+<section class="uk-section">
+    <div class="uk-container">
+        <div class="uk-column-1">
             <?php echo $text_content; ?>
         </div>
     </div>
-</div>
+</section>

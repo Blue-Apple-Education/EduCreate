@@ -1,7 +1,11 @@
+<?php
+$text_content = get_sub_field('text_content');
+$text_content = strip_tags($text_content, null);
+?>
 <section class="uk-section">
     <div class="uk-container">
         <div class="uk-column-1-3">
-            {{ item.text_content }}
+            <?php echo $text_content; ?>
         </div>
     </div>
 </section>
