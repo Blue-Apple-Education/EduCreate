@@ -307,7 +307,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'all',
+				'value' => 'page',
 			),
 		),
 	),
@@ -330,7 +330,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'hero' => 'Hero',
 	),
-	'modified' => 1613390133,
+	'modified' => 1613558835,
 ));
 
 endif;

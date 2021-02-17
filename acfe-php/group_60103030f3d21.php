@@ -341,6 +341,48 @@ acf_add_local_field_group(array(
 					'acfe_flexible_settings' => '',
 					'acfe_flexible_settings_size' => 'medium',
 				),
+				'layout_602d058ddacaa' => array(
+					'key' => 'layout_602d058ddacaa',
+					'name' => 'newsfeed-pg-01',
+					'label' => 'Newsfeed posts 01',
+					'display' => 'row',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_602d0597dacab',
+							'label' => 'Content Clone',
+							'name' => 'content_clone',
+							'type' => 'clone',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'acfe_permissions' => '',
+							'clone' => array(
+								0 => 'group_5d9efb939a2e5',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_settings' => '',
+						),
+					),
+					'min' => '',
+					'max' => '',
+					'acfe_flexible_thumbnail' => '',
+					'acfe_flexible_category' => array(
+						0 => 'Newsfeed',
+					),
+					'acfe_flexible_render_template' => false,
+					'acfe_flexible_render_style' => false,
+					'acfe_flexible_render_script' => false,
+					'acfe_flexible_settings' => '',
+					'acfe_flexible_settings_size' => 'medium',
+				),
 			),
 			'button_label' => 'Add Module',
 			'min' => '',
@@ -387,7 +429,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1613406580,
+	'modified' => 1613563325,
 ));
 
 endif;

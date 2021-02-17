@@ -9,7 +9,7 @@ get_header();
 /**
  * Get 404 content
  */
-include(get_stylesheet_directory() . "/views/page-builder/partials/404.php");
+include(get_stylesheet_directory() . "/views/partial/404.php");
 
 
 /**

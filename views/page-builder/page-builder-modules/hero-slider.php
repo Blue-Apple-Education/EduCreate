@@ -2,7 +2,6 @@
 // Main Hero Slider 
 // This is best used on the Homepage Only
 
-/* SP */
 // Heading
 $heading = get_sub_field('heading');
 $heading = strip_tags($heading, null);
@@ -17,6 +16,8 @@ $paragraph = strip_tags($paragraph, null);
 
     <!-- List Outer -->
     <ul class="uk-slider-items uk-grid">
+
+        <!-- Loop -->
         <?php if (have_rows('hero_slider')) : ?>
         <?php while (have_rows('hero_slider')) : the_row(); ?>
 

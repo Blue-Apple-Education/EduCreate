@@ -2,14 +2,13 @@
 /* Hero */
 // This can be used on any page
 
-/* SP */
 // Heading
 $heading = get_sub_field('heading');
 $heading = strip_tags($heading, null);
 // Paragraph
 $paragraph = get_sub_field('paragraph');
 $paragraph = strip_tags($paragraph, null);
-/* END */
+
 ?>
 
 <!-- Outer Div -->
@@ -36,6 +35,7 @@ $paragraph = strip_tags($paragraph, null);
         </p>
 
     </div>
+    <!-- MC END -->
 </div>
 
 <!-- Styles for module -->

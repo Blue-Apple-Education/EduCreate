@@ -24,10 +24,7 @@
         <div class="container-404">
             <div class="background-container">
                 <div class="overlay"></div>
-                <?php
-                $desktopImageURL = get_field('404_background_image', 'option')['url'];
-                include(get_stylesheet_directory() . "/views/partials/hero-background-image.php");
-                ?>
+
             </div>
         </div>
     </div>

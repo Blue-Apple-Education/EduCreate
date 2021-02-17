@@ -336,6 +336,48 @@
                     "acfe_flexible_render_script": false,
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
+                },
+                "layout_602d058ddacaa": {
+                    "key": "layout_602d058ddacaa",
+                    "name": "newsfeed-pg-01",
+                    "label": "Newsfeed posts 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_602d0597dacab",
+                            "label": "Content Clone",
+                            "name": "content_clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d9efb939a2e5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Newsfeed"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
                 }
             },
             "button_label": "Add Module",
@@ -380,7 +422,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613406580,
+    "modified": 1613563325,
     "acfe_categories": {
         "page-building": "Page Building"
     }

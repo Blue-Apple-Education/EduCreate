@@ -6,8 +6,11 @@
  *
  */
 
-echo '<div class="flexible-content-wrap clearfix">';
+// override $post
+// $post = $postObject;
+// setup_postdata( $post ); 
 
+echo '<div class="flexible-content-wrap clearfix">';
 
 // ID of the current item in the WordPress Loop
 $id = get_the_ID();
@@ -24,19 +27,16 @@ if (have_rows('content', $id)) :
         echo 'Module Code: ' . get_row_layout();
         echo '</div>';
 
-
         $file = get_stylesheet_directory() . "/views/page-builder/page-builder-modules/" . get_row_layout() . ".php";
         include($file);
 
         echo '</section>';
-
 
     endwhile;
 
 elseif (get_the_content()) :
 
 // no layouts found
-
 endif;
 
 // IMPORTANT - reset the $post object so the rest of the page works correctly
