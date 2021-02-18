@@ -1,6 +1,6 @@
 {
     "key": "group_5d4de52c4f08e",
-    "title": "CPT: Vacancies",
+    "title": "CPT: Careers",
     "fields": [
         {
             "key": "field_5d91ea21ce6f2",
@@ -89,7 +89,7 @@
                     "key": "field_5dadcaf3c6ee0",
                     "label": "Post header image",
                     "name": "post_header_image",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "Ratio: 3840x882",
                     "required": 0,
                     "conditional_logic": 0,
@@ -98,9 +98,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 3840,
-                    "aspect_ratio_height": 882,
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -111,9 +110,7 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "acfe_validate": "",
-                    "acfe_update": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 },
                 {
                     "key": "field_5dadcb42c6ee1",
@@ -142,7 +139,7 @@
                     "key": "field_5dadcb5ec6ee2",
                     "label": "Post featured image",
                     "name": "post_featured_image",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "Ratio: 1920 x 1080",
                     "required": 0,
                     "conditional_logic": 0,
@@ -151,9 +148,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 1920,
-                    "aspect_ratio_height": 1080,
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -164,15 +160,13 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "acfe_validate": "",
-                    "acfe_update": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 },
                 {
                     "key": "field_5dadcb78c6ee3",
                     "label": "Post content image",
                     "name": "post_content_image",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "Ratio: 856x308",
                     "required": 0,
                     "conditional_logic": 0,
@@ -181,9 +175,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 856,
-                    "aspect_ratio_height": 308,
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -194,9 +187,7 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "acfe_validate": "",
-                    "acfe_update": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 }
             ]
         },
@@ -244,7 +235,7 @@
             "key": "field_5dfc850307248",
             "label": "School Logo",
             "name": "school_logo",
-            "type": "image_aspect_ratio_crop",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -253,9 +244,8 @@
                 "class": "",
                 "id": ""
             },
-            "acfe_permissions": "",
-            "aspect_ratio_width": 150,
-            "aspect_ratio_height": 150,
+            "uploader": "wp",
+            "acfe_thumbnail": 0,
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -266,7 +256,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "crop_type": "aspect_ratio"
+            "default_value": ""
         }
     ],
     "location": [
@@ -294,7 +284,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613559044,
+    "modified": 1613661047,
     "acfe_categories": {
         "cpt": "CPT",
         "vacancies": "Vacancies"

@@ -1,6 +1,4 @@
-<?php
-
-/* Custom EDUCREATE Includes */
+<?php /* Custom EDUCREATE Functions */
 
 // Link Global Styles
 function my_custom_css_styles()
@@ -21,19 +19,16 @@ require_once(get_stylesheet_directory() . "/config/acf-layout-images.php");
 // require_once(get_stylesheet_directory() . "/config/acf-layouts.php");
 
 
-
 /*
     * WP-ADMIN THEME SUPPORT
     */
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");
-
 
 // Plugin Installation and Activaton
 require_once(get_template_directory() . '/lib/educreate-plugins.php');
 
 // GET CPTUI Fields
 require(get_stylesheet_directory() . "/config/cptui-settings.php");
-// Add CPTUI Fields
 
 /* Admin Menu Settings */
 require_once(get_stylesheet_directory() . "/config/admin-menu.php");

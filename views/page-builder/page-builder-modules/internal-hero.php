@@ -1,5 +1,5 @@
 <?php /* Internal Hero */
-
+$post_id = get_the_ID();
 $media = get_field('media');
 $post_featured_image = get_field('post_featured_image');
 ?>

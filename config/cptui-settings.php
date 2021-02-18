@@ -70,10 +70,8 @@ $careers_args = [
 
 register_post_type("cpt_careers", $careers_args);
 
-/**
- * Post Type: Staff.
- */
 
+/* Post Type: Staff.*/
 $staff_labels = [
     "name" => __("Staff", "custom-post-type-ui"),
     "singular_name" => __("Staff", "custom-post-type-ui"),
@@ -104,9 +102,8 @@ $staff_args = [
 
 register_post_type("cpt_staff", $staff_args);
 
-/**
- * Post Type: Policies.
- */
+
+/* Post Type: Policies */
 $policies_labels = [
     "name" => __("Policies", "custom-post-type-ui"),
     "singular_name" => __("Policy", "custom-post-type-ui"),
@@ -139,9 +136,7 @@ $policies_args = [
 register_post_type("cpt_policies", $policies_args);
 
 
-/**
- * Post Type: CTA's.
- */
+/* Post Type: CTA's */
 $cta_labels = array(
     'name'                  => _x('cta', 'Post Type General Name', 'educreate'),
     'singular_name'         => _x('cta', 'Post Type Singular Name', 'educreate'),

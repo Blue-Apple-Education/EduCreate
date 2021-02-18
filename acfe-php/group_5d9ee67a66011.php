@@ -70,7 +70,7 @@ acf_add_local_field_group(array(
 					'key' => 'field_5d9ee67a73a18',
 					'label' => 'Post header image',
 					'name' => 'post_header_image',
-					'type' => 'image_aspect_ratio_crop',
+					'type' => 'image',
 					'instructions' => 'Ratio: 3840x882',
 					'required' => 0,
 					'conditional_logic' => 0,
@@ -79,9 +79,8 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'acfe_permissions' => '',
-					'aspect_ratio_width' => 3840,
-					'aspect_ratio_height' => 882,
+					'uploader' => 'wp',
+					'acfe_thumbnail' => 0,
 					'return_format' => 'array',
 					'preview_size' => 'medium',
 					'library' => 'all',
@@ -92,9 +91,7 @@ acf_add_local_field_group(array(
 					'max_height' => '',
 					'max_size' => '',
 					'mime_types' => '',
-					'acfe_validate' => '',
-					'acfe_update' => '',
-					'crop_type' => 'aspect_ratio',
+					'default_value' => '',
 				),
 				array(
 					'key' => 'field_5d9ee67a73a63',
@@ -272,7 +269,7 @@ acf_add_local_field_group(array(
 		'cpt' => 'CPT',
 		'newsfeed' => 'Newsfeed',
 	),
-	'modified' => 1613572773,
+	'modified' => 1613661111,
 ));
 
 endif;
