@@ -1,53 +1,52 @@
-<?php
-    echo '<div class="news-animate viewport_check">';
-        echo '<div class="news-event-item-wrap">';
-            echo '<div class="img-wrap">';
-                
-                if ( $file != '' ) {
-                    $url = $file['url'];
-                    $target = '_blank';
-                } else {
-                    $url = get_the_permalink();
-                    $target = '';
-                }
-                
-                echo '<a class="pageLoader" target="'. $target .'" href="'. $url .'"></a>';
+<div class="newsfeed-tile-01">
+    <div class="news-event-item-wrap">
+        <div class="img-wrap">
+            <?php
+            if ($file != '') {
+                $url = $file['url'];
+                $target = '_blank';
+            } else {
+                $url = get_the_permalink();
+                $target = '';
+            }
 
-                $ratio = '499x205';
-                echo '<div class="overlay"></div>';
-                include(get_stylesheet_directory() . "/template-parts/parts/background-image.php"); 
+            ?>
 
-            echo '</div>';
+            <a class="button" target="<?php echo $target; ?>" href="<?php echo $url; ?>"></a>
 
-            echo '<div class="content-wrap">';
-                if( $title ):
-                    echo '<a class="pageLoader" target="'. $target .'" href="'. $url .'">';
-                        echo '<div class="underlineWrap">';
-                            echo '<span class="hover-1 title dark medium bold">'. $title .'</span>';
-                        echo '</div>';
-                    echo '</a>';
-                endif;
+            <div class="overlay"></div>
 
-                if( $preview ):
-                    echo '<span class="paragraph normal dark">';
-                        echo apply_filters('the_content', $preview);
-                    echo '</span>';
-                endif;
-            
-                echo '<div class="button-wrap">';
+        </div>
 
-                    if ( $buttonText == '') {
-                        if ( $file != '' ) {
-                            $buttonText = 'Download';
-                        } else {
-                            $buttonText = 'Read more';
-                        }
+        <div class="content-wrap">
+
+            <?php if ($title) : ?> <a class="pageLoader" target="<?php echo $target; ?>" href="<?php echo $url; ?>">
+                <div class="underlineWrap">
+                    <span class="hover-1 title dark medium bold"><?php echo $title; ?></span>
+                </div>
+            </a>
+            <?php endif;
+
+            if ($preview) :
+                echo '<span class="paragraph normal dark">';
+                echo apply_filters('the_content', $preview);
+                echo '</span>';
+            endif; ?>
+
+            <div class="button-wrap">
+                <?php
+                if ($buttonText == '') {
+                    if ($file != '') {
+                        $buttonText = 'Download';
+                    } else {
+                        $buttonText = 'Read more';
                     }
+                }
+                ?>
+                <a href="<?php echo $url; ?>" target="<?php echo $target; ?>"
+                    class="pageLoader button bt-primary button--ujarak button--border-thin button--text-thick"><span><?php echo $buttonText; ?></span></a>';
 
-                    echo '<a href="'. $url .'" target="'. $target .'" class="pageLoader button bt-primary button--ujarak button--border-thin button--text-thick"><span>'. $buttonText .'</span></a>';
-
-                echo '</div>';
-                
-            echo '</div>';
-        echo '</div>';
-    echo '</div>';
+            </div>
+        </div>
+    </div>
+</div>

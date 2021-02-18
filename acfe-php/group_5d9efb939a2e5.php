@@ -4,7 +4,7 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5d9efb939a2e5',
-	'title' => 'Module: Newsfeed Page - all posts 01',
+	'title' => 'Module: Newsfeed Page - All posts 01',
 	'fields' => array(
 		array(
 			'key' => 'field_5d9efb939e02f',
@@ -64,7 +64,7 @@ acf_add_local_field_group(array(
 		'cpt' => 'CPT',
 		'newsfeed' => 'Newsfeed',
 	),
-	'modified' => 1613563509,
+	'modified' => 1613661567,
 ));
 
 endif;
