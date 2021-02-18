@@ -85,184 +85,109 @@ if ($header_text_and_icon_colours == '') {
 /*------------------------------------*\
 	 HEADER COLOURS
     \*------------------------------------*/
-
-.show-scrolled-menu header,
-.force-header-visible header {
-    background-color: <?php echo $header_background_colour;
-    ?> !important;
-}
+header {}
 
 /*------------------------------------*\
 	 FOOTER COLOURS
     \*------------------------------------*/
-
-footer .container .title,
-footer .container .paragraph,
-footer .container span,
-footer .container a,
-footer .container a span,
-footer .container a:before,
-footer .container p {
-    color: <?php echo $main_text_colour;
-    ?>;
-}
-
-footer .container svg,
-footer .container svg path {
-    fill: <?php echo $main_text_colour;
-    ?>;
-}
-
-footer {
-    background-color: <?php echo $main_section_bg_colour;
-    ?>;
-}
-
-footer .lower-block {
-    background-color: <?php echo $copyright_section_bg_colour;
-    ?>;
-}
-
-footer .lower-block a,
-footer .lower-block a span,
-footer .lower-block span,
-footer .lower-block p {
-    color: <?php echo $copyright_text_colour;
-    ?>;
-}
-
-footer .lower-block a:hover {
-    color: <?php echo $copyright_text_hover_colour;
-    ?>;
-}
-
-footer .lower-block a:hover span {
-    color: <?php echo $copyright_text_hover_colour;
-    ?>;
-}
+footer {}
 
 /*------------------------------------*\
 	 BUTTON COLOURS
     \*------------------------------------*/
 
 /* DEFAULT COLOUR */
-.button--ujarak {
-    border-color: <?php echo $bt_primary;
+.button-default {
+    border-color: <?php echo $bc_primary;
     ?>;
     background-color: <?php echo $bt_primary;
     ?>;
 }
 
-.button--ujarak:hover {
+.button-default:hover {
     border-color: <?php echo $bt_primary;
     ?>;
 }
 
-.button--ujarak:hover span {
+.button-default:hover span {
     color: <?php echo $bt_primary;
     ?>;
 }
 
-/* bt White */
-
-.button--ujarak.bt-white {
-    background-color: #fff;
-    border-color: #fff;
-}
-
-.button--ujarak.bt-white span {
-    color: #191919;
-}
-
-.button--ujarak.bt-white:hover {
-    border-color: <?php echo $bt_primary;
-    ?>;
-}
-
-.button--ujarak.bt-white:hover:before {
-    background-color: <?php echo $bt_primary;
-    ?>;
-}
-
-.button--ujarak.bt-white:hover span {
-    color: #fff;
-}
-
-
-/* bt_PRIMARY */
-.button--ujarak.bt-primary {
+/* 1st Colour */
+.button-default.bt-primary {
     background-color: <?php echo $bt_primary;
     ?>;
     border-color: <?php echo $bt_primary;
     ?>;
 }
 
-.button--ujarak.bt-primary:hover {
+.button-default.bt-primary:hover {
     border-color: <?php echo $bt_primary;
     ?>;
 }
 
-.button--ujarak.bt-primary:hover span {
+.button-default.bt-primary:hover span {
     color: <?php echo $bt_primary;
     ?>;
     border-color: <?php echo $bt_primary;
     ?>;
 }
 
-/* SECONDARY */
-.button--ujarak.bt-secondary {
+/* 2nd Colour */
+.button-default.bt-secondary {
     background-color: <?php echo $bt_secondary;
     ?>;
     border-color: <?php echo $bt_secondary;
     ?>;
 }
 
-.button--ujarak.bt-secondary:hover {
+.button-default.bt-secondary:hover {
     border-color: <?php echo $bt_secondary;
     ?>;
 }
 
-.button--ujarak.bt-secondary:hover span {
+.button-default.bt-secondary:hover span {
     color: <?php echo $bt_secondary;
     ?>;
     border-color: <?php echo $bt_secondary;
     ?>;
 }
 
-/* TERTIARY */
-.button--ujarak.bt-tertiary {
+/* 3rd Colour */
+.button-default.bt-tertiary {
     background-color: <?php echo $bt_tertiary;
     ?>;
     border-color: <?php echo $bt_tertiary;
     ?>;
 }
 
-.button--ujarak.bt-tertiary:hover {
+.button-default.bt-tertiary:hover {
     border-color: <?php echo $bt_tertiary;
     ?>;
 }
 
-.button--ujarak.bt-tertiary:hover span {
+.button-default.bt-tertiary:hover span {
     color: <?php echo $bt_tertiary;
     ?>;
     border-color: <?php echo $bt_tertiary;
     ?>;
 }
 
-/* QUATERNARY */
-.button--ujarak.bt-quaternary {
+/* 4th Colour */
+.button-default.bt-quaternary {
     background-color: <?php echo $bt_quaternary;
     ?>;
     border-color: <?php echo $bt_quaternary;
     ?>;
 }
 
-.button--ujarak.bt-quaternary:hover {
+.button-default.bt-quaternary:hover {
     border-color: <?php echo $bt_quaternary;
     ?>;
 }
 
-.button--ujarak.bt-quaternary:hover span {
+.button-default.bt-quaternary:hover span {
     color: <?php echo $bt_quaternary;
     ?>;
     border-color: <?php echo $bt_quaternary;
@@ -270,60 +195,15 @@ footer .lower-block a:hover span {
 }
 
 
-/*------------------------------------*\
-	 SINGLE POST COLOURS
-    \*------------------------------------*/
-
-.row-post-categories-list ul li.cat-title,
-.row-single-recent-posts-list .recent-title ul li.cat-title {
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
-
-.row-post-categories-list ul li a:hover {
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
-
-.row-post-categories-list ul li.taxonomy-active a {
-    background-color: <?php echo $bt_primary;
-    ?>;
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
+/* Single Post Colours */
+.single-post {}
 
 
-/*------------------------------------*\
-	 SIDE BAR MENU
-    \*------------------------------------*/
-
-.row-side-bar-menu-01 .side-menu .side-menu-header,
-.row-side-bar-menu-custom-01 .side-menu-custom .side-menu-header {
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
-
-.row-side-bar-menu-01 .side-menu ul li a:hover,
-.row-side-bar-menu-custom-01 .side-menu-custom ul li a:hover {
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
-
-.row-side-bar-menu-01 .side-menu ul li.page-active a,
-.row-side-bar-menu-01 .side-menu ul li.current_page_item a,
-.row-side-bar-menu-custom-01 .side-menu-custom ul li.page-active a,
-.row-side-bar-menu-custom-01 .side-menu-custom ul li.current_page_item a {
-    background-color: <?php echo $bt_primary;
-    ?>;
-    border-bottom: 2px solid <?php echo $bt_primary;
-    ?>;
-}
+/* SideBar Colours */
+.side-bar-menu {}
 
 
-/*------------------------------------*\
-	 CALENADR COLOURS
-    \*------------------------------------*/
-
+/* EVENTON Colours */
 .eventon_events_list .eventon_list_event:nth-child(4n-7) {
     background-color: <?php echo $primary;
     ?> !important;
@@ -349,10 +229,7 @@ footer .lower-block a:hover span {
     ?> !important;
 }
 
-/*------------------------------------*\
-	 MODERN EVENTS CALENADR COLOURS
-    \*------------------------------------*/
-
+/* MEC Colours */
 .mec-calendar .mec-selected-day,
 .mec-calendar .mec-selected-day:hover {
     background: <?php echo $primary;
@@ -423,51 +300,9 @@ footer .lower-block a:hover span {
 }
 
 /*------------------------------------*\
-	 NEWS FEED TILE 02 COLOURS
-    \*------------------------------------*/
-
-.newsfeed-tile-02:nth-child(4n+1) .content-wrap .color-block {
-    background-color: <?php echo $primary;
-    ?>;
-}
-
-.newsfeed-tile-02:nth-child(4n+2) .content-wrap .color-block {
-    background-color: <?php echo $secondary;
-    ?>;
-}
-
-.newsfeed-tile-02:nth-child(4n+3) .content-wrap .color-block {
-    background-color: <?php echo $tertiary;
-    ?>;
-}
-
-.newsfeed-tile-02:nth-child(4n+4) .content-wrap .color-block {
-    background-color: <?php echo $quaternary;
-    ?>;
-}
-
-/*------------------------------------*\
 	 MODULE COLOURS
     \*------------------------------------*/
 
-.row-social-twitter-01 {
-    background-color: <?php echo $social_twitter_01_background;
-    ?>;
-}
-
-.row-social-twitter-02 .tweet .content-wrap a {
-    color: <?php echo $bt_primary;
-    ?> !important;
-}
-
-.row-social-twitter-02 .tweet .tweet-author-name a {
-    color: #000 !important;
-}
-
-.row-cta-3icon-01 {
-    background-color: <?php echo $cta_3icon_01_background;
-    ?>;
-}
 
 /*------------------------------------*\
 	 MENU COLOURS

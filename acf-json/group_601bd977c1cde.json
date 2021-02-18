@@ -303,7 +303,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
+                "value": "post"
             }
         ]
     ],
@@ -323,7 +323,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613558835,
+    "modified": 1613667448,
     "acfe_categories": {
         "hero": "Hero"
     }

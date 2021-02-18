@@ -1,29 +1,13 @@
 <?php
 
-/**
- * Get header
- */
+// Header
 get_header();
 
-/**
- * LOAD HERO NARROW
- */
+// Internal Hero
 include(get_stylesheet_directory() . "/views/page-builder/page-builder-modules/internal-hero.php");
 
-
-/**
- * LOAD PAGE CONTENT - TWO COLUMNS 
- */
-// include(get_stylesheet_directory() . "/views/page-builder/cpt-layouts/single-layout-content-columns.php.");
-
-
-/**
- * LOAD PAGE FLEXIBLE CONTENT CONTENT - FULL WIDTH 
- */
+// Custom Post Type Template
 include(get_stylesheet_directory() . "/views/page-builder/cpt-layouts/careers.php");
 
-
-/**
- * Get footer
- */
+// Footer
 get_footer();

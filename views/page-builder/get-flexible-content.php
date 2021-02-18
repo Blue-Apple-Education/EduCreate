@@ -24,7 +24,7 @@ if (have_rows('content', $id)) :
         echo '<section class="flexible-content ' . get_row_layout() . ' ">';
 
         echo '<div class="Module">';
-        echo 'Module Code: ' . get_row_layout();
+        echo 'Module: ' . get_row_layout();
         echo '</div>';
 
         $file = get_stylesheet_directory() . "/views/page-builder/page-builder-modules/" . get_row_layout() . ".php";
