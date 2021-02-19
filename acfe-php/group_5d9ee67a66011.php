@@ -265,11 +265,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
+	'modified' => 1613738390,
 	'acfe_categories' => array(
 		'cpt' => 'CPT',
 		'newsfeed' => 'Newsfeed',
 	),
-	'modified' => 1613661111,
 ));
 
 endif;

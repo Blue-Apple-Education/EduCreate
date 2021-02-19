@@ -51,11 +51,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
+	'modified' => 1613738191,
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 		'text-column' => 'Text Column',
 	),
-	'modified' => 1613406433,
 ));
 
 endif;

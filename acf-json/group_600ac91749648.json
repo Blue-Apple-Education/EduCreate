@@ -30,7 +30,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "global-styles"
+                "value": "theme-general-settings"
             }
         ]
     ],
@@ -50,5 +50,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1611660811
+    "modified": 1613738629
 }

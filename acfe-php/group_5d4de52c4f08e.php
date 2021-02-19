@@ -288,11 +288,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
+	'modified' => 1613738177,
 	'acfe_categories' => array(
 		'cpt' => 'CPT',
 		'vacancies' => 'Vacancies',
 	),
-	'modified' => 1613661047,
 ));
 
 endif;

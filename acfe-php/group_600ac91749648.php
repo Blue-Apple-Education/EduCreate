@@ -35,7 +35,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'options_page',
 				'operator' => '==',
-				'value' => 'global-styles',
+				'value' => 'theme-general-settings',
 			),
 		),
 	),
@@ -55,7 +55,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1611740503,
+	'modified' => 1613738629,
 ));
 
 endif;
