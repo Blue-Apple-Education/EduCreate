@@ -1,16 +1,16 @@
-<?php /* Newsfeed Tile 01 */ ?>
+<?php /* Newsfeed Tile 01 */?>
 <div class="newsfeed-tile-01 uk-card-body">
     <div class="img-wrap">
         <?php
-        if ($file != '') {
-            $url = $file['url'];
-            $target = '_blank';
-        } else {
-            $url = get_the_permalink();
-            $target = '';
-        }
+if ($file != '') {
+    $url = $file['url'];
+    $target = '_blank';
+} else {
+    $url = get_the_permalink();
+    $target = '';
+}
 
-        ?>
+?>
         <div class="featured-image">
             <img src="<?php echo esc_url($media['post_featured_image']['url']); ?>"
                 alt="<?php echo esc_attr($media['post_featured_image']['alt']); ?>">
@@ -25,34 +25,34 @@
 
     <div class="content-wrap">
         <!-- Title Text -->
-        <?php if ($title) : ?> <a class="" target="<?php echo $target; ?>" href="<?php echo $url; ?>">
+        <?php if ($title): ?> <a class="" target="<?php echo $target; ?>" href="<?php echo $url; ?>">
             <div class="title-wrap">
                 <span class="uk-card-title"><?php echo $title; ?></span>
             </div>
         </a>
-        <?php endif; ?>
+        <?php endif;?>
         <!--  -->
 
         <!-- Preview Text -->
-        <?php if ($preview) : ?>
+        <?php if ($preview): ?>
         <span class="paragraph normal dark">
             <?php echo apply_filters('the_content', $preview); ?>
         </span>
-        <?php endif; ?>
+        <?php endif;?>
         <!--  -->
 
         <!-- Button -->
         <a href="<?php echo $url; ?>" target="<?php echo $target; ?>" class="button bt-primary button-default">
             <div class="button-wrap">
                 <?php
-                if ($buttonText == '') {
-                    if ($file != '') {
-                        $buttonText = 'Download';
-                    } else {
-                        $buttonText = 'Read more';
-                    }
-                }
-                ?>
+if ($buttonText == '') {
+    if ($file != '') {
+        $buttonText = 'Download';
+    } else {
+        $buttonText = 'Read more';
+    }
+}
+?>
                 <span><?php echo $buttonText; ?></span>
             </div>
         </a>

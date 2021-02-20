@@ -12,8 +12,8 @@ $flexIndex = 1;
 
 // echo $postObject;
 
-if (have_rows('content', $postObject)) :
-    while (have_rows('content', $postObject)) : the_row();
+if (have_rows('content', $postObject)):
+    while (have_rows('content', $postObject)): the_row();
 
         echo '<section class="flexible-content row-' . get_row_layout() . ' row-index-' . $flexIndex . '">';
 
@@ -22,7 +22,7 @@ if (have_rows('content', $postObject)) :
         // }
 
         $file = get_stylesheet_directory() . "/views/page-builder/page-builder-modules/" . get_row_layout() . ".php";
-        include($file);
+        include $file;
 
         echo '</section>';
 
@@ -36,5 +36,5 @@ $flex_name = false;
 echo '</div>';
 echo '</div>';
 
-wp_reset_postdata(); 
+wp_reset_postdata();
 // IMPORTANT - reset the $post object so the rest of the page works correctly

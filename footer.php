@@ -1,20 +1,20 @@
 <?php
 /* $social_title = get_field('social_title', 'option');
-    if ( $social_title == '' ) {
-        $social_title = 'CONNECT WITH US';
-    }
+if ( $social_title == '' ) {
+$social_title = 'CONNECT WITH US';
+}
 
-    $site_logo = get_field('footer_image', 'option');
+$site_logo = get_field('footer_image', 'option');
 
-    $email_address = get_field('email_address', 'option');
-    $email_footer =  get_field('email_footer', 'option');
-    
-    $telephone = get_field('telephone', 'option');
-    $telephone_footer =  get_field('telephone_footer', 'option');
+$email_address = get_field('email_address', 'option');
+$email_footer =  get_field('email_footer', 'option');
 
-    $footer_legal_link = get_field('footer_legal_link', 'option');
-    $address = get_field('address_details', 'option')['address'];
-    $footer_build_text = get_field('footer_build_text', 'option');*/
+$telephone = get_field('telephone', 'option');
+$telephone_footer =  get_field('telephone_footer', 'option');
+
+$footer_legal_link = get_field('footer_legal_link', 'option');
+$address = get_field('address_details', 'option')['address'];
+$footer_build_text = get_field('footer_build_text', 'option');*/
 ?>
 </main>
 <footer>

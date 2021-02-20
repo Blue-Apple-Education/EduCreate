@@ -25,7 +25,7 @@ $email_address = get_field('email_address', 'option');
 $email_header = get_field('email_header', 'option');
 
 $telephone = get_field('telephone', 'option');
-$header_cta = get_field('header_cta', 'option'); ?>
+$header_cta = get_field('header_cta', 'option');?>
 
 <div class="container-fluid">
     <div class="row">

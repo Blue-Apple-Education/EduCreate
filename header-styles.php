@@ -1,7 +1,7 @@
 <?php
 /*------------------------------------*\
-	 BRANDING COLOURS
-    \*------------------------------------*/
+BRANDING COLOURS
+\*------------------------------------*/
 
 $branding_colours = get_field('branding_colours', 'option');
 $primary = $branding_colours['primary'];
@@ -10,8 +10,8 @@ $tertiary = $branding_colours['tertiary'];
 $quaternary = $branding_colours['quaternary'];
 
 /*------------------------------------*\
-	 BUTTON COLOURS
-    \*------------------------------------*/
+BUTTON COLOURS
+\*------------------------------------*/
 
 $button_colours = get_field('button_colours', 'option');
 $bt_primary = $button_colours['primary'];
@@ -20,8 +20,8 @@ $bt_tertiary = $button_colours['tertiary'];
 $bt_quaternary = $button_colours['quaternary'];
 
 /*------------------------------------*\
-	 HEADER COLOURS
-    \*------------------------------------*/
+HEADER COLOURS
+\*------------------------------------*/
 
 $header_colours = get_field('header_colours', 'option');
 $header_background_colour = $header_colours['header_background_colour'];
@@ -30,8 +30,8 @@ if ($header_background_colour == '') {
 }
 
 /*------------------------------------*\
-	 FOOTER COLOURS
-    \*------------------------------------*/
+FOOTER COLOURS
+\*------------------------------------*/
 $footer_colours = get_field('footer_colours', 'option');
 $main_text_colour = $footer_colours['main_text_colour'];
 if ($main_text_colour == '') {
@@ -59,20 +59,19 @@ if ($copyright_text_hover_colour == '') {
 }
 
 /*------------------------------------*\
-	 MODULE COLOURS
-    \*------------------------------------*/
+MODULE COLOURS
+\*------------------------------------*/
 $module_colours = get_field('module_colours', 'option');
 
 $social_twitter_01 = $module_colours['social-twitter-01'];
 $social_twitter_01_background = $social_twitter_01['background_colours_basic'];
 
-
 $cta_3icon_01 = $module_colours['cta-3icon-01'];
 $cta_3icon_01_background = $cta_3icon_01['background_colours_basic'];
 
 /*------------------------------------*\
-	 MENU COLOURS
-    \*------------------------------------*/
+MENU COLOURS
+\*------------------------------------*/
 $header_text_and_icon_colours = get_field('header_colours', 'option')['header_text_and_icon_colours'];
 
 if ($header_text_and_icon_colours == '') {

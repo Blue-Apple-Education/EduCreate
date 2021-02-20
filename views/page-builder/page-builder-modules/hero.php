@@ -15,23 +15,23 @@ $paragraph = strip_tags($paragraph, null);
 <div class="uk-cover-background uk-position-relative">
 
     <!-- Image -->
-    <img class="uk-visible" src="<?php the_sub_field('background_image'); ?>" width="100%" height="auto" alt="" />
+    <img class="uk-visible" src="<?php the_sub_field('background_image');?>" width="100%" height="auto" alt="" />
 
     <!-- Overlay -->
     <div class="uk-overlay-primary uk-position-cover hero-bg-overlay-acf"></div>
 
     <!-- Main Content -->
-    <div class="uk-position-cover uk-flex uk-flex-center <?php get_sub_field('content_position'); ?> uk-flex-middle">
+    <div class="uk-position-cover uk-flex uk-flex-center <?php get_sub_field('content_position');?> uk-flex-middle">
 
         <!-- Heading -->
-        <h1 class="uk-animation-<?php get_sub_field('heading_animation'); ?>"
-            style="animation-delay:<?php get_sub_field('heading_animation_delay'); ?>ms;">
-            <?php the_sub_field('heading'); ?></h1>
+        <h1 class="uk-animation-<?php get_sub_field('heading_animation');?>"
+            style="animation-delay:<?php get_sub_field('heading_animation_delay');?>ms;">
+            <?php the_sub_field('heading');?></h1>
 
         <!-- Paragraph  -->
-        <p class="uk-animation-<?php get_sub_field('paragraph_animation'); ?>"
-            style="animation-delay:<?php get_sub_field('paragraph_animation_delay'); ?>ms;">
-            <?php the_sub_field('paragraph'); ?>
+        <p class="uk-animation-<?php get_sub_field('paragraph_animation');?>"
+            style="animation-delay:<?php get_sub_field('paragraph_animation_delay');?>ms;">
+            <?php the_sub_field('paragraph');?>
         </p>
 
     </div>

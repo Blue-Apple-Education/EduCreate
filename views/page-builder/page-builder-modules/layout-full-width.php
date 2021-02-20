@@ -10,6 +10,6 @@ if ($enable_animation == 1) {
 echo '<div class="flex-one-column-wrap clearfix">';
 echo '<div class="flex-column ' . $animation . '">';
 $postObject = $full_width_content;
-include(get_stylesheet_directory() . "/views/page-builder/get-postobject-flexible-content.php");
+include get_stylesheet_directory() . "/views/page-builder/get-postobject-flexible-content.php";
 echo '</div>';
 echo '</div>';
