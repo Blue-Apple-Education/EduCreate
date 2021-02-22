@@ -25,12 +25,13 @@ $email_address = get_field('email_address', 'option');
 $email_header = get_field('email_header', 'option');
 
 $telephone = get_field('telephone', 'option');
-$header_cta = get_field('header_cta', 'option');?>
+$header_cta = get_field('header_cta', 'option'); ?>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
             <h1>Header</h1>
+            <img src="https://educreate.local/wp-content/uploads/2021/02/Blue-Apple-Education-Roundal-White.png" alt="">
         </div>
     </div>
 </div>
