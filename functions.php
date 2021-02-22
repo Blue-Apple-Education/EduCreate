@@ -25,8 +25,11 @@ require_once get_template_directory() . '/lib/educreate-plugins.php';
 // GET CPTUI Fields
 require get_stylesheet_directory() . "/config/cptui-settings.php";
 
-/* Admin Menu Settings */
-require_once get_stylesheet_directory() . "/config/admin-menu.php";
+// UIKIT menu WALKER generation
+require_once(get_stylesheet_directory() . '/views/partial/uikitmenuwalkers.php');
+
+
+
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
 /* This is where you can register custom post types. */
@@ -105,3 +108,33 @@ function myfoo($text)
     $text .= ' bar!';
     return $text;
 }
+
+function admin_bar()
+{
+
+    if (is_user_logged_in()) {
+        add_filter('show_admin_bar', '__return_true', 1000);
+    }
+}
+add_action('init', 'admin_bar');
+
+
+
+
+// // Navigation Menus
+// if (function_exists('register_nav_menus')) {
+//     register_nav_menus(
+//         array(
+//             'primary-menu' => 'Primary Menu',
+//             'footer-menu' => 'Footer Menu',
+//         )
+//     );
+// }
+
+// function selected_class($classes, $item)
+// {
+//     if (in_array('current-menu-item', $classes)) {
+//         $classes[] = 'active';
+//     }
+//     return $classes;
+// }

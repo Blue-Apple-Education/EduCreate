@@ -17,6 +17,7 @@ $header_cta = get_field('header_cta', 'option');
 
 // Header Background Colours
 $header_background = "#fff";
+$hamburger_menu_bg = '#3c3c3c';
 $transparentMenu = '';
 
 
@@ -33,7 +34,7 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
             <!-- Logo -->
             <div class="logo col-lg-3 col-md-6 col-sm-6 col-xs-6">
                 <a href="/">
-                    <img src="https://educreate.local/wp-content/uploads/2021/02/Blue-Apple-Education-Roundal-Blue.png"
+                    <img src="<?php echo esc_url($site_logo); ?> https://educreate.local/wp-content/uploads/2021/02/Blue-Apple-Education-Roundal-Blue.png"
                         alt="">
                 </a>
             </div>
@@ -41,45 +42,16 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
             <!-- Menu -->
             <nav class="col-lg-9 col-md-6 col-sm-6 desktop-menu-01 uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+
+                    <!-- UIKit Top Menu Walker File -->
+                    <?php do_action('uikit_top_menu'); ?>
 
                 </div>
             </nav>
 
-            <!-- Hamburger Menu Toggle -->
-            <div class="hamburger-menu-01">
-                <a class="mobile-off-canvas" href="#offcanvas-slide" class="uk-button uk-button-default"
-                    uk-toggle>Open</a>
-            </div>
+            <!-- OFF Canvas Menu -->
+            <?php include(get_stylesheet_directory() . "/views/partial/navigation/offCanvasMenu.php"); ?>
 
-
-            <!-- Hamburger Sliding Menu -->
-            <div id="offcanvas-slide" uk-offcanvas>
-                <div class="uk-offcanvas-bar">
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-header">Header</li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -106,7 +78,7 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 
 .header_colour {
     background: <?php echo $header_background;
-    ?>;
+    ?> !important;
 }
 
 .header_padding {
@@ -123,19 +95,19 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 /* Navbar */
 .uk-navbar-nav>li>a {
     color: <?php echo $menu_item_color;
-    ?>;
+    ?> !important;
 }
 
 .uk-navbar-nav>li.uk-active>a {
     color: <?php echo $menu_item_active;
-    ?>;
+    ?> !important;
 }
 
 .uk-navbar-nav>li:hover>a,
 .uk-navbar-nav>li>a.uk-open,
 .uk-navbar-nav>li>a:focus {
     color: <?php echo $menu_item_hover;
-    ?>;
+    ?> !important;
     outline: 0;
 }
 
@@ -143,9 +115,9 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     min-width: 200px;
     padding: 20px;
     background: <?php echo $menu_item_dropdown_background;
-    ?>;
+    ?> !important;
     color: <?php echo $menu_item_color;
-    ?>;
+    ?> !important;
 }
 
 .uk-navbar-dropdown-nav>li>a:hover {
@@ -154,7 +126,7 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 
 /* Hamburger Menu */
 .uk-offcanvas-bar {
-    background: <?php echo $header_background;
-    ?>;
+    background: <?php echo $hamburger_menu_bg;
+    ?> !important;
 }
 </style>
