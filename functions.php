@@ -27,7 +27,27 @@ require get_stylesheet_directory() . "/config/cptui-settings.php";
 
 // UIKIT menu WALKER generation
 require_once(get_stylesheet_directory() . '/views/partial/navigation/uiKitMenuWalkers.php');
+// require_once(get_stylesheet_directory() . '/views/partial/navigation/bootstrapMenuWalker.php');
 
+function load_js_script()
+{
+
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js');
+    //or use the version below if you know exactly where the file is
+    //wp_enqueue_script( 'js-file', get_template_directory_uri() . '/js/myscript.js');
+
+}
+
+add_action('wp_enqueue_scripts', 'load_js_script');
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker()
+{
+    require_once get_template_directory() . '/views/partial/navigation/bootstrapMenuWalker.php';
+}
+add_action('after_setup_theme', 'register_navwalker');
 
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
@@ -123,10 +143,11 @@ add_action('init', 'admin_bar');
 if (function_exists('register_nav_menus')) {
     register_nav_menus(
         array(
-            'primary-menu' => __('Primary Menu'),
-            'modal-menu' => __('mobile Modal menu'),
-            'off-canvas-menu' => __('offCanvas menu'),
-            'footer-menu' => __('Footer Menu')
+            'primary-menu' => __('Primary Menu', 'EduCreate'),
+            'header-menu' => __('Header Menu', 'EduCreate'),
+            'modal-menu' => __('mobile Modal menu', 'EduCreate'),
+            'off-canvas-menu' => __('offCanvas menu', 'EduCreate'),
+            'footer-menu' => __('Footer Menu', 'EduCreate'),
         )
     );
 }

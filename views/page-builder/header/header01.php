@@ -38,17 +38,19 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
                         alt="">
                 </a>
             </div>
+            <div class="col-lg-9 wp-nav-wrap" id="main-menu">
+                <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
+            </div>
 
             <!-- Menu -->
-            <nav class="col-lg-9 col-md-6 col-sm-6 desktop-menu-01 uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <div class="uk-navbar-right">
+            <!-- <nav class="col-lg-9 col-md-6 col-sm-6 desktop-menu-01 uk-navbar-container uk-navbar-transparent  uk-navbar>
+                <div class=" uk-navbar-right"> -->
 
-                    <!-- UIKit Top Menu Walker File -->
-                    <?php do_action('uikit_top_menu'); ?>
+            <!-- UIKit Top Menu Walker File -->
+            <?php /* do_action('uikit_top_menu'); */ ?>
 
-                </div>
-            </nav>
 
+            <!-- </nav> -->
 
 
             <!-- OFF CANVAS MENU -->
@@ -113,46 +115,42 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     height: 100px;
 }
 
-
-/* Navbar */
-.uk-nav>li>a {
-    margin-right: 30px;
+/* Navigation */
+.menu-primary-menu-container {
+    background: #fefefe;
+    position: absolute;
+    width: 90%;
+    top: 50px;
 }
 
-.uk-navbar-nav>li>a {
-    color: <?php echo $menu_item_color;
-    ?> !important;
+
+.menu-primary-menu-container ul.menu {
+    padding-left: 0px;
+    width: 100%;
 }
 
-.uk-navbar-nav>li.uk-active>a {
-    color: <?php echo $menu_item_active;
-    ?> !important;
+.menu-primary-menu-container ul.menu li.level-0 {
+    display: inline-block;
+    padding-left: 0px;
 }
 
-.uk-navbar-nav>li:hover>a,
-.uk-navbar-nav>li>a.uk-open,
-.uk-navbar-nav>li>a:focus {
-    color: <?php echo $menu_item_hover;
-    ?> !important;
-    outline: 0;
+.menu-primary-menu-container ul.menu li.level-1 {
+    display: none;
 }
 
-.uk-navbar-dropdown {
-    min-width: 200px;
-    padding: 20px;
-    background: <?php echo $menu_item_dropdown_background;
-    ?> !important;
-    color: <?php echo $menu_item_color;
-    ?> !important;
+.open {
+    display: block;
 }
 
-.uk-navbar-dropdown-nav>li>a:hover {
-    color: #666;
+.closed {
+    display: none;
 }
 
-/* Hamburger Menu */
-.uk-offcanvas-bar {
-    background: <?php echo $hamburger_menu_bg;
-    ?> !important;
+ul.sub-menu {
+    background: #000;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    padding: 20px !important;
 }
 </style>
