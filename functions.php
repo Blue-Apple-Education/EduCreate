@@ -26,32 +26,24 @@ require_once get_template_directory() . '/lib/educreate-plugins.php';
 require get_stylesheet_directory() . "/config/cptui-settings.php";
 
 // UIKIT menu WALKER generation
-require_once(get_stylesheet_directory() . '/views/partial/navigation/uiKitMenuWalkers.php');
-// require_once(get_stylesheet_directory() . '/views/partial/navigation/bootstrapMenuWalker.php');
-
-function load_js_script()
-{
-
-    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js');
-    //or use the version below if you know exactly where the file is
-    //wp_enqueue_script( 'js-file', get_template_directory_uri() . '/js/myscript.js');
-
-}
-
-add_action('wp_enqueue_scripts', 'load_js_script');
-
-/**
- * Register Custom Navigation Walker
- */
 function register_navwalker()
 {
     require_once get_template_directory() . '/views/partial/navigation/bootstrapMenuWalker.php';
 }
 add_action('after_setup_theme', 'register_navwalker');
 
+
+// Load Javascript
+function load_js_script()
+{
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js');
+}
+add_action('wp_enqueue_scripts', 'load_js_script');
+
+
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
-/* This is where you can register custom post types. */
+/* Custom post types. */
 function register_post_types()
 {
     // GET CPTUI Fields
@@ -62,7 +54,6 @@ function register_post_types()
 function register_taxonomies()
 {
 }
-
 
 // Add default posts and comments RSS feed links to head.
 add_theme_support('automatic-feed-links');
@@ -135,8 +126,6 @@ function admin_bar()
     }
 }
 add_action('init', 'admin_bar');
-
-
 
 
 // Navigation Menus
