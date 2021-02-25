@@ -116,30 +116,62 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 }
 
 /* Navigation */
-.menu-primary-menu-container {
-    background: #fefefe;
-    position: absolute;
-    width: 90%;
-    top: 50px;
+#main-menu {
+    margin-left: auto;
 }
 
+.menu-primary-menu-container {
+    background: #fefefe;
+    top: 58px;
+    padding: 40px 0px 30px 0px;
+    text-align: right;
+    display: ;
+}
 
 .menu-primary-menu-container ul.menu {
     padding-left: 0px;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .menu-primary-menu-container ul.menu li.level-0 {
-    display: inline-block;
-    padding-left: 0px;
+    display: inline-block !important;
+    padding: 10px 12px;
 }
 
-.menu-primary-menu-container ul.menu li.level-1 {
+.menu-primary-menu-container ul li {
+    display: block;
+}
+
+.menu-primary-menu-container ul li a {
+    text-decoration: none;
+}
+
+.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu {
+    height: auto;
+    padding: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-primary-menu-container ul.menu li.level-0:last-child:hover>ul.sub-menu {
+    right: 20px;
+}
+
+.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu a {
+    display: block;
+}
+
+.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu a {
     display: none;
 }
 
+.menu-primary-menu-container ul.menu li.level-1 {}
+
 .open {
-    display: block;
+    display: block !important;
 }
 
 .closed {
@@ -147,10 +179,18 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 }
 
 ul.sub-menu {
-    background: #000;
-    width: 200px;
-    height: 200px;
+    background: #3c3c3c;
+    width: auto;
+    min-width: 140px;
     position: absolute;
-    padding: 20px !important;
+    padding: 0px;
+    height: 0px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 </style>
