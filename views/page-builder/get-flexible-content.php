@@ -10,22 +10,30 @@
 // $post = $postObject;
 // setup_postdata( $post );
 
+$show_module_name = get_field('show_module_name', 'option');
+
+
 echo '<div class="flexible-content-wrap clearfix">';
 
 // ID of the current item in the WordPress Loop
 $id = get_the_ID();
 
 // check if the flexible content field has rows of data
-if (have_rows('content', $id)):
+if (have_rows('content', $id)) :
 
     // loop through the selected ACF layouts and display the matching module
-    while (have_rows('content', $id)): the_row();
+    while (have_rows('content', $id)) : the_row();
 
         echo '<section class="flexible-content ' . get_row_layout() . ' ">';
 
-        echo '<div class="Module">';
-        echo 'Module: ' . get_row_layout();
-        echo '</div>';
+
+        // Check if to show module name & display if TRUE
+        if (get_field('show_module_name', 'option')) {
+            echo '<div class="Module">';
+            echo 'Module: ' . get_row_layout();
+            echo '</div>';
+        }
+
 
         $file = get_stylesheet_directory() . "/views/page-builder/page-builder-modules/" . get_row_layout() . ".php";
         include $file;
@@ -34,7 +42,7 @@ if (have_rows('content', $id)):
 
     endwhile;
 
-elseif (get_the_content()):
+elseif (get_the_content()) :
 
 // no layouts found
 endif;

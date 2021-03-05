@@ -28,15 +28,14 @@ $footer_build_text = get_field('footer_build_text', 'option');*/
 </footer>
 
 
-< !--UIkit JS-->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+<!--UIkit JS-->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
-    </body>
+</body>

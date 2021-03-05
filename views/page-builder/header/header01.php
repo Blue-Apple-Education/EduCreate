@@ -60,10 +60,11 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
             </div>
 
             <!-- Hamburger Sliding Menu -->
-            <?php do_action('uikit_off_canvas_menu'); ?>
-            <!-- <div id="offcanvas-slide" uk-offcanvas>
-                <div class="uk-offcanvas-bar">
 
+            <div id="offcanvas-slide" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <?php // wp_nav_menu(array('theme_location' => 'primary-menu')); 
+                    ?>
                     <ul class="uk-nav uk-nav-default">
                         <li class="uk-active"><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
@@ -75,7 +76,7 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
                     </ul>
 
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </div>
@@ -125,7 +126,6 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     top: 58px;
     padding: 40px 0px 30px 0px;
     text-align: right;
-    display: ;
 }
 
 .menu-primary-menu-container ul.menu {
@@ -147,6 +147,60 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     text-decoration: none;
 }
 
+
+/* LEVEL 1 DROPDOWN*/
+/* Show level-1 links */
+.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu li.level-1 a {
+    display: block;
+}
+
+/* Hide Level 2 links */
+.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu li.level-2 a {
+    display: none;
+}
+
+/* Level 2 Links */
+/* Show level 2 items */
+.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu li.level-2 a {
+    display: block;
+}
+
+/* Hide level-3 items */
+.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu li.level-3 a {
+    display: none;
+}
+
+
+
+/* show Level 3 links */
+.menu-primary-menu-container ul.menu li.level-1:hover>li.level-3 a {
+    display: none;
+}
+
+.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu li.level-1 a {
+    display: none;
+}
+
+/* Top level Sub Menu */
+.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu {
+    background: #3c3c3c;
+    width: auto;
+    min-width: 140px;
+    position: absolute;
+    padding: 0px;
+    height: -1px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    -webkit-transition: <?php echo $animation;
+    ?>;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Top level hover - Show Top level Sub menu */
 .menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu {
     height: auto;
     padding: 20px;
@@ -156,17 +210,52 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     transition: all 0.25s ease-in-out;
 }
 
-.menu-primary-menu-container ul.menu li.level-0:last-child:hover>ul.sub-menu {
+
+/* LEVEL 2 DROPDOWN*/
+/* Level 2 Sub Menu */
+.menu-primary-menu-container ul.menu li.level-1 ul.sub-menu {
+    background: #3c3c3c;
+    width: 0px;
+    min-width: 140px;
+    position: absolute;
+    padding: 0px;
+    height: auto;
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* second level hover - Show Sub menu */
+.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu {
+    width: auto;
+    padding: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* second level hover - hide third-level Sub menu */
+.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu {
+    width: auto;
+    padding: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-primary-menu-container ul.menu li.level-0:last-child a:hover>li.level-0 ul.sub-menu {
     right: 20px;
 }
 
-.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu a {
-    display: block;
-}
 
-.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu a {
-    display: none;
-}
+/* Top level hover */
+
 
 .menu-primary-menu-container ul.menu li.level-1 {}
 
@@ -178,7 +267,7 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     display: none;
 }
 
-ul.sub-menu {
+.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu {
     background: #3c3c3c;
     width: auto;
     min-width: 140px;
@@ -192,5 +281,31 @@ ul.sub-menu {
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+}
+
+/* Level One Sub Menu */
+.menu-primary-menu-container ul.sub-menu li.level-1:hover>ul.sub-menu {
+    height: auto;
+    padding: 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-primary-menu-container ul.sub-menu li.level-1 ul.sub-menu {
+    right: 140px;
+    background: #3c3c3c;
+    width: auto;
+    min-width: 140px;
+    position: absolute;
+    padding: 0px;
+    height: -1px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.menu-primary-menu-container ul.menu li.level-1 ul.sub-menu li.level-2 a {
+    display: none;
 }
 </style>

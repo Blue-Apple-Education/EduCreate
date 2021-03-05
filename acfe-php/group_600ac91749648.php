@@ -29,6 +29,25 @@ acf_add_local_field_group(array(
 			'image_path' => '/wp-content/themes/EduCreate/acf-image-select/fonts/',
 			'image_extension' => 'png',
 		),
+		array(
+			'key' => 'field_6042242210714',
+			'label' => 'Show Module Name',
+			'name' => 'show_module_name',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+		),
 	),
 	'location' => array(
 		array(
@@ -55,7 +74,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1613905004,
+	'modified' => 1614947585,
 ));
 
 endif;

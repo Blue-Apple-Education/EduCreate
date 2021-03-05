@@ -23,6 +23,25 @@
             "multiple": 0,
             "image_path": "\/wp-content\/themes\/EduCreate\/acf-image-select\/fonts\/",
             "image_extension": "png"
+        },
+        {
+            "key": "field_6042242210714",
+            "label": "Show Module Name",
+            "name": "show_module_name",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -50,5 +69,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613738629
+    "modified": 1614947585
 }
