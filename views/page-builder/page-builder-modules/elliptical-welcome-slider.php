@@ -147,7 +147,6 @@ $bt_primary = $button_colours['primary'];
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
-
 /* Dot Navigation */
 .uk-dotnav {
     z-index: 100;
