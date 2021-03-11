@@ -33,13 +33,24 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 
             <!-- Logo -->
             <div class="logo col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                <a href="/">
-                    <img src="<?php echo esc_url($site_logo); ?> https://educreate.local/wp-content/uploads/2021/02/Blue-Apple-Education-Roundal-Blue.png"
-                        alt="">
-                </a>
+                  <a href="/">
+                      <img src="<?php echo esc_url($site_logo); ?> https://educreate.local/wp-content/uploads/2021/02/Blue-Apple-Education-Roundal-Blue.png"
+                                    alt="">
+                  </a>
             </div>
             <div class="col-lg-9 wp-nav-wrap" id="main-menu">
-                <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
+<?php
+              wp_nav_menu(
+    array(
+                          'theme_location'    => 'primary-menu',
+                          'depth'             => 5,
+                          'container'         => 'div',
+                          'container_class'   => ' navbar navbar-ex1- ',
+                          'menu_class'        => 'nav navbar-nav ',
+                          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                          'walker'            => new wp_bootstrap_navwalker())
+);
+              ?>
             </div>
 
             <!-- Menu -->
@@ -63,21 +74,21 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
 
             <div id="offcanvas-slide" uk-offcanvas>
                 <div class="uk-offcanvas-bar">
-                    <?php // wp_nav_menu(array('theme_location' => 'primary-menu')); 
-                    ?>
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-header">Header</li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+                    <?php // wp_nav_menu(array('theme_location' => 'primary-menu'));
+                            ?>
+                            <ul class="uk-nav uk-nav-default">
+                                  <li class="uk-active"><a href="#">Active</a></li>
+                                  <li><a href="#">Item</a></li>
+                                  <li class="uk-nav-header">Header</li>
+                                  <li><a href="#">Item</a></li>
+                                  <li><a href="#">Item</a></li>
+                                  <li class="uk-nav-divider"></li>
+                                  <li><a href="#">Item</a></li>
+                              </ul>
 
-                </div>
-            </div>
-        </div>
+                          </div>
+              </div>
+          </div>
     </div>
 </div>
 <style>
@@ -127,185 +138,13 @@ $menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'opt
     padding: 40px 0px 30px 0px;
     text-align: right;
 }
-
-.menu-primary-menu-container ul.menu {
-    padding-left: 0px;
-    width: 100%;
-    margin-bottom: 0px;
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:active>.dropdown-menu, .dropdown-submenu:hover>.dropdown-menu {
+       display: block;
+       right:162px;
 }
-
-.menu-primary-menu-container ul.menu li.level-0 {
-    display: inline-block !important;
-    padding: 10px 12px;
-}
-
-.menu-primary-menu-container ul li {
-    display: block;
-}
-
-.menu-primary-menu-container ul li a {
-    text-decoration: none;
-}
-
-
-/* LEVEL 1 DROPDOWN*/
-/* Show level-1 links */
-.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu li.level-1 a {
-    display: block;
-}
-
-/* Hide Level 2 links */
-.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu li.level-2 a {
-    display: none;
-}
-
-/* Level 2 Links */
-/* Show level 2 items */
-.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu li.level-2 a {
-    display: block;
-}
-
-/* Hide level-3 items */
-.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu li.level-3 a {
-    display: none;
-}
-
-
-
-/* show Level 3 links */
-.menu-primary-menu-container ul.menu li.level-1:hover>li.level-3 a {
-    display: none;
-}
-
-.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu li.level-1 a {
-    display: none;
-}
-
-/* Top level Sub Menu */
-.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu {
-    background: #3c3c3c;
-    width: auto;
-    min-width: 140px;
-    position: absolute;
-    padding: 0px;
-    height: -1px;
-    margin-top: 10px;
-    text-align: left;
-    padding-left: 20px;
-    -webkit-transition: <?php echo $animation;
-    ?>;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-/* Top level hover - Show Top level Sub menu */
-.menu-primary-menu-container ul.menu li.level-0:hover>ul.sub-menu {
-    height: auto;
-    padding: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-
-/* LEVEL 2 DROPDOWN*/
-/* Level 2 Sub Menu */
-.menu-primary-menu-container ul.menu li.level-1 ul.sub-menu {
-    background: #3c3c3c;
-    width: 0px;
-    min-width: 140px;
-    position: absolute;
-    padding: 0px;
-    height: auto;
-    margin-top: 0px;
-    text-align: left;
-    padding-left: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-/* second level hover - Show Sub menu */
-.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu {
-    width: auto;
-    padding: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-/* second level hover - hide third-level Sub menu */
-.menu-primary-menu-container ul.menu li.level-1:hover>ul.sub-menu {
-    width: auto;
-    padding: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-.menu-primary-menu-container ul.menu li.level-0:last-child a:hover>li.level-0 ul.sub-menu {
-    right: 20px;
-}
-
-
-/* Top level hover */
-
-
-.menu-primary-menu-container ul.menu li.level-1 {}
-
-.open {
-    display: block !important;
-}
-
-.closed {
-    display: none;
-}
-
-.menu-primary-menu-container ul.menu li.level-0 ul.sub-menu {
-    background: #3c3c3c;
-    width: auto;
-    min-width: 140px;
-    position: absolute;
-    padding: 0px;
-    height: 0px;
-    margin-top: 10px;
-    text-align: left;
-    padding-left: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-/* Level One Sub Menu */
-.menu-primary-menu-container ul.sub-menu li.level-1:hover>ul.sub-menu {
-    height: auto;
-    padding: 20px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-}
-
-.menu-primary-menu-container ul.sub-menu li.level-1 ul.sub-menu {
-    right: 140px;
-    background: #3c3c3c;
-    width: auto;
-    min-width: 140px;
-    position: absolute;
-    padding: 0px;
-    height: -1px;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.menu-primary-menu-container ul.menu li.level-1 ul.sub-menu li.level-2 a {
-    display: none;
-}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:active>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
 </style>

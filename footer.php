@@ -38,6 +38,7 @@ $footer_build_text = get_field('footer_build_text', 'option');*/
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
+
 <?php wp_footer(); ?>
 
 </body>
