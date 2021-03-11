@@ -26,7 +26,9 @@ $footer_build_text = get_field('footer_build_text', 'option');*/
         </div>
     </div>
 </footer>
-
+<div class="test-footer-commit">
+  <p>Test Text</p>
+</div>
 
 <!--UIkit JS-->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js">
