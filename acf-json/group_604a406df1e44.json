@@ -116,18 +116,18 @@
                 },
                 {
                     "key": "field_604a45f3abd41",
-                    "label": "Button",
+                    "label": "Button Url",
                     "name": "ib_button",
                     "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "70",
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array"
+                    "return_format": "url"
                 }
             ]
         }
@@ -157,7 +157,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615483783,
+    "modified": 1615551596,
     "acfe_categories": {
         "cta": "CTA",
         "page-building": "Page Building"

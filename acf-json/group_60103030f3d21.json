@@ -472,6 +472,48 @@
                     "acfe_flexible_render_script": false,
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604b641f6067f": {
+                    "key": "layout_604b641f6067f",
+                    "name": "image-gallery",
+                    "label": "Image Gallery",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604b646360680",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_604b62ead5baf"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "202",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
                 }
             },
             "button_label": "Add Module",
@@ -516,7 +558,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615480602,
+    "modified": 1615554346,
     "acfe_categories": {
         "page-building": "Page Building"
     }

@@ -12,9 +12,12 @@ $ib_icon = get_sub_field('ib_icon');
 // Button
 $ib_button = get_sub_field('ib_button');
 
-$ib_link = $ib_button['url'];
-$ib_title = $ib_button['title'];
-$ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
+// Branding COLOURS
+$branding_colours = get_field('branding_colours', 'option');
+$primary = $branding_colours['primary'];
+$secondary = $branding_colours['secondary'];
+$tertiary = $branding_colours['tertiary'];
+$quaternary = $branding_colours['quaternary'];
  ?>
  <div class="container">
    <div class="row">
@@ -25,7 +28,7 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
 
 
        <!-- GRID ITEM -->
-               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 content-1-grid">
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 content-1-grid">
                  <div class="content">
 
                      <div class="content-caption">
@@ -38,10 +41,7 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
                      <div class="content-details fadeIn-top">
                        <p><?php the_sub_field('ib_desc');?></p>
                        <br>
-                       <a href="<?php echo esc_url($ib_link);?>" target="<?php echo esc_attr($ib_target); ?>" data-hover-border-color="#fff" class="ib-button" style="color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);">
-                         <!-- Button Title -->
-                         <?php echo esc_html($ib_title); ?>
-                       </a>
+                         <a href="<?php echo esc_url($ib_button); ?>" data-hover-border-color="#fff" class="ib-button">SEE MORE</a>
                      </div>
 
                  </div>
@@ -54,23 +54,33 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
    </div>
  </div>
 <style>
+.interactive-banners{
+  padding: 50px 0px;
+}
 .content {max-height: 500px;}
 .content-1-grid {
-	position: relative;
-	width: 33%;
-	padding: 30px;
+  margin-bottom: 15px;
+  position: relative;
+  position: relative;
+  height: 346px;
 }
 .content-1-grid .content {
-	position: relative;
-	max-width: 100%;
-	margin: auto;
-	overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  max-height: 100%;
+  height: 100%;
 }
 .content:hover .content-overlay {
   opacity: 1;
 }
 .content-details {
   opacity: 0;
+}
+.content-caption{
+  opacity: 1;
+  z-index: 100;
 }
 .content:hover .content-details {
   top: 50%;
@@ -85,17 +95,26 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
 .content .content-caption img.caption,
 .content .content-caption h3.caption {
   opacity: 1;
+  z-index: 100;
+  color: #fff;
 }
 .content:hover .content-caption,
 .content:hover .content-caption img.caption,
 .content:hover .content-caption h3.caption {
   opacity: 0;
+  z-index: 0;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	transition: all 0.1s ease-in-out 0s;
+}
+.content-caption img.caption{
+  margin-bottom: 5%;
 }
 .content-details a {
   text-decoration:none;
 }
 .content-overlay {
-	background: rgba(61, 61, 61, 0.35);
+	background: rgba(61, 61, 61, 0.65);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -103,14 +122,16 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
   top: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.6s ease-in-out 0s;
-  -moz-transition: all 0.6s ease-in-out 0s;
-  transition: all 0.6s ease-in-out 0s;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
 }
 .content-1-grid .content img.content-image {
-	width: 100%;
-	display: block;
+  width: auto;
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 .fadeIn-top {
 	top:20%;
@@ -128,9 +149,9 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 1s ease-in-out 0s;
+	-moz-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
 }
 .content-details h3 {
 	color:#fff;
@@ -143,4 +164,30 @@ $ib_target = $ib_button['target'] ? $ib_button['target'] : '_self';
 	z-index: 100;
 	line-height: 42px;
 }
+.content-details a.ib-button{
+  z-index:100;
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border-style: solid;
+  padding: 12px 20px;
+  font-weight: 600;
+  height:38px;
+  text-transform: capitalize!important;
+}
+.content-details a.ib-button:hover{
+  z-index:100;
+  color: rgb(255, 255, 255);
+  border-color: <?php echo $primary;?>;
+  background-color:<?php echo $primary;?>;
+  border-radius: 12px;
+  border-style: solid;
+  padding: 12px 20px;
+  font-weight: 600;
+  text-transform: capitalize!important;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
 </style>

@@ -120,18 +120,18 @@ acf_add_local_field_group(array(
 				),
 				array(
 					'key' => 'field_604a45f3abd41',
-					'label' => 'Button',
+					'label' => 'Button Url',
 					'name' => 'ib_button',
 					'type' => 'link',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
 					'wrapper' => array(
-						'width' => '',
+						'width' => '70',
 						'class' => '',
 						'id' => '',
 					),
-					'return_format' => 'array',
+					'return_format' => 'url',
 				),
 			),
 		),
@@ -165,7 +165,7 @@ acf_add_local_field_group(array(
 		'cta' => 'CTA',
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1615483783,
+	'modified' => 1615551596,
 ));
 
 endif;

@@ -10,7 +10,6 @@ function my_register_fields()
 
 // Theme Admin Menu
 if (function_exists('acf_add_options_page')) {
-
     acf_add_options_page(array(
         'page_title'     => 'General Settings',
         'menu_title'    => 'Theme Settings',
@@ -26,6 +25,12 @@ if (function_exists('acf_add_options_page')) {
     ));
 
     acf_add_options_sub_page(array(
+        'page_title'     => 'Styling',
+        'menu_title'    => 'Styling',
+        'parent_slug'    => 'theme-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
         'page_title'     => 'Footer Settings',
         'menu_title'    => 'Footer',
         'parent_slug'    => 'theme-general-settings',
@@ -35,7 +40,6 @@ if (function_exists('acf_add_options_page')) {
 
 // Register ACF Options pages
 if (function_exists('acf_add_options_page')) {
-
     acf_add_options_page(array(
         'page_title'     => 'General Settings',
         'menu_title'    => 'Theme Settings',

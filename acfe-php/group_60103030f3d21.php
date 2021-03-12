@@ -477,6 +477,48 @@ acf_add_local_field_group(array(
 					'acfe_flexible_settings' => '',
 					'acfe_flexible_settings_size' => 'medium',
 				),
+				'layout_604b641f6067f' => array(
+					'key' => 'layout_604b641f6067f',
+					'name' => 'image-gallery',
+					'label' => 'Image Gallery',
+					'display' => 'row',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_604b646360680',
+							'label' => 'Clone',
+							'name' => 'clone',
+							'type' => 'clone',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'acfe_permissions' => '',
+							'clone' => array(
+								0 => 'group_604b62ead5baf',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_settings' => '',
+						),
+					),
+					'min' => '',
+					'max' => '',
+					'acfe_flexible_thumbnail' => '202',
+					'acfe_flexible_category' => array(
+						0 => 'CTA',
+					),
+					'acfe_flexible_render_template' => false,
+					'acfe_flexible_render_style' => false,
+					'acfe_flexible_render_script' => false,
+					'acfe_flexible_settings' => '',
+					'acfe_flexible_settings_size' => 'medium',
+				),
 			),
 			'button_label' => 'Add Module',
 			'min' => '',
@@ -523,7 +565,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1615480602,
+	'modified' => 1615554346,
 ));
 
 endif;
