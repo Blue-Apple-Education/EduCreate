@@ -30,7 +30,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "cptcta"
+                "value": "post"
             }
         ]
     ],
@@ -61,9 +61,8 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613130559,
+    "modified": 1615806087,
     "acfe_categories": {
-        "cta": "CTA",
-        "page-building": "Page Building"
+        "cta": "CTA"
     }
 }

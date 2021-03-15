@@ -1,6 +1,6 @@
 {
     "key": "group_5d9efb939a2e5",
-    "title": "Module: Newsfeed Page - All posts 01",
+    "title": "Module: Newsfeed Page - all posts 01",
     "fields": [
         {
             "key": "field_5d9efb939e02f",
@@ -40,7 +40,7 @@
             }
         ]
     ],
-    "menu_order": 47,
+    "menu_order": 59,
     "position": "normal",
     "style": "default",
     "label_placement": "left",
@@ -56,9 +56,8 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613739534,
+    "modified": 1615765532,
     "acfe_categories": {
-        "cpt": "CPT",
         "newsfeed": "Newsfeed"
     }
 }

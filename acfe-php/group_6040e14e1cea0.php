@@ -155,9 +155,8 @@ acf_add_local_field_group(array(
 	'acfe_note' => '',
 	'acfe_categories' => array(
 		'cta' => 'CTA',
-		'page-building' => 'Page Building',
 	),
-	'modified' => 1614947806,
+	'modified' => 1615805896,
 ));
 
 endif;

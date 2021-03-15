@@ -14,10 +14,10 @@
             "acfe_flexible_layouts_templates": 0,
             "acfe_flexible_layouts_previews": 0,
             "acfe_flexible_layouts_placeholder": 1,
-            "acfe_flexible_title_edition": 0,
+            "acfe_flexible_title_edition": 1,
             "acfe_flexible_clone": 0,
-            "acfe_flexible_copy_paste": 1,
-            "acfe_flexible_toggle": 1,
+            "acfe_flexible_copy_paste": 0,
+            "acfe_flexible_toggle": 0,
             "acfe_flexible_close_button": 1,
             "acfe_flexible_remove_add_button": 0,
             "acfe_flexible_remove_duplicate_button": 0,
@@ -26,13 +26,13 @@
             "acfe_flexible_modal_edition": 1,
             "acfe_flexible_modal": {
                 "acfe_flexible_modal_enabled": "1",
-                "acfe_flexible_modal_title": "Add Module",
+                "acfe_flexible_modal_title": "Test",
                 "acfe_flexible_modal_col": "4",
                 "acfe_flexible_modal_categories": "1"
             },
             "acfe_flexible_layouts_state": "",
             "acfe_flexible_layouts_remove_collapse": 0,
-            "key": "field_6010307841842",
+            "key": "field_604f358c276ba",
             "label": "Content",
             "name": "content",
             "type": "flexible_content",
@@ -46,14 +46,14 @@
             },
             "acfe_permissions": "",
             "layouts": {
-                "layout_601bd8fddec76": {
-                    "key": "layout_601bd8fddec76",
-                    "name": "hero-slider",
-                    "label": "Hero Slider",
+                "layout_604f3946df112": {
+                    "key": "layout_604f3946df112",
+                    "name": "calendar",
+                    "label": "Calendar",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_601bd90edec77",
+                            "key": "field_604f394edf113",
                             "label": "Clone",
                             "name": "clone",
                             "type": "clone",
@@ -67,7 +67,7 @@
                             },
                             "acfe_permissions": "",
                             "clone": [
-                                "group_601bd6ffef5ee"
+                                "group_5d6d8bec21122"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -80,7 +80,7 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": [
-                        "Hero"
+                        "Calendar"
                     ],
                     "acfe_flexible_render_template": false,
                     "acfe_flexible_render_style": false,
@@ -88,14 +88,14 @@
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
                 },
-                "layout_601bdb12f69f5": {
-                    "key": "layout_601bdb12f69f5",
-                    "name": "hero",
-                    "label": "Hero",
+                "layout_604f3996df116": {
+                    "key": "layout_604f3996df116",
+                    "name": "vacancy-pg-01",
+                    "label": "Career vacancies 01",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_601bdb19f69f6",
+                            "key": "field_604f399ddf117",
                             "label": "Clone",
                             "name": "clone",
                             "type": "clone",
@@ -109,230 +109,13 @@
                             },
                             "acfe_permissions": "",
                             "clone": [
-                                "group_601bd977c1cde"
+                                "group_5d85ce6fb1d19"
                             ],
                             "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
                             "prefix_name": 0,
                             "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "",
-                    "acfe_flexible_category": [
-                        "Hero"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_60103ae3d7be0": {
-                    "key": "layout_60103ae3d7be0",
-                    "name": "column01",
-                    "label": "1 Text Column",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_602aa06315050",
-                            "label": "Clone",
-                            "name": "clone",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "clone": [
-                                "group_602aa00c223e6"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0,
-                            "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "134",
-                    "acfe_flexible_category": [
-                        "Text Columns"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_60103c86d7be3": {
-                    "key": "layout_60103c86d7be3",
-                    "name": "column02",
-                    "label": "2 Text Columns",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_602aa0c715051",
-                            "label": "Clone",
-                            "name": "clone",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "clone": [
-                                "group_602aa0a460588"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0,
-                            "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "",
-                    "acfe_flexible_category": [
-                        "Text Columns"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_60104135e8143": {
-                    "key": "layout_60104135e8143",
-                    "name": "column03",
-                    "label": "3 Text Columns",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_602aa0ff15052",
-                            "label": "Clone",
-                            "name": "clone",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "clone": [
-                                "group_602aa0db96b64"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0,
-                            "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "",
-                    "acfe_flexible_category": [
-                        "Text Columns"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_6010413ee8145": {
-                    "key": "layout_6010413ee8145",
-                    "name": "column04",
-                    "label": "4 Text Columns",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_602aa11315053",
-                            "label": "Clone",
-                            "name": "clone",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "clone": [
-                                "group_602aa0eb0a1d9"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0,
-                            "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "",
-                    "acfe_flexible_category": [
-                        "Text Columns"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_60216424f8b51": {
-                    "key": "layout_60216424f8b51",
-                    "name": "cta",
-                    "label": "cta",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_6021643ef8b52",
-                            "label": "Clone",
-                            "name": "clone",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "post_type": [
-                                "cptcta"
-                            ],
-                            "taxonomy": "",
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "return_format": "id",
-                            "save_custom": 0,
-                            "save_post_status": "publish",
-                            "acfe_bidirectional": {
-                                "acfe_bidirectional_enabled": "0"
-                            },
-                            "acfe_settings": "",
-                            "acfe_validate": "",
-                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -347,16 +130,16 @@
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
                 },
-                "layout_6040f70a9a943": {
-                    "key": "layout_6040f70a9a943",
-                    "name": "elliptical-welcome-slider",
-                    "label": "Elliptical Welcome Slider",
+                "layout_604f39d9df118": {
+                    "key": "layout_604f39d9df118",
+                    "name": "contact-pg-01",
+                    "label": "Contact form 01",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_6040f7589a944",
-                            "label": "Content Clone",
-                            "name": "content_clone",
+                            "key": "field_604f39e6df119",
+                            "label": "Clone",
+                            "name": "clone",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -367,6 +150,550 @@
                                 "id": ""
                             },
                             "acfe_permissions": "",
+                            "clone": [
+                                "group_5d4747c8d3674"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Contact"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f360b276be": {
+                    "key": "layout_604f360b276be",
+                    "name": "cta",
+                    "label": "CTA",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3618276bf",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_60215f9deab75"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3888df108": {
+                    "key": "layout_604f3888df108",
+                    "name": "cta-caro-01",
+                    "label": "CTA - Carousel 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f388edf109",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d361e833ff82"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f38bbdf10a": {
+                    "key": "layout_604f38bbdf10a",
+                    "name": "cta-grid-01",
+                    "label": "CTA - Grid 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f38c1df10b",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d34db503a936"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3869df106": {
+                    "key": "layout_604f3869df106",
+                    "name": "cta-4icon-01",
+                    "label": "CTA - 4 icons 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f386edf107",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d80d6e503391"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3823df104": {
+                    "key": "layout_604f3823df104",
+                    "name": "cta-4icon-coloured-01",
+                    "label": "CTA - 4 icons coloured 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f382adf105",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d80bdeed6d06"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f37f5df102": {
+                    "key": "layout_604f37f5df102",
+                    "name": "cta-btn-01",
+                    "label": "CTA - Button 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f37fddf103",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6ee30891a82"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f374ce06c7": {
+                    "key": "layout_604f374ce06c7",
+                    "name": "cta-img-01",
+                    "label": "CTA - Image 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3757e06c8",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d49d7831bb4d"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f379fe06c9": {
+                    "key": "layout_604f379fe06c9",
+                    "name": "cta-img-02",
+                    "label": "CTA - Image 02",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f379fe06ca",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d362f6ce80cb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f38e6df10c": {
+                    "key": "layout_604f38e6df10c",
+                    "name": "cta-link-01",
+                    "label": "CTA - Links 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f38efdf10d",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6ffb5ba599d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f392fdf110": {
+                    "key": "layout_604f392fdf110",
+                    "name": "cta-quick-links",
+                    "label": "CTA - Quick links",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3933df111",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5f0599c9f36a5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3917df10e": {
+                    "key": "layout_604f3917df10e",
+                    "name": "cta-signup-01",
+                    "label": "CTA - Signup 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f391bdf10f",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6d6c63bc499"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3bf6df130": {
+                    "key": "layout_604f3bf6df130",
+                    "name": "policies-pg-01",
+                    "label": "Document List",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3c0cdf131",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d703f3db0296"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Documents"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f362c276c0": {
+                    "key": "layout_604f362c276c0",
+                    "name": "elliptical-welcome-slider",
+                    "label": "Elliptical Welcome Slider",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3635276c1",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
                             "clone": [
                                 "group_6040e14e1cea0"
                             ],
@@ -389,16 +716,98 @@
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
                 },
-                "layout_602d058ddacaa": {
-                    "key": "layout_602d058ddacaa",
-                    "name": "newsfeed-pg-01",
-                    "label": "Newsfeed posts 01",
+                "layout_604f35923a555": {
+                    "key": "layout_604f35923a555",
+                    "name": "hero-slider",
+                    "label": "Hero Slider",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_602d0597dacab",
-                            "label": "Content Clone",
-                            "name": "content_clone",
+                            "key": "field_604f35ac276bb",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_601bd6ffef5ee"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f35f3276bc": {
+                    "key": "layout_604f35f3276bc",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f35fa276bd",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_601bd977c1cde"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3b37df126": {
+                    "key": "layout_604f3b37df126",
+                    "name": "hero-nrw-01",
+                    "label": "Header Image",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3b42df127",
+                            "label": "Clone",
+                            "name": "clone",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -409,6 +818,423 @@
                                 "id": ""
                             },
                             "acfe_permissions": "",
+                            "clone": [
+                                "group_5d42d5b08abe3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3a34df11c": {
+                    "key": "layout_604f3a34df11c",
+                    "name": "hero-01",
+                    "label": "Hero 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3a3ddf11d",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d7f85b205bda"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3a58df11e": {
+                    "key": "layout_604f3a58df11e",
+                    "name": "hero-03",
+                    "label": "Hero 03",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3ac4df11f",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6c097f05a42"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3ad9df120": {
+                    "key": "layout_604f3ad9df120",
+                    "name": "hero-04",
+                    "label": "Hero 04",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3ae1df121",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d9860eb5326b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3af2df122": {
+                    "key": "layout_604f3af2df122",
+                    "name": "hero-05",
+                    "label": "Hero 05",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3afbdf123",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d2cde2081eab"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3b13df124": {
+                    "key": "layout_604f3b13df124",
+                    "name": "hero-07",
+                    "label": "Hero 07",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3b1ddf125",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5f9ecad53d74a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Hero"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3695276c6": {
+                    "key": "layout_604f3695276c6",
+                    "name": "image-gallery",
+                    "label": "Image Gallery",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f369c276c7",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_604b62ead5baf"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Gallery"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3680276c4": {
+                    "key": "layout_604f3680276c4",
+                    "name": "interactive-banners",
+                    "label": "Interactive Banners",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3688276c5",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_604a406df1e44"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "CTA"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3b8adf12a": {
+                    "key": "layout_604f3b8adf12a",
+                    "name": "newsfeed-caro-01",
+                    "label": "Newsfeed carousel 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3b96df12b",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d374c068af39"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Newsfeed"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3ba9df12c": {
+                    "key": "layout_604f3ba9df12c",
+                    "name": "newsfeed-caro-02",
+                    "label": "Newsfeed carousel 02",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3bb1df12d",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6e25cda2093"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Newsfeed"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3648276c2": {
+                    "key": "layout_604f3648276c2",
+                    "name": "newsfeed-pg-01",
+                    "label": "Newsfeed posts 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f364e276c3",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
                             "clone": [
                                 "group_5d9efb939a2e5"
                             ],
@@ -431,56 +1257,14 @@
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
                 },
-                "layout_604a416f04082": {
-                    "key": "layout_604a416f04082",
-                    "name": "interactive-banners",
-                    "label": "Interactive Banners",
+                "layout_604f3b66df128": {
+                    "key": "layout_604f3b66df128",
+                    "name": "newsfeed-pg-02",
+                    "label": "Newsfeed posts 02",
                     "display": "row",
                     "sub_fields": [
                         {
-                            "key": "field_604a41ca04083",
-                            "label": "clone",
-                            "name": "clone",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_permissions": "",
-                            "clone": [
-                                "group_604a406df1e44"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0,
-                            "acfe_settings": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": "",
-                    "acfe_flexible_thumbnail": "162",
-                    "acfe_flexible_category": [
-                        "CTA"
-                    ],
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
-                    "acfe_flexible_settings": "",
-                    "acfe_flexible_settings_size": "medium"
-                },
-                "layout_604b641f6067f": {
-                    "key": "layout_604b641f6067f",
-                    "name": "image-gallery",
-                    "label": "Image Gallery",
-                    "display": "row",
-                    "sub_fields": [
-                        {
-                            "key": "field_604b646360680",
+                            "key": "field_604f3b6ddf129",
                             "label": "Clone",
                             "name": "clone",
                             "type": "clone",
@@ -494,7 +1278,7 @@
                             },
                             "acfe_permissions": "",
                             "clone": [
-                                "group_604b62ead5baf"
+                                "group_5d9efb955429e"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -505,9 +1289,135 @@
                     ],
                     "min": "",
                     "max": "",
-                    "acfe_flexible_thumbnail": "202",
+                    "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": [
-                        "CTA"
+                        "Newsfeed"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3c50df134": {
+                    "key": "layout_604f3c50df134",
+                    "name": "social-twitter-01",
+                    "label": "Social twitter carousel",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3c5adf135",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6d9f7bb0fee"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Social"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3c7adf136": {
+                    "key": "layout_604f3c7adf136",
+                    "name": "social-twitter-02",
+                    "label": "Social twitter tiles",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3c84df137",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5e2430cf29bd4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Social"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
+                "layout_604f3c23df132": {
+                    "key": "layout_604f3c23df132",
+                    "name": "staff-pg-01",
+                    "label": "Staff members 01",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f3c32df133",
+                            "label": "Clone",
+                            "name": "clone",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_5d6832616a675"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Staff"
                     ],
                     "acfe_flexible_render_template": false,
                     "acfe_flexible_render_style": false,
@@ -528,6 +1438,13 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "index.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
             }
         ]
     ],
@@ -558,7 +1475,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615554346,
+    "modified": 1615806867,
     "acfe_categories": {
         "page-building": "Page Building"
     }

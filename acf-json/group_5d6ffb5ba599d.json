@@ -1,0 +1,773 @@
+{
+    "key": "group_5d6ffb5ba599d",
+    "title": "Module: CTA - Links 01",
+    "fields": [
+        {
+            "key": "field_5f23fd7f49b38",
+            "label": "Style \/ Layout",
+            "name": "style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": "",
+            "admin_column_taxonomies": "",
+            "choices": {
+                "images": "Images",
+                "icons": "Icons"
+            },
+            "default_value": "links",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f27d9a27478b",
+            "label": "Links \/ Files",
+            "name": "links_files",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": [
+                "post",
+                "page",
+                "ajde_events",
+                "cookielawinfo",
+                "cpt_careers",
+                "cpt_newsevents",
+                "cpt_staff",
+                "cpt_page_content",
+                "cpt_policies",
+                "cpt_newsletter",
+                "cpt_schools",
+                "cpt_cta_content",
+                "cpt_sidebar_content",
+                "mec-events",
+                "mec_calendars",
+                "cpt_alerts",
+                "cpt_courses",
+                "cpt_course_content",
+                "acfe-dbt",
+                "acfe-form",
+                "acfe-dop",
+                "acfe-dpt",
+                "acfe-dt"
+            ],
+            "admin_column_taxonomies": [
+                "category",
+                "post_tag",
+                "link_category",
+                "event_location",
+                "event_organizer",
+                "event_type",
+                "event_type_2",
+                "cpt_tax_newsfeed_categories",
+                "cpt_tax_staff_categories",
+                "cpt_tax_policies",
+                "cpt_tax_career_cat",
+                "mec_category",
+                "cpt_tax_schools",
+                "acf-field-group-category",
+                "mec_label",
+                "mec_location",
+                "mec_organizer"
+            ],
+            "choices": {
+                "links": "Links",
+                "files": "Files"
+            },
+            "default_value": "links",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f23feac9cdc3",
+            "label": "Columns",
+            "name": "columns",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f23fd7f49b38",
+                        "operator": "==",
+                        "value": "icons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": [
+                "post",
+                "page",
+                "ajde_events",
+                "cookielawinfo",
+                "cpt_careers",
+                "cpt_newsevents",
+                "cpt_staff",
+                "cpt_page_content",
+                "cpt_policies",
+                "cpt_newsletter",
+                "cpt_schools",
+                "cpt_cta_content",
+                "cpt_sidebar_content",
+                "mec-events",
+                "mec_calendars",
+                "cpt_alerts",
+                "cpt_courses",
+                "cpt_course_content",
+                "acfe-dbt",
+                "acfe-form",
+                "acfe-dop",
+                "acfe-dpt",
+                "acfe-dt"
+            ],
+            "admin_column_taxonomies": [
+                "category",
+                "post_tag",
+                "link_category",
+                "event_location",
+                "event_organizer",
+                "event_type",
+                "event_type_2",
+                "cpt_tax_newsfeed_categories",
+                "cpt_tax_staff_categories",
+                "cpt_tax_policies",
+                "cpt_tax_career_cat",
+                "mec_category",
+                "cpt_tax_schools",
+                "acf-field-group-category",
+                "mec_label",
+                "mec_location",
+                "mec_organizer"
+            ],
+            "choices": {
+                "1": "One",
+                "2": "Two",
+                "3": "Three",
+                "4": "Four"
+            },
+            "default_value": 2,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f23ff919cdc6",
+            "label": "Text size",
+            "name": "text_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f23fd7f49b38",
+                        "operator": "==",
+                        "value": "icons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": [
+                "post",
+                "page",
+                "ajde_events",
+                "cookielawinfo",
+                "cpt_careers",
+                "cpt_newsevents",
+                "cpt_staff",
+                "cpt_page_content",
+                "cpt_policies",
+                "cpt_newsletter",
+                "cpt_schools",
+                "cpt_cta_content",
+                "cpt_sidebar_content",
+                "mec-events",
+                "mec_calendars",
+                "cpt_alerts",
+                "cpt_courses",
+                "cpt_course_content",
+                "acfe-dbt",
+                "acfe-form",
+                "acfe-dop",
+                "acfe-dpt",
+                "acfe-dt"
+            ],
+            "admin_column_taxonomies": [
+                "category",
+                "post_tag",
+                "link_category",
+                "event_location",
+                "event_organizer",
+                "event_type",
+                "event_type_2",
+                "cpt_tax_newsfeed_categories",
+                "cpt_tax_staff_categories",
+                "cpt_tax_policies",
+                "cpt_tax_career_cat",
+                "mec_category",
+                "cpt_tax_schools",
+                "acf-field-group-category",
+                "mec_label",
+                "mec_location",
+                "mec_organizer"
+            ],
+            "choices": {
+                "Small": "Small",
+                "medium": "Medium",
+                "large": "Large"
+            },
+            "default_value": "medium",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f23ffd29cdc7",
+            "label": "Text colour",
+            "name": "text_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f23fd7f49b38",
+                        "operator": "==",
+                        "value": "icons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": "",
+            "admin_column_taxonomies": "",
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_5f240d459d905",
+            "label": "Module margin",
+            "name": "module_margin",
+            "type": "select",
+            "instructions": "set the height above and below the module in px.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "admin_column_enabled": 0,
+            "admin_column_post_types": "",
+            "admin_column_taxonomies": "",
+            "choices": {
+                "none": "None",
+                "small": "Small",
+                "medium": "Medium",
+                "large": "Large"
+            },
+            "default_value": "medium",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d6ffb8be3db5",
+            "label": "Images",
+            "name": "links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f23fd7f49b38",
+                        "operator": "==",
+                        "value": "images"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5d6ffc3de3db6",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image_aspect_ratio_crop",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "crop_type": "aspect_ratio",
+                    "aspect_ratio_width": 563,
+                    "aspect_ratio_height": 362,
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5d84fe9b98070",
+                    "label": "Overlay opacity",
+                    "name": "overlay_opacity",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "default_value": 6,
+                    "min": 1,
+                    "max": 9,
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_5d6ffdb3e3db7",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5d7000a8e3db8",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f27d9a27478b",
+                                "operator": "==",
+                                "value": "links"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5f27d9f1446c2",
+                    "label": "File",
+                    "name": "file",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f27d9a27478b",
+                                "operator": "==",
+                                "value": "files"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "wp"
+                }
+            ]
+        },
+        {
+            "key": "field_5f2403b27bc8a",
+            "label": "Icons",
+            "name": "files",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f23fd7f49b38",
+                        "operator": "==",
+                        "value": "icons"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f2403b37bc8c",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "acfe_thumbnail": 0,
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "default_value": "",
+                    "uploader": "wp"
+                },
+                {
+                    "key": "field_5f2403b37bc8e",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": [
+                        "post",
+                        "page",
+                        "ajde_events",
+                        "cookielawinfo",
+                        "cpt_careers",
+                        "cpt_newsevents",
+                        "cpt_staff",
+                        "cpt_page_content",
+                        "cpt_policies",
+                        "cpt_newsletter",
+                        "cpt_schools",
+                        "cpt_cta_content",
+                        "cpt_sidebar_content",
+                        "mec-events",
+                        "mec_calendars",
+                        "cpt_alerts",
+                        "cpt_courses",
+                        "cpt_course_content",
+                        "acfe-dbt",
+                        "acfe-form",
+                        "acfe-dop",
+                        "acfe-dpt",
+                        "acfe-dt"
+                    ],
+                    "admin_column_taxonomies": [
+                        "category",
+                        "post_tag",
+                        "link_category",
+                        "event_location",
+                        "event_organizer",
+                        "event_type",
+                        "event_type_2",
+                        "cpt_tax_newsfeed_categories",
+                        "cpt_tax_staff_categories",
+                        "cpt_tax_policies",
+                        "cpt_tax_career_cat",
+                        "mec_category",
+                        "cpt_tax_schools",
+                        "acf-field-group-category",
+                        "mec_label",
+                        "mec_location",
+                        "mec_organizer"
+                    ],
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f2403b37bc8f",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": [
+                        "post",
+                        "page",
+                        "ajde_events",
+                        "cookielawinfo",
+                        "cpt_careers",
+                        "cpt_newsevents",
+                        "cpt_staff",
+                        "cpt_page_content",
+                        "cpt_policies",
+                        "cpt_newsletter",
+                        "cpt_schools",
+                        "cpt_cta_content",
+                        "cpt_sidebar_content",
+                        "mec-events",
+                        "mec_calendars",
+                        "cpt_alerts",
+                        "cpt_courses",
+                        "cpt_course_content",
+                        "acfe-dbt",
+                        "acfe-form",
+                        "acfe-dop",
+                        "acfe-dpt",
+                        "acfe-dt"
+                    ],
+                    "admin_column_taxonomies": [
+                        "category",
+                        "post_tag",
+                        "link_category",
+                        "event_location",
+                        "event_organizer",
+                        "event_type",
+                        "event_type_2",
+                        "cpt_tax_newsfeed_categories",
+                        "cpt_tax_staff_categories",
+                        "cpt_tax_policies",
+                        "cpt_tax_career_cat",
+                        "mec_category",
+                        "cpt_tax_schools",
+                        "acf-field-group-category",
+                        "mec_label",
+                        "mec_location",
+                        "mec_organizer"
+                    ],
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                },
+                {
+                    "key": "field_5f27da25446c3",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f27d9a27478b",
+                                "operator": "==",
+                                "value": "links"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5f2403b37bc91",
+                    "label": "File",
+                    "name": "file",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f27d9a27478b",
+                                "operator": "==",
+                                "value": "files"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "admin_column_enabled": 0,
+                    "admin_column_post_types": "",
+                    "admin_column_taxonomies": "",
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "uploader": "wp"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 66,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1615765555,
+    "acfe_categories": {
+        "cta": "CTA"
+    }
+}

@@ -1,0 +1,227 @@
+{
+    "key": "group_5d80d6e503391",
+    "title": "Module: CTA 4 icons 01",
+    "fields": [
+        {
+            "key": "field_5d9f89189d9ce",
+            "label": "Choose background colour",
+            "name": "choose_background_colour",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_5d9f88dfa86fc_field_5d80f5bb4dec2",
+                    "label": "Colours",
+                    "name": "background_colours",
+                    "type": "color_palette",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "#fff": "White",
+                        "#F8F8F8": "Grey",
+                        "#233a80": "Brand one",
+                        "#67b2ce": "Brand two",
+                        "#acd3de": "Brand three",
+                        "#69b171": "Brand four"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "acfe_validate": "",
+                    "acfe_update": "",
+                    "readonly": "readonly",
+                    "_clone": "field_5d9f88dfa86fc",
+                    "__key": "field_5d80f5bb4dec2",
+                    "__name": "background_colours",
+                    "__label": "Colours"
+                },
+                {
+                    "key": "field_5d9f8f032e077_field_5d82290b06f97",
+                    "label": "Text colours",
+                    "name": "text_colours",
+                    "type": "color_palette",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "#4D4D4D": "Dark",
+                        "#fff": "White",
+                        "#315d98": "Brand primary",
+                        "#66c7b8": "Brand secondary"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "acfe_validate": "",
+                    "acfe_update": "",
+                    "readonly": "readonly",
+                    "_clone": "field_5d9f8f032e077",
+                    "__key": "field_5d82290b06f97",
+                    "__name": "text_colours",
+                    "__label": "Text colours"
+                }
+            ]
+        },
+        {
+            "key": "field_5d80d6e507c06",
+            "label": "CTA Icons",
+            "name": "cta_icons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "collapsed": "",
+            "min": 1,
+            "max": 4,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5d80d6e509033",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "default_value": "",
+                    "acfe_thumbnail": 0,
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5d80d715def2c",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 50,
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5d80d720def2d",
+                    "label": "Paragraph",
+                    "name": "paragraph",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 80,
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5d80d729def2e",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 47,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1615765475,
+    "acfe_categories": {
+        "cta": "CTA"
+    }
+}

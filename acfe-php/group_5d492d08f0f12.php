@@ -66,7 +66,7 @@ acf_add_local_field_group(array(
 			),
 		),
 	),
-	'menu_order' => 28,
+	'menu_order' => 38,
 	'position' => 'normal',
 	'style' => 'default',
 	'label_placement' => 'left',
@@ -79,14 +79,15 @@ acf_add_local_field_group(array(
 		0 => 'php',
 		1 => 'json',
 	),
+	'acfe_permissions' => '',
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1613905032,
 	'acfe_categories' => array(
 		'cpt' => 'CPT',
 		'policies' => 'Policies',
 	),
+	'modified' => 1615764633,
 ));
 
 endif;

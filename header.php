@@ -33,7 +33,7 @@ include(get_stylesheet_directory() . "/header-styles.php"); */
 $google_translate = get_field('google_translate', 'option');
 
 if ($google_translate == 1) {
-?>
+    ?>
 <script type="text/javascript">
 var custom_languages = '<?php echo get_field('translate_languages', 'option') ?>';
 
@@ -61,8 +61,6 @@ $getHeader = basename($getHeaderSelect, '.jpg') . PHP_EOL;
 $getHeader = preg_replace("/[^a-zA-Z0-9]/", "", $getHeader);
 $menu_style = get_field('menu_style', 'option');
 $header_options = get_field('header_options', 'option');
-$force_header_background_on_load = $header_options['force_header_background_on_load'];
-$force_header_large = $header_options['force_header_large'];
 
 ?>
 
@@ -74,5 +72,3 @@ $force_header_large = $header_options['force_header_large'];
 
     <!-- OPEN MAIN -->
     <main class="main">
-
-        <?php /* include(get_stylesheet_directory() . "/template-parts/parts/login-page-form.php"); */ ?>

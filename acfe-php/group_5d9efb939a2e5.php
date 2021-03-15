@@ -4,7 +4,7 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5d9efb939a2e5',
-	'title' => 'Module: Newsfeed Page - All posts 01',
+	'title' => 'Module: Newsfeed Page - all posts 01',
 	'fields' => array(
 		array(
 			'key' => 'field_5d9efb939e02f',
@@ -44,7 +44,7 @@ acf_add_local_field_group(array(
 			),
 		),
 	),
-	'menu_order' => 47,
+	'menu_order' => 59,
 	'position' => 'normal',
 	'style' => 'default',
 	'label_placement' => 'left',
@@ -60,11 +60,10 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1613905039,
 	'acfe_categories' => array(
-		'cpt' => 'CPT',
 		'newsfeed' => 'Newsfeed',
 	),
+	'modified' => 1615765532,
 ));
 
 endif;

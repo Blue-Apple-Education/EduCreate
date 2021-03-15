@@ -216,7 +216,7 @@
             }
         ]
     ],
-    "menu_order": 41,
+    "menu_order": 53,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -229,10 +229,11 @@
         "php",
         "json"
     ],
+    "acfe_permissions": "",
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613558969,
+    "modified": 1615764634,
     "acfe_categories": {
         "cpt": "CPT",
         "staff": "Staff"
