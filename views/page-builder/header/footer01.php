@@ -47,7 +47,7 @@
                 <span class="title footer-title medium bold"><?php echo $social_title; ?></span>
 
                 <div class="social-icons">
-                    <?php include(get_stylesheet_directory() . "/template-parts/parts/social-icons-footer.php"); ?>
+                    <?php include(get_stylesheet_directory() . "/views/partial/social-icons-footer.php"); ?>
                 </div>
 
                 <div class="translate-wrap">

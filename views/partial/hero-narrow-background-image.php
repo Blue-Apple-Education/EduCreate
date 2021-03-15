@@ -24,16 +24,14 @@
     if ($mobileImageURL == '') {
         $mobileImageURL = $desktopImageURL;
     }
-    
+
     if ($tabletImageURL == '') {
         $tabletImageURL = $desktopImageURL;
     }
 
     echo '<div class="background-images">';
-        echo '<img class="background-mobile fill-container" srcset="'. generate_srcset( $mobileImageURL, $size, $mobileRatio ) .'" alt="background image" />';
-        echo '<img class="background-tablet fill-container" srcset="'. generate_srcset( $tabletImageURL, $size, $tabletRatio ) .'" alt="background image" />';
-        echo '<img class="background-desktop fill-container" srcset="'. generate_srcset( $desktopImageURL, $size, $desktopRatio ) .'" alt="background image" />';
-        echo '<div class="background-ie fill-container background-image animated slow fadeIn" style="background-image: url('. aq_resize( $desktopImageURL, 3840, 882, true, true, true ) .')"></div>';
+        echo '<img class="background-mobile fill-container" srcset="'. generate_srcset($mobileImageURL, $size, $mobileRatio) .'" alt="background image" />';
+        echo '<img class="background-tablet fill-container" srcset="'. generate_srcset($tabletImageURL, $size, $tabletRatio) .'" alt="background image" />';
+        echo '<img class="background-desktop fill-container" srcset="'. generate_srcset($desktopImageURL, $size, $desktopRatio) .'" alt="background image" />';
+        echo '<div class="background-ie fill-container background-image animated slow fadeIn" style="background-image: url('. aq_resize($desktopImageURL, 3840, 882, true, true, true) .')"></div>';
     echo '</div>';
-
-?>

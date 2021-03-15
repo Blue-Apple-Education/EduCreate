@@ -41,6 +41,14 @@ function load_js_script()
 add_action('wp_enqueue_scripts', 'load_js_script');
 
 
+
+    /*
+    * LOAD THIRD PARTY SCRIPTS
+    */
+    require_once(get_stylesheet_directory() . "/assets/scripts/aq_resizer.php");
+    require_once(get_stylesheet_directory() . "/assets/scripts/aq_resizer_srcset.php");
+
+
 // require_once(get_stylesheet_directory() . "/config/dashboard.php");
 
 /* Custom post types. */
@@ -120,7 +128,6 @@ function myfoo($text)
 
 function admin_bar()
 {
-
     if (is_user_logged_in()) {
         add_filter('show_admin_bar', '__return_true', 1000);
     }

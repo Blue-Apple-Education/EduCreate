@@ -86,7 +86,7 @@
                         <a class="underlineWrap outwards social link call-now" alt="call us 01625 523141" href="tel:<?php echo $telephone; ?>"><span class="hover hover-3"><?php echo $telephone; ?></span></a>
                     </div>
 
-                    <?php include(get_stylesheet_directory() . "/template-parts/parts/social-icons-header.php"); ?>
+                    <?php include(get_stylesheet_directory() . "/views/partial/social-icons-header.php"); ?>
 
                     <?php 
                         if( $email_header != 1) {
@@ -106,4 +106,4 @@
     </div>
 </header>
 
-<?php include(get_stylesheet_directory() . "/template-parts/layouts/navigation.php"); ?>
+<?php include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>

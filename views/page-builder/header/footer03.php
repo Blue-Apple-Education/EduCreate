@@ -22,7 +22,7 @@
                 <span class="paragraph block normal">Tel: <?php echo $telephone; ?></span>
 
                 <div class="social-icons">
-                    <?php include(get_stylesheet_directory() . "/template-parts/parts/social-icons-footer.php"); ?>
+                    <?php include(get_stylesheet_directory() . "/views/partial/social-icons-footer.php"); ?>
                 </div>
             </div>
         </div>

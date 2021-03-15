@@ -3,19 +3,19 @@
     $site_logo = get_field('site_logo', 'option');
     $site_logo_dark = get_field('site_logo_dark', 'option');
     $force_visible_header = get_field('force_visible_header', $pageId);
-    
+
     $headerStyle = 'transparent';
-    if ( $force_visible_header == 1 ) {
+    if ($force_visible_header == 1) {
         $headerStyle = 'visible';
     }
 
-    if ( $site_logo_dark == '' ) {
+    if ($site_logo_dark == '') {
         $site_logo_dark = $site_logo;
     }
 
     $show_screen_size = get_field('show_screen_size', 'option');
     $screen_size = 'hide-screen-size';
-    if ( $show_screen_size == 1 ) {
+    if ($show_screen_size == 1) {
         $screen_size = 'show-screen-size';
     }
 
@@ -35,8 +35,8 @@
         <div class="logo-outer-wrap over-ride viewport_check viewport_check-down">
             <a href="<?php echo get_site_url(); ?>" class="link"></a>
                 <div class="logo-inner-wrap">
-                    <img class="light" src="<?php echo $site_logo['url'] ?>" alt="<?php echo get_bloginfo( 'name' ); ?> logo">
-                    <img class="dark" src="<?php echo $site_logo_dark['url'] ?>" alt="<?php echo get_bloginfo( 'name' ); ?> logo">
+                    <img class="light" src="<?php the_field('site_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?> logo">
+                    <img class="dark" src="<?php the_field('site_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?> logo">
                 </div>
             </a>
         </div>
@@ -52,10 +52,10 @@
                 </div>
 
                 <?php
-            		$google_translate = get_field('google_translate', 'option');
-            		$google_translate_location = get_field('google_translate_location', 'option');
+                    $google_translate = get_field('google_translate', 'option');
+                    $google_translate_location = get_field('google_translate_location', 'option');
 
-                    if ( $google_translate == 1 && $google_translate_location == 'header') {
+                    if ($google_translate == 1 && $google_translate_location == 'header') {
                         ?>
                             <div id="google_translate_element_wrap">
                                 <div id="google_translate_element">
@@ -93,21 +93,21 @@
 
                 <div class="socials">
                     <div class="header-ctas">
-                        <a class="underlineWrap outwards social link book-now" href="<?php echo $header_cta['url'] ?>" alt="book a visit"><span class="hover hover-3"><?php echo $header_cta['title'] ?></span></a>
+                        <a class="underlineWrap outwards social link book-now" href="<?php /* echo $header_cta['url'];*/?>" alt="book a visit"><span class="hover hover-3"><?php /* echo $header_cta['title']; */?></span></a>
                         <span class="spacer"> | </span>
-                        <span class="telephone underlineWrap outwards social link call-now"><span><?php echo $telephone; ?></span></span>
+                        <span class="telephone underlineWrap outwards social link call-now"><span><?php /* echo $telephone;*/?></span></span>
                     </div>
-                    
-                    <?php include(get_stylesheet_directory() . "/template-parts/parts/social-icons-header.php"); ?>
 
-                    <?php 
-                        if( $email_header != 1) {
-                            if( $email_address != '' ) {
+                    <?php include(get_stylesheet_directory() . "/views/partial/social-icons-header.php"); ?>
+
+                    <?php
+                        if ($email_header != 1) {
+                            if ($email_address != '') {
                                 echo '<div class="header-cta-mail">';
-                                    echo '<a target="_blank" class="animate-social social link mailus" alt="mail us" href="mailto:'. $email_address .'">';
-                                        echo '<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.183 22.503"><path id="Icon" d="M29.181,21.5H0V0H29.183V21.5h0ZM2.457,19.045H26.724V7.746L14.6,13.973,2.457,7.914Zm12.129-7.826L26.724,4.982V2.457H2.457V5.168Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-width="1"/></svg>';
-                                        echo '<svg class="dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.183 22.503"><path id="Icon" d="M29.181,21.5H0V0H29.183V21.5h0ZM2.457,19.045H26.724V7.746L14.6,13.973,2.457,7.914Zm12.129-7.826L26.724,4.982V2.457H2.457V5.168Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-width="1"/></svg>';
-                                    echo '</a>';
+                                echo '<a target="_blank" class="animate-social social link mailus" alt="mail us" href="mailto:'. $email_address .'">';
+                                echo '<svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.183 22.503"><path id="Icon" d="M29.181,21.5H0V0H29.183V21.5h0ZM2.457,19.045H26.724V7.746L14.6,13.973,2.457,7.914Zm12.129-7.826L26.724,4.982V2.457H2.457V5.168Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-width="1"/></svg>';
+                                echo '<svg class="dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.183 22.503"><path id="Icon" d="M29.181,21.5H0V0H29.183V21.5h0ZM2.457,19.045H26.724V7.746L14.6,13.973,2.457,7.914Zm12.129-7.826L26.724,4.982V2.457H2.457V5.168Z" transform="translate(0.5 0.5)" stroke="rgba(0,0,0,0)" stroke-width="1"/></svg>';
+                                echo '</a>';
                                 echo '</div>';
                             }
                         }
@@ -118,4 +118,4 @@
     </div>
 </header>
 
-<?php include(get_stylesheet_directory() . "/template-parts/layouts/navigation.php"); ?>
+<?php include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>
