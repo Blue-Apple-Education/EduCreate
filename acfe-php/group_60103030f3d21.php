@@ -1303,6 +1303,48 @@ acf_add_local_field_group(array(
 					'acfe_flexible_settings' => '',
 					'acfe_flexible_settings_size' => 'medium',
 				),
+				'layout_604f56f3f3145' => array(
+					'key' => 'layout_604f56f3f3145',
+					'name' => 'text-column-master',
+					'label' => 'Text Column',
+					'display' => 'row',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_604f573af3147',
+							'label' => 'Number of Columns',
+							'name' => 'number_of_columns',
+							'type' => 'clone',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'acfe_permissions' => '',
+							'clone' => array(
+								0 => 'group_602aa00c223e6',
+							),
+							'display' => 'seamless',
+							'layout' => 'block',
+							'prefix_label' => 0,
+							'prefix_name' => 0,
+							'acfe_settings' => '',
+						),
+					),
+					'min' => '',
+					'max' => '',
+					'acfe_flexible_thumbnail' => '',
+					'acfe_flexible_category' => array(
+						0 => 'Content',
+					),
+					'acfe_flexible_render_template' => false,
+					'acfe_flexible_render_style' => false,
+					'acfe_flexible_render_script' => false,
+					'acfe_flexible_settings' => '',
+					'acfe_flexible_settings_size' => 'medium',
+				),
 				'layout_604f3c50df134' => array(
 					'key' => 'layout_604f3c50df134',
 					'name' => 'social-twitter-01',
@@ -1482,7 +1524,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1615806867,
+	'modified' => 1615812451,
 ));
 
 endif;

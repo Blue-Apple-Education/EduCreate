@@ -66,7 +66,7 @@
 
     <div class="fill-container menu-wrap flexbox row alignCenter">
         <div class="block">
-            <?php wp_nav_menu(array( 'theme_location' => 'primary-menu' )); ?>
+            <?php wp_nav_menu(array( 'theme_location' => 'main-menu' )); ?>
         </div>
     </div>
 
@@ -79,6 +79,7 @@
         </div>
     </div>
 </div>
+
 
 <?php
 

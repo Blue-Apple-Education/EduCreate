@@ -1299,6 +1299,48 @@
                     "acfe_flexible_settings": "",
                     "acfe_flexible_settings_size": "medium"
                 },
+                "layout_604f56f3f3145": {
+                    "key": "layout_604f56f3f3145",
+                    "name": "text-column-master",
+                    "label": "Text Column",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_604f573af3147",
+                            "label": "Number of Columns",
+                            "name": "number_of_columns",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "clone": [
+                                "group_602aa00c223e6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_settings": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_category": [
+                        "Content"
+                    ],
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_settings": "",
+                    "acfe_flexible_settings_size": "medium"
+                },
                 "layout_604f3c50df134": {
                     "key": "layout_604f3c50df134",
                     "name": "social-twitter-01",
@@ -1475,7 +1517,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615806867,
+    "modified": 1615812451,
     "acfe_categories": {
         "page-building": "Page Building"
     }

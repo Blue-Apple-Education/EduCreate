@@ -1,31 +1,4 @@
 <?php
-$pageId = get_the_ID();
-$site_logo = get_field('site_logo', 'option');
-$site_logo_dark = get_field('site_logo_dark', 'option');
-
-$headerStyle = 'transparent';
-
-// Header Information
-$address = get_field('address', 'option');
-
-$email_address = get_field('email_address', 'option');
-$email_header = get_field('email_header', 'option');
-
-$telephone = get_field('telephone', 'option');
-$header_cta = get_field('header_cta', 'option');
-
-
-// Header Background Colours
-$header_background = "#fff";
-$hamburger_menu_bg = '#3c3c3c';
-$transparentMenu = '';
-
-
-// Menu Colours
-$menu_item_color = get_field('menu_item_color', 'option');
-$menu_item_active = get_field('menu_item_active', 'option');
-$menu_item_dropdown_background = get_field('menu_item_dropdown_background', 'option');
-
 ?>
 <div class="header01 fixed">
     <div class="header_padding header_colour">

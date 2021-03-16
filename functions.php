@@ -5,8 +5,8 @@ function my_custom_css_styles()
 {
     /* Global Styles */
     wp_enqueue_style(
-        'global-styles',
-        get_template_directory_uri() . ('/assets/css/global-styles.css')
+        'global-styles', get_template_directory_uri() . ('/assets/css/global-styles.css'),
+        'plugin-styles', get_template_directory_uri() . ('/assets/css/plugin-styles.min.css')
     );
 }
 add_action('wp_enqueue_scripts', 'my_custom_css_styles');
@@ -25,22 +25,19 @@ require_once get_template_directory() . '/lib/educreate-plugins.php';
 // GET CPTUI Fields
 require get_stylesheet_directory() . "/config/cptui-settings.php";
 
-// UIKIT menu WALKER generation
-function register_navwalker()
-{
-    require_once get_template_directory() . '/views/partial/navigation/bootstrapMenuWalker.php';
-}
-add_action('after_setup_theme', 'register_navwalker');
+// navigation Menus
+require_once(get_stylesheet_directory() . "/config/theme-menus.php");
 
+// Animate Characters
+require_once(get_stylesheet_directory() . "/config/animate-characters.php");
 
 // Load Javascript
 function load_js_script()
 {
     wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js');
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/lib.js');
 }
 add_action('wp_enqueue_scripts', 'load_js_script');
-
-
 
     /*
     * LOAD THIRD PARTY SCRIPTS
@@ -133,20 +130,6 @@ function admin_bar()
     }
 }
 add_action('init', 'admin_bar');
-
-
-// Navigation Menus
-if (function_exists('register_nav_menus')) {
-    register_nav_menus(
-        array(
-            'primary-menu' => __('Primary Menu', 'EduCreate'),
-            'header-menu' => __('Header Menu', 'EduCreate'),
-            'modal-menu' => __('mobile Modal menu', 'EduCreate'),
-            'off-canvas-menu' => __('offCanvas menu', 'EduCreate'),
-            'footer-menu' => __('Footer Menu', 'EduCreate'),
-        )
-    );
-}
 
 
 

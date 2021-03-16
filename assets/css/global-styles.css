@@ -8,6 +8,18 @@ html {
   opacity: 1 !important;
 }
 
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+
+.fill-container{
+  display: none!Important;
+}
 /**
 * Animation mixins
 */
@@ -17,151 +29,6 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-
-/*------------------------------------*\
-    IN VIEWPORT CHECKS - CSS3 ANIMATIONS
-\*------------------------------------*/
-/* line 4, src/sass/base/_animations.scss */
-.in_viewport {
-  opacity: 1;
-}
-
-/* line 9, src/sass/base/_animations.scss */
-.image-zoom img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all 30s ease-in-out;
-  transition: all 30s ease-in-out;
-}
-
-/* line 15, src/sass/base/_animations.scss */
-.reset-delay {
-  -webkit-transition-delay: 0s !important;
-  transition-delay: 0s !important;
-}
-
-/*------------------------------------*\
-    IN VIEWPORT CHECKS - CSS3 TRANSFORMS
-\*------------------------------------*/
-/* line 22, src/sass/base/_animations.scss */
-.viewport_check-up,
-.viewport_check-left,
-.viewport_check-right,
-.viewport_check-down {
-  -webkit-transition: opacity 0.8s ease 0s, -webkit-transform 0.8s cubic-bezier(0.175, 0.85, 0.71, 1.07) 0s;
-  transition: opacity 0.8s ease 0s, -webkit-transform 0.8s cubic-bezier(0.175, 0.85, 0.71, 1.07) 0s;
-  transition: opacity 0.8s ease 0s, transform 0.8s cubic-bezier(0.175, 0.85, 0.71, 1.07) 0s;
-  transition: opacity 0.8s ease 0s, transform 0.8s cubic-bezier(0.175, 0.85, 0.71, 1.07) 0s, -webkit-transform 0.8s cubic-bezier(0.175, 0.85, 0.71, 1.07) 0s;
-  will-change: opacity, transform;
-}
-
-/* line 31, src/sass/base/_animations.scss */
-.viewport_check-fadein {
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
-  will-change: opacity;
-}
-
-/* line 36, src/sass/base/_animations.scss */
-.viewport_check-scalein {
-  -webkit-transition: opacity 0.8s ease 0s, -webkit-transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-  transition: opacity 0.8s ease 0s, -webkit-transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-  transition: opacity 0.8s ease 0s, transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-  transition: opacity 0.8s ease 0s, transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, -webkit-transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-  will-change: opacity, transform;
-}
-
-@media only screen and (min-width: 640px) {
-
-  /* line 43, src/sass/base/_animations.scss */
-  .viewport_check-up:not(.in_viewport) {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-}
-
-@media only screen and (min-width: 640px) and (min-width: 1280px) {
-
-  /* line 43, src/sass/base/_animations.scss */
-  .viewport_check-up:not(.in_viewport) {
-    -webkit-transform: translateY(40px);
-    transform: translateY(40px);
-  }
-}
-
-@media only screen and (min-width: 640px) {
-
-  /* line 52, src/sass/base/_animations.scss */
-  .viewport_check-left:not(.in_viewport) {
-    opacity: 0;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-  }
-}
-
-@media only screen and (min-width: 640px) and (min-width: 1280px) {
-
-  /* line 52, src/sass/base/_animations.scss */
-  .viewport_check-left:not(.in_viewport) {
-    -webkit-transform: translateX(40px);
-    transform: translateX(40px);
-  }
-}
-
-@media only screen and (min-width: 640px) {
-
-  /* line 61, src/sass/base/_animations.scss */
-  .viewport_check-right:not(.in_viewport) {
-    opacity: 0;
-    -webkit-transform: translateX(-30px);
-    transform: translateX(-30px);
-  }
-}
-
-@media only screen and (min-width: 640px) and (min-width: 1280px) {
-
-  /* line 61, src/sass/base/_animations.scss */
-  .viewport_check-right:not(.in_viewport) {
-    -webkit-transform: translateX(-40px);
-    transform: translateX(-40px);
-  }
-}
-
-@media only screen and (min-width: 640px) {
-
-  /* line 70, src/sass/base/_animations.scss */
-  .viewport_check-down:not(.in_viewport) {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-}
-
-@media only screen and (min-width: 640px) and (min-width: 1280px) {
-
-  /* line 70, src/sass/base/_animations.scss */
-  .viewport_check-down:not(.in_viewport) {
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
-  }
-}
-
-@media only screen and (min-width: 640px) {
-
-  /* line 79, src/sass/base/_animations.scss */
-  .viewport_check-fadein:not(.in_viewport) {
-    opacity: 0;
-  }
-
-  /* line 83, src/sass/base/_animations.scss */
-  .viewport_check-scalein:not(.in_viewport) {
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-
 /*------------------------------------*\
     Animate news articles
 \*------------------------------------*/
@@ -643,9 +510,6 @@ html {
   }
 }
 
-/*------------------------------------*\
-    ANIMATE STAFF LIST
-\*------------------------------------*/
 /*------------------------------------*\
     ANIMATE CALENDAR
 \*------------------------------------*/
@@ -1198,6 +1062,11 @@ html {
 /*------------------------------------*\
     HEADER AND NAV
 \*------------------------------------*/
+
+
+.logo-outer-wrap .logo-inner-wrap img{
+  width:auto!important;
+}
 /* line 64, src/sass/base/_z-index.scss */
 header {
   z-index: 100;
@@ -4122,17 +3991,6 @@ html {
 /* line 222, src/sass/elements/_general.scss */
 html.page-loaded {
   opacity: 1;
-}
-
-/*------------------------------------*\
-    CONTAINERS
-\*------------------------------------*/
-/* line 230, src/sass/elements/_general.scss */
-.container {
-  display: block;
-  width: 100%;
-  float: left;
-  position: relative;
 }
 
 /* line 236, src/sass/elements/_general.scss */
@@ -10232,7 +10090,7 @@ header.header03 .logo-outer-wrap .logo-inner-wrap img {
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -12368,7 +12226,7 @@ header.header06.search-active .wp-nav-wrap {
 .footer01 .lower-block .copyright {
   width: 100%;
   float: none;
-  padding: 20px 0;
+  padding: 15px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28610,4 +28468,158 @@ html.IE .background-ie {
   line-height: 18px;
   color: #191919;
   text-align: left;
+}
+
+
+@media not all and (min-resolution:.001dpcm) {
+     @supports (-webkit-appearance:none) {
+   .force-header-visible .socials, .show-scrolled-menu .socials {
+margin-top: 50px!important;
+}
+	}}
+
+.socials {
+    right: 57px!important;
+}
+@media only screen and (max-width:1400px){
+	.force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:first-child, .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(2), .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(3), .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(4), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:first-child, .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(2), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(3), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(4) {
+    margin-right: 3.5%;
+}
+}
+.force-header-visible .socials, .show-scrolled-menu .socials {
+margin-top: unset!important;
+}
+@media only screen and (min-width: 768px)
+.show-scrolled-menu header.header07 .socials, .socials {
+	margin-top:unset!important;
+    position: fixed;
+    top: 0;
+    right: 0!important;
+}
+.force-header-visible header .logo-outer-wrap, .show-scrolled-menu header .logo-outer-wrap {
+    z-index: 1!important;
+}
+.force-header-visible .header-new-left-menu, .show-scrolled-menu .header-new-left-menu{
+	position:absolute!important;
+}
+.force-header-visible .header-new-right-menu, .show-scrolled-menu .header-new-right-menu{
+	position:absolute!important;
+}
+@media only screen and (min-width:1920px){
+	.force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(8), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(8) {
+    margin-left: 2%;
+}
+}
+.sticky-menu-style {
+    top: 38px!important;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#headerSticky.sticky {
+	max-width:6000px!important;
+}
+@media only screen and (min-width:1280px) and (max-width:1500px){
+.new-logo-inner-wrap a{
+	max-width:280px;
+	}}
+@media only screen and (min-width:1501px) and (max-width:1650px){
+		.new-logo-inner-wrap a{
+	max-width:300px;
+	}
+}
+@media only screen and (min-width:1650px){
+		.new-logo-inner-wrap a{
+	max-width:350px;
+	}
+}
+.new-logo-inner-wrap a img{
+	z-index:1;
+}
+@media only screen and (min-width: 1400px){
+.force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:first-child, .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(2), .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(3), .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(4), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:first-child, .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(2), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(3), .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0:nth-child(4) {
+    margin-right: 4.5%!important;
+	}}
+.content-wrap .paragraph.normal P {
+    font-size: 18px;
+}
+
+.force-header-visible header.header07 .centerPage, .show-scrolled-menu header.header07 .centerPage {
+    max-width: 1920px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.increase-header-size .row-hero-nrw-01 h1 {
+    margin-top: 5% !important;
+}
+
+.evo_cal_above span.evo-gototoday-btn {
+
+    display: none!important;
+}
+
+.force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0 ul.sub-menu {
+    z-index: 1000!important;
+}
+
+.force-header-visible header .logo-outer-wrap, .show-scrolled-menu header .logo-outer-wrap {
+    top: 23px!important;
+    z-index: 0;
+}
+
+.force-header-visible .logo-outer-wrap img, .show-scrolled-menu .logo-outer-wrap img {
+    margin-left: auto;
+    margin-right: auto;
+	width: 90%;}
+
+
+@media only screen and (max-width:1600px){
+	.force-header-visible header.header07 .underlineWrap span, .show-scrolled-menu header.header07 .underlineWrap span, .force-header-visible header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0 a span, .show-scrolled-menu header.header07 .wp-nav-wrap .menu-main-menu-container ul#menu-main-menu li.level-0 a span{
+	font-size:12px!important;
+	}
+}
+
+.row-cta-link-01 .container .file-item-wrap img {
+	max-width: 64px !important;}
+
+div.staff-info-container.clearfix{
+	z-index: 2 !important;
+}
+
+.header07-Cta .header07-cta-inner .img-outer img {
+    width: 36px!important;
+    max-height: 38px!important;
+	height:36px!important;
+}
+
+
+
+.row-hero-07 .background-overlay {
+    background-image: linear-gradient(360deg, rgba(23,23,23,0.6231267507002801) 0%, rgba(23,23,23,0.09707633053221287) 79%, rgba(23,23,23,0.92032563025210083) 100%)!important;
+}
+style.min.c…606150817:2
+.row-hero-01 .background-overlay, .row-hero-04 .background-overlay, .row-hero-07 .background-overlay {
+    background-image: linear-gradient(360deg, rgba(23,23,23,0.6231267507002801) 0%, rgba(23,23,23,0.09707633053221287) 79%, rgba(23,23,23,0.92032563025210083) 100%)!important;
+}
+
+@media only screen and (min-width: 1024px){
+header .centerPage {
+    padding: 0 20px!important;
+	}}
+
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu {
+    max-height: 650px!important;
+}
+.row-policies-pg-01 .policies .policies-grid{
+	background-color:#ffffff!important;
+}
+
+
+.row-hero-07 .hero-carousel-content-wrap .flexboxitem .block .title-wrap {
+    padding: 0px 12%;
+}
+.row-vacancy-pg-01 .vacancies-carousel-content-wrap .flexboxitem .block .vac-title{
+	margin:0px!important;
 }

@@ -13,19 +13,18 @@ $ib_icon = get_sub_field('ib_icon');
 $ib_button = get_sub_field('ib_button');
 
 // Branding COLOURS
-$branding_colours = get_field('branding_colours', 'option');
+$branding_colours = get_field('button_colours', 'option');
 $primary = $branding_colours['primary'];
 $secondary = $branding_colours['secondary'];
 $tertiary = $branding_colours['tertiary'];
-$quaternary = $branding_colours['quaternary'];
- ?>
- <div class="container">
+$quaternary = $branding_colours['quaternary'];?>
+ <div class="container-fluid">
    <div class="row">
 
      <!-- Loop -->
      <?php if (have_rows('interactive_banners')) : ?>
      <?php while (have_rows('interactive_banners')) : the_row(); ?>
-
+ <!-- END Loop -->
 
        <!-- GRID ITEM -->
                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 content-1-grid">
@@ -46,10 +45,11 @@ $quaternary = $branding_colours['quaternary'];
 
                  </div>
                </div>
-       <!-- END -->
+
+     <!-- END -->
      <?php endwhile; ?>
      <?php endif; ?>
-  <!-- END Loop -->
+     <!-- END Loop -->
 
    </div>
  </div>

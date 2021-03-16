@@ -21,7 +21,10 @@ $elliptical_slide_image_alt = $elliptical_slide_image['alt'];
 
 /* Button Colours from "educreate/Header-styles.php" */
 $button_colours = get_field('button_colours', 'option');
-$bt_primary = $button_colours['primary'];
+$bt_primary = get_sub_field('primary');
+$bt_secondary = get_sub_field('secondary');
+$bt_tertiary = get_sub_field('tertiary');
+$bt_quaternary = get_sub_field('quaternary');
 
 ?>
 <div class="elliptical-welcome-slide-wrapper">
@@ -37,6 +40,8 @@ $bt_primary = $button_colours['primary'];
 
             <li class="elliptical-slideshow-item">
 
+
+<!-- Conditional change -->
                 <div class="esi-image-container"
                     style="background-image:url('<?php the_sub_field('elliptical_slide_image'); ?>')" ;>
 
@@ -48,7 +53,7 @@ $bt_primary = $button_colours['primary'];
                     <!--  Heading  -->
                     <h2 class="uk-animation-fade"><?php the_sub_field("elliptical_slide_heading"); ?></h2>
 
-                    <!--  Sub Heading 
+                    <!--  Sub Heading
                      Only shown if content in field -->
 
                     <p class="sub-heading uk-animation-fade"><?php the_sub_field("elliptical_slide_sub_heading"); ?>
@@ -61,7 +66,7 @@ $bt_primary = $button_colours['primary'];
                         href="<?php echo esc_url($elliptical_slide_button_url); ?>"><?php esc_html($elliptical_slide_button_title); ?>Button</a>
 
                 </div>
-
+<!--  -->
             </li>
 
             <?php endwhile; ?>

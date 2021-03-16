@@ -3,31 +3,27 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_600ac91749648',
-	'title' => 'Fonts',
+	'key' => 'group_605076f9cdeea',
+	'title' => 'Admin Settings',
 	'fields' => array(
 		array(
-			'key' => 'field_600ac9175bc2d',
-			'label' => 'Fonts',
-			'name' => 'font_select',
-			'type' => 'image_select',
+			'key' => 'field_60507717a7681',
+			'label' => 'Show Module Name',
+			'name' => 'show_module_name',
+			'type' => 'true_false',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
-				'width' => '100',
+				'width' => '',
 				'class' => '',
 				'id' => '',
 			),
-			'choices' => array(
-				'Helvetica' => 'Helvetica',
-				'Arial' => 'Arial',
-			),
-			'default_value' => array(
-			),
-			'multiple' => 0,
-			'image_path' => '/wp-content/themes/EduCreate/acf-image-select/fonts/',
-			'image_extension' => 'png',
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 1,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
 		),
 	),
 	'location' => array(
@@ -35,7 +31,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'options_page',
 				'operator' => '==',
-				'value' => 'acf-options-styling',
+				'value' => 'theme-general-settings',
 			),
 		),
 	),
@@ -55,7 +51,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1615886070,
+	'modified' => 1615886139,
 ));
 
 endif;
