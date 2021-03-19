@@ -200,7 +200,7 @@ $bt_quaternary = get_sub_field('quaternary');
 
 }
 
-@media only screen and (max-width:1101px) {
+@media only screen and (min-width:768px) and (max-width:1101px) {
     ul.uk-slideshow-items {
         min-height: 650px !important;
         max-height: 650px !important;
@@ -214,5 +214,27 @@ $bt_quaternary = get_sub_field('quaternary');
         max-height: 800px !important;
         height: 800px !important;
     }
+}
+
+@media only screen and (max-width:768px){
+  .elliptical-welcome-slider{
+    height:600px;
+  }
+  ul.uk-slideshow-items {
+      min-height: none !important;
+      max-height: none !important;
+      height: 600px !important;
+  }
+  .esi-content, .esi-image-container{
+    width:100%;
+    float:none;
+  }
+  .esi-image-container{
+    display:none;
+  }
+  .uk-dotnav{
+    left:50%;
+  }
+
 }
 </style>

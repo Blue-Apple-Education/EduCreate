@@ -2,8 +2,6 @@
 // Main Hero Slider
 // This is best used on the Homepage Only
 
-
-
 // Heading
 $heading = get_sub_field('heading');
 $heading = strip_tags($heading, null);

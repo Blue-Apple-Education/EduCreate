@@ -168,7 +168,7 @@ acf_add_local_field_group(array(
 					'key' => 'field_60507ec9397a0',
 					'label' => 'Main background Colour',
 					'name' => 'main_section_bg_colour',
-					'type' => 'color_picker',
+					'type' => 'extended-color-picker',
 					'instructions' => '',
 					'required' => 0,
 					'conditional_logic' => 0,
@@ -177,7 +177,9 @@ acf_add_local_field_group(array(
 						'class' => '',
 						'id' => '',
 					),
-					'default_value' => '',
+					'default_value' => '#ff0044',
+					'color_palette' => '',
+					'hide_palette' => 0,
 				),
 				array(
 					'key' => 'field_60507ee2397a1',
@@ -267,7 +269,11 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1615892756,
+	'acfe_categories' => array(
+		'footer' => 'Footer',
+		'settings' => 'Settings',
+	),
+	'modified' => 1616159520,
 ));
 
 endif;

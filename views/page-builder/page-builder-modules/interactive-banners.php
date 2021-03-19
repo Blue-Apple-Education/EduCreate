@@ -95,7 +95,7 @@ $quaternary = $branding_colours['quaternary'];?>
 .content .content-caption img.caption,
 .content .content-caption h3.caption {
   opacity: 1;
-  z-index: 100;
+  z-index: 99;
   color: #fff;
 }
 .content:hover .content-caption,
@@ -128,10 +128,17 @@ $quaternary = $branding_colours['quaternary'];?>
   transition: all 1s ease-in-out 0s;
 }
 .content-1-grid .content img.content-image {
+      position: relative;
+      display: block;
+      object-fit: cover;
+      height: 100%!important;
+      width:100%;
+      height:auto;
+}
+@media only and (max-width:1024px){
+  .content-1-grid .content img.content-image {
   width: auto;
-  display: block;
-  height: 100%;
-  object-fit: cover;
+  }
 }
 .fadeIn-top {
 	top:20%;

@@ -1,10 +1,9 @@
 <?php
 
     $header_background_colour = get_field('header_background_colour', 'option');
-    if ($header_background_colour == '') {
+    if ($header_background_colour !== '') {
         $header_background_colour = 'transparent';
     }
-
 ?>
 <header class="header <?php echo $getHeader; ?> <?php echo $screen_size; ?> header-type-<?php echo $dropdown_menu_type; ?> search-not-active">
 
@@ -21,7 +20,6 @@
 
         <div class="flexbox row">
             <div class="flexboxitem block top viewport_check viewport_check-down">
-
                 <div class="hamburger hamburger--collapse ">
                     <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
@@ -98,7 +96,10 @@
         <div class="wp-nav-wrap">
             <?php wp_nav_menu(array( 'theme_location' => 'main-menu' )); ?>
         </div>
+
     </div>
+    <!-- <p>header_bg_colour <?php echo $header_bg_colour;?></p>
+    <p>transparent_header <?php echo $transparent_header;?></p> -->
 </header>
 
 <style>
@@ -106,13 +107,80 @@
     background-color: <?php echo $background_header;?>!important;
 }
 .header{
-  background:<?php echo $header_background_colour;?>!important;
-  height:11%;
+  background-color: <?php echo $header_bg_colour;?>;
+  height: 15%;
 }
 
-.new-search-wrap{display:none;}
+@media only screen and (max-width:1024px){
+  .header{
+    height: auto;
+    padding-bottom: 6%;
+  }
+  .menu__toggler{
+    opacity:1;
+    z-index: 10000;
+  }
+}
+@media only screen and (min-width:1024px){
+  .header{
+    background-color: #0f0f0f;
+    height: auto;
+    padding-bottom: 70px;
+  }
+
+  .menu__toggler{
+    opacity:0;
+    z-index: 0;
+  }
+}
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 a{
+  color:<?php echo $header_text_and_icon_colours;?>;
+}
+.new-search-wrap{
+  display:none;
+}
+
 .socials {
   display: none;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:hover {
+  background:<?php echo $mc_hvbg;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item::before {
+color:<?php echo $mc_hvtc;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:hover a{
+  color:<?php echo $mc_tc;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-3:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-3:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-3:hover>ul.sub-menu {
+  -webkit-transform: translate(-100%, 0px)!important;
+  transform: translate(-100%, 0px)!important;
+}
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu {
+  background-color: <?php echo $sm_bg;?>!important;
+  overflow: visible;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 ul.sub-menu{
+
+}
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-2:hover>ul.sub-menu ,
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-3:hover>ul.sub-menu  {
+  transform: translate(100%, 0%)!important;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
 }
 </style>
 <?php include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>

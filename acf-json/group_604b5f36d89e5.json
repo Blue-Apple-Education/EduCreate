@@ -101,8 +101,8 @@
                 {
                     "key": "field_60508ac4d2656",
                     "label": "Background Colour",
-                    "name": "background_colour",
-                    "type": "color_picker",
+                    "name": "menu_background_colour",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -111,13 +111,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 },
                 {
                     "key": "field_60508accd2657",
                     "label": "Sub Menu Background Colour",
                     "name": "sub_menu_bg_colour",
-                    "type": "color_picker",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -126,13 +128,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 },
                 {
                     "key": "field_60508ad9d2658",
                     "label": "Text Colour",
                     "name": "text_colour",
-                    "type": "color_picker",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -141,13 +145,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 },
                 {
                     "key": "field_60508ae1d2659",
                     "label": "Hover Tab Colour",
                     "name": "hover_tab_colour",
-                    "type": "color_picker",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -156,13 +162,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 },
                 {
                     "key": "field_60508aebd265a",
                     "label": "Hover Item Background Colour",
                     "name": "hover_item_background_colour",
-                    "type": "color_picker",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -171,13 +179,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 },
                 {
                     "key": "field_60508af5d265b",
                     "label": "Bottom Border Colour",
                     "name": "bottom_border_colour",
-                    "type": "color_picker",
+                    "type": "extended-color-picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -186,7 +196,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": ""
+                    "default_value": "",
+                    "color_palette": "",
+                    "hide_palette": 0
                 }
             ]
         },
@@ -382,5 +394,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615891206
+    "modified": 1616112230
 }

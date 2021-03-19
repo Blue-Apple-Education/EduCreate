@@ -1,21 +1,25 @@
 <?php
-?>
 
-<header class="<?php echo $getHeader; ?> <?php echo $screen_size; ?> header-type-<?php echo $dropdown_menu_type; ?>">
+    $header_background_colour = get_field('header_background_colour', 'option');
+    if ($header_background_colour !== '') {
+        $header_background_colour = 'transparent';
+    }
+?>
+<header class="header <?php echo $getHeader; ?> <?php echo $screen_size; ?> header-type-<?php echo $dropdown_menu_type; ?> search-not-active">
 
     <div class="centerPage clearfix">
         <div class="logo-outer-wrap over-ride viewport_check viewport_check-down">
-            <a class="" href="<?php echo get_site_url(); ?>" class="link"></a>
+
                 <div class="logo-inner-wrap">
-                    <img class="light" src="<?php the_field('site_logo', 'option'); ?>" alt="<?php echo get_bloginfo('name'); ?> logo">
-                    <!-- <img class="dark" src="<?php echo $site_logo_dark['url'] ?>" alt="<?php echo get_bloginfo('name'); ?> logo"> -->
+                    <a class="" href="<?php echo get_site_url(); ?>" class="link">
+                    <img class="light" src="<?php echo $site_logo['url']; ?>" alt="<?php echo get_bloginfo('name'); ?> logo"></a>
+                    <a class="" href="<?php echo get_site_url(); ?>" class="link"><img class="dark" src="<?php echo $site_logo_dark['url'];?>" alt="<?php echo get_bloginfo('name'); ?> logo"></a>
                 </div>
-            </a>
+
         </div>
 
         <div class="flexbox row">
             <div class="flexboxitem block top viewport_check viewport_check-down">
-
                 <div class="hamburger hamburger--collapse ">
                     <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
@@ -23,11 +27,35 @@
                 </div>
 
                 <div class="socials">
-
                     <div class="header-ctas">
-                        <a class=" underlineWrap outwards social link book-now" href="<?php echo $header_cta['url'] ?>" alt="book a visit"><span class="hover hover-3"><?php echo $header_cta['title'] ?></span></a>
+                        <a class=" underlineWrap outwards social link book-now" href="<?php echo $header_cta_url; ?>" alt="book a visit"><span class="hover hover-3"><?php echo $header_cta_title; ?></span></a>
                         <span class="spacer"> | </span>
                         <a class="underlineWrap outwards social link call-now" alt="call us 01625 523141" href="tel:<?php echo $telephone; ?>"><span class="hover hover-3"><?php echo $telephone; ?></span></a>
+                    </div>
+
+                    <div class="search-box">
+                        <div class="header-search-activate"></div>
+
+                        <div class="new-search-wrap">
+                            <form class="search-wrap" action="/" method="get">
+                                <div class="field-wrap">
+                                    <input id="search" type="text" name="s" value="" placeholder="SEARCH" class="" maxlength="128" autocomplete="off">
+                                    <input type="hidden" value="page" name="post_type" />
+                                </div>
+
+                                <button class="search-bt" type="submit" title="Search">
+                                    <div class="icon-wrap">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17s-17-7.626-17-17S14.61,6,23.984,6z"/><g></svg>
+                                    </div>
+                                </button>
+
+                                <div class="close-bt">
+                                    <div class="icon-wrap">
+                                        <svg class="close" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285L284.286,256.002z"/></g></g></svg>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
 
                     <div class="header-cta-socials">
@@ -35,7 +63,6 @@
                             <svg class="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.02 22.396"><g id="Connect_Reduced" data-name="Connect Reduced" transform="translate(0.044 -0.07)"><path id="Path_1398" data-name="Path 1398" d="M16.327,15.167a3.637,3.637,0,0,0-2.552,1.048L7.188,11.9a3.661,3.661,0,0,0,.067-.667,3.583,3.583,0,0,0-.187-1.1l6.54-4.008a3.632,3.632,0,1,0-.931-2.41,3.576,3.576,0,0,0,.061.6L5.963,8.471a3.613,3.613,0,0,0-2.357-.887A3.649,3.649,0,1,0,6.28,13.7l6.509,4.264a3.612,3.612,0,0,0-.112.856,3.649,3.649,0,1,0,3.65-3.65Zm0-12.835a1.388,1.388,0,1,1-1.388,1.387A1.387,1.387,0,0,1,16.327,2.332ZM3.605,12.621a1.388,1.388,0,1,1,1.388-1.388A1.388,1.388,0,0,1,3.605,12.621ZM16.327,20.2a1.387,1.387,0,1,1,1.387-1.387A1.387,1.387,0,0,1,16.327,20.2Z" fill="#fff"/></g></svg>
                             <svg class="dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.02 22.396"><g id="Connect_Reduced" data-name="Connect Reduced" transform="translate(0.044 -0.07)"><path id="Path_1398" data-name="Path 1398" d="M16.327,15.167a3.637,3.637,0,0,0-2.552,1.048L7.188,11.9a3.661,3.661,0,0,0,.067-.667,3.583,3.583,0,0,0-.187-1.1l6.54-4.008a3.632,3.632,0,1,0-.931-2.41,3.576,3.576,0,0,0,.061.6L5.963,8.471a3.613,3.613,0,0,0-2.357-.887A3.649,3.649,0,1,0,6.28,13.7l6.509,4.264a3.612,3.612,0,0,0-.112.856,3.649,3.649,0,1,0,3.65-3.65Zm0-12.835a1.388,1.388,0,1,1-1.388,1.387A1.387,1.387,0,0,1,16.327,2.332ZM3.605,12.621a1.388,1.388,0,1,1,1.388-1.388A1.388,1.388,0,0,1,3.605,12.621ZM16.327,20.2a1.387,1.387,0,1,1,1.387-1.387A1.387,1.387,0,0,1,16.327,20.2Z" fill="#fff"/></g></svg>
                         </a>
-
                         <?php include(get_stylesheet_directory() . "/views/partial/social-icons-header.php"); ?>
                     </div>
 
@@ -62,15 +89,126 @@
                             <?php
                         }
                     ?>
-
                 </div>
             </div>
         </div>
 
         <div class="wp-nav-wrap">
-            <?php wp_nav_menu(array( 'theme_location' => 'main-menu' )); ?>
+            <?php /* wp_nav_menu(array( 'theme_location' => 'main-menu' )); */?>
         </div>
+
     </div>
+    <!-- <p>header_bg_colour <?php echo $header_bg_colour;?></p>
+    <p>transparent_header <?php echo $transparent_header;?></p> -->
 </header>
 
+<style>
+.logo-outer-wrap{
+  left: 50%!important;
+  transform: translateX(-50%)!important;
+}
+/* NEW MOBILE MENU */
+@media only screen and (max-width:1024px) {
+  #main-menu {
+    display: block !important;
+    opacity: 1;
+    z-index: 1000;
+  }
+
+.menu__toggler{
+  top: 52px;
+}
+
+  .header {
+    height: 10%;
+  }
+}
+@media only screen and (min-width:1440px)  {
+  .header .flexbox{
+    height: 88px;
+  }
+  .header{
+    height: 12%;
+  }
+  .menu__toggler{
+    top: 70px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .header .flexbox{
+    height: 88px;
+  }
+  .menu__toggler{
+    top: 63px;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1440px){
+  .header .flexbox{
+    height: 88px;
+  }
+  .header{
+    height: 10%;
+  }
+  .menu__toggler{
+    top:63px;
+  }
+}
+.socials {
+    margin-right: 100px !important;
+}
+.solid_background header {
+    background-color: <?php echo $background_header;?>!important;
+}
+.header{
+  background-color: <?php echo $header_bg_colour;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 a{
+  color:<?php echo $header_text_and_icon_colours;?>;
+}
+.new-search-wrap{
+  display:none;
+}
+
+.header03 .socials {
+  display: none!important;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:hover {
+  background:<?php echo $mc_hvbg;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item::before {
+color:<?php echo $mc_hvtc;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:hover a{
+  color:<?php echo $mc_tc;?>;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:last-child ul.sub-menu li.level-3:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(2) ul.sub-menu li.level-3:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-2:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu .level-0:nth-last-child(3) ul.sub-menu li.level-3:hover>ul.sub-menu {
+  -webkit-transform: translate(-100%, 0px)!important;
+  transform: translate(-100%, 0px)!important;
+}
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu {
+  background-color: <?php echo $sm_bg;?>!important;
+  overflow: visible;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 ul.sub-menu{
+
+}
+
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-1:hover>ul.sub-menu,
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-2:hover>ul.sub-menu ,
+.wp-nav-wrap .menu-main-menu-container ul.menu li.level-3:hover>ul.sub-menu  {
+  transform: translate(100%, 0%)!important;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+}
+</style>
 <?php include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>

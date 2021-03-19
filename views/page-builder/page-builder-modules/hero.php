@@ -21,16 +21,17 @@ $paragraph = strip_tags($paragraph, null);
     <div class="uk-overlay-primary uk-position-cover hero-bg-overlay-acf"></div>
 
     <!-- Main Content -->
-    <div class="uk-position-cover uk-flex uk-flex-center <?php get_sub_field('content_position');?> uk-flex-middle">
+    <div class="uk-position-cover uk-flex uk-flex-center
+uk-position-center <?php the_sub_field('content_position'); ?> uk-flex-middle">
 
         <!-- Heading -->
-        <h1 class="uk-animation-<?php get_sub_field('heading_animation');?>"
-            style="animation-delay:<?php get_sub_field('heading_animation_delay');?>ms;">
-            <?php the_sub_field('heading');?></h1>
+        <h2 class="uk-animation-slide-top"
+            style="animation-delay:2000ms;">
+            <?php the_sub_field('heading');?></h2>
 
         <!-- Paragraph  -->
-        <p class="uk-animation-<?php get_sub_field('paragraph_animation');?>"
-            style="animation-delay:<?php get_sub_field('paragraph_animation_delay');?>ms;">
+        <p class="uk-animation-slide-bottom"
+            style="animation-delay:3200ms;">
             <?php the_sub_field('paragraph');?>
         </p>
 
@@ -40,6 +41,15 @@ $paragraph = strip_tags($paragraph, null);
 
 <!-- Styles for module -->
 <style>
+.hero h2, .hero p{
+  color:#ffffff;
+}
+.hero h2{
+  font-size: 46px;
+}
+.hero p{
+  font-size: 1rem;
+}
 .hero-bg-overlay-acf {
     background: linear-gradient(<?php echo $overlay_direction; ?> deg, rgba(<?php echo $fade_colour; ?>) 0%, rgba(<?php echo $solid_colour; ?>) 100%) !important;
 }

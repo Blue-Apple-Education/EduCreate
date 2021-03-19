@@ -1,93 +1,10 @@
 <?php
-$pageId = get_the_ID();
-    $site_logo = get_field('site_logo', 'option');
-    $site_logo_dark = get_field('site_logo_dark', 'option');
-    // $force_visible_header = get_field('force_visible_header', $pageId);
-    $headerStyle = 'transparent';
-    // if ( $force_visible_header == 1 ) {
-    //     $headerStyle = 'visible';
-    // }
-    if ( $site_logo_dark == '' ) {
-        $site_logo_dark = $site_logo;
-    }
-    $show_screen_size = get_field('show_screen_size', 'option');
-    $screen_size = 'hide-screen-size';
-    if ( $show_screen_size == 1 ) {
-        $screen_size = 'show-screen-size';
-    }
-    $address = get_field('address', 'option');
-    $email_address = get_field('email_address', 'option');
-    $email_header = get_field('email_header', 'option');
-    $telephone = get_field('telephone', 'option');
-    $header_cta = get_field('header_cta', 'option');
-    $transparent_header = get_field('transparent_header','option');
 
-    /*------------------------------------*\
-    Header07 News Update Settings
-    /*------------------------------------*/
-    $header_07_news_update_settings = get_field('header_07_news_update_settings', 'option');
-    $show_news_update = $header_07_news_update_settings['show_news_update'];
-    $news_update_logo = $header_07_news_update_settings['news_update_logo'];
-    $news_update_bg = $header_07_news_update_settings['news_update_bg'];
-
-    /*------------------------------------*\
-	 BRANDING COLOURS
-    \*------------------------------------*/
-
-    $branding_colours = get_field('branding_colours', 'option');
-    $primary = $branding_colours['primary'];
-    $secondary = $branding_colours['secondary'];
-    $tertiary = $branding_colours['tertiary'];
-    $quaternary = $branding_colours['quaternary'];
-
-    /*------------------------------------*\
-	 BUTTON COLOURS
-    \*------------------------------------*/
-
-    $button_colours = get_field('button_colours', 'option');
-    $bt_primary = $button_colours['primary'];
-    $bt_secondary = $button_colours['secondary'];
-    $bt_tertiary = $button_colours['tertiary'];
-    $bt_quaternary = $button_colours['quaternary'];
-
-    /*------------------------------------*\
-	 MENU COLOURS
-    \*------------------------------------*/
-
-    $menu_colours = get_field('menu_colours', 'option');
-    $mc_bg = $menu_colours['background_colour'];
-    $sm_bg = $menu_colours['sub_menu_bg_colour'];
-    $mc_tc = $menu_colours['text_colour'];
-    $mc_hvtc = $menu_colours['hover_tab_colour'];
-    $mc_hvbg = $menu_colours['hover_item_background_colour'];
-    $mc_bbc = $menu_colours['bottom_border_colour'];
-
-    /*------------------------------------*\
-	 MENU OPTIONS
-    \*------------------------------------*/
-    $mfs = $menu_options['menu_font_size'];
-
-    /*------------------------------------*\
-	 HEADER COLOURS
-    \*------------------------------------*/
-    $header_colours = get_field('header_colours', 'option');
-    $header_background_colour = $header_colours['header_background_colour'];
-    $transparent_header = $header_colours['transparent_header'];
-
-
-    // News Updates
-    $news_update_1 = get_field('news_update_1', 'option');
-    $news_update_2 = get_field('news_update_2', 'option');
-    $news_update_3 = get_field('news_update_3', 'option');
-    $news_update_4 = get_field('news_update_4', 'option');
-    $news_update_5 = get_field('news_update_5', 'option');
-
-    $search_icon = (get_stylesheet_directory() . "/theme/assets/img/search.svg");
 
 ?>
 <header class="<?php echo $getHeader; ?> <?php echo $screen_size; ?>" id="header07">
     <!--  Only Show on Homepage -->
-    <?php if($show_news_update && is_front_page()) : ?>
+    <?php if ($show_news_update && is_front_page()) : ?>
     <div class="header07-Cta align-self-center" style="background:<?php echo $news_update_bg;?>" id="header07-Cta">
         <div class=" header07-cta-inner centerPage">
             <div class="img-outer">
@@ -161,7 +78,7 @@ $pageId = get_the_ID();
     </style>
     <?php endif; ?>
     <!-- If transparent header is SELECTED - DO THIS -->
-    <?php if( $transparent_header  == 'True' ) { ?>
+    <?php if ($transparent_header  == 'True') { ?>
     <style>
     /* Move home Hero image up */
     .row-hero-07 .hero-carousel-image .background-container .background-images {
@@ -207,7 +124,7 @@ $pageId = get_the_ID();
         <div class=" logo-outer-wrap over-ride viewport_check viewport_check-down" id="sticky-logo-outer">
             <div class="new-logo-inner-wrap">
                 <a href="<?php echo home_url(); ?>" class="link"><img id="sticky-logo-img" class="dark"
-                        src="<?php echo $site_logo_dark['url'] ?>" alt="<?php echo get_bloginfo( 'name' ); ?> logo"></a>
+                        src="<?php echo $site_logo_dark['url'] ?>" alt="<?php echo get_bloginfo('name'); ?> logo"></a>
             </div>
             </a>
         </div>
@@ -224,10 +141,10 @@ $pageId = get_the_ID();
             <div class="flexboxitem block top viewport_check viewport_check-down">
                 <div class="desktop-header">
                     <div class="wp-nav-wrap" id="wp-nav-wrap">
-                        <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span class="hover hover-3">','link_after'=>'</span>' ) ); ?>
+                        <?php wp_nav_menu(array( 'theme_location' => 'main-menu', 'link_before' => '<span class="hover hover-3">','link_after'=>'</span>' )); ?>
                     </div>
                     <div class="header-new-left-menu" id="sticky-quick-links-hide">
-                        <?php wp_nav_menu( array( 'theme_location' => 'quick-links', 'link_before' => '<span class="hover hover-3">','link_after'=>'</span>'  ) ); ?>
+                        <?php wp_nav_menu(array( 'theme_location' => 'quick-links', 'link_before' => '<span class="hover hover-3">','link_after'=>'</span>'  )); ?>
                     </div>
                     <div class="header-new-right-menu">
                         <div class="socials" id="socials">
@@ -255,7 +172,7 @@ $pageId = get_the_ID();
                         $google_translate = get_field('google_translate', 'option');
                         $google_translate_location = get_field('google_translate_location', 'option');
 
-                        if ( $google_translate == 1 && $google_translate_location == 'header') { ?>
+                        if ($google_translate == 1 && $google_translate_location == 'header') { ?>
                             <div id="google_translate_element_wrap" onclick="translateTextShow()"
                                 id="translateElementSize" style=" cursor:pointer;">
                                 <div id="google_translate_element">

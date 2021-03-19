@@ -66,10 +66,6 @@ $header_options = get_field('header_options', 'option');
 
 <body>
     <header class="">
-
-      <!-- Include Header ACF Fields -->
-      <?php include(get_stylesheet_directory() . "/views/page-builder/header/acf-fields.php"); ?>
-
       <!-- Include Header Styles -->
       <?php include(get_stylesheet_directory() . "/views/page-builder/header/header-styles.php"); ?>
 

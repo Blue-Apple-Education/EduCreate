@@ -70,15 +70,11 @@
         </div>
     </div>
 
-    <div class="close-menu">
-        <div class="hamburger hamburger--collapse is-active">
-            <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 </div>
+
+<?php include(get_stylesheet_directory() . "/views/partial/layouts/mobile-menu.php"); ?>
 
 
 <?php

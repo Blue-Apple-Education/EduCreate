@@ -55,280 +55,280 @@ add_action('tgmpa_register', 'require_these_plugins_register_required_plugins');
  */
 function require_these_plugins_register_required_plugins()
 {
-	/*
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
-	$plugins = array(
-		// Wordpress Directory Plugins unless stated otherwise
-		array(
-			'name'      => 'ACF Better Search',
-			'slug'      => 'acf-better-search',
-			'required'  => true,
-			'force_activation'   => true,
-			// Normally I would force the plugins to be de-activated when the theme is deselected, but in this particular use case, it will be better for us to keep the plugin active as we will only be using the EduCreate theme on our websites.
-			// This helps to ensure all required plugins are active no matter what theme/state the website is in
-			'force_deactivation' => false,
-		),
+    /*
+     * Array of plugin arrays. Required keys are name and slug.
+     * If the source is NOT from the .org repo, then source is also required.
+     */
+    $plugins = array(
+        // Wordpress Directory Plugins unless stated otherwise
+        array(
+            'name'      => 'ACF Better Search',
+            'slug'      => 'acf-better-search',
+            'required'  => true,
+            'force_activation'   => true,
+            // Normally I would force the plugins to be de-activated when the theme is deselected, but in this particular use case, it will be better for us to keep the plugin active as we will only be using the EduCreate theme on our websites.
+            // This helps to ensure all required plugins are active no matter what theme/state the website is in
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'ACF Extended',
-			'slug'      => 'acf-extended',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'ACF Extended',
+            'slug'      => 'acf-extended',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'ACF Restrict Color Picker',
-			'slug'      => 'acf-restrict-color-picker',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'ACF Restrict Color Picker',
+            'slug'      => 'acf-restrict-color-picker',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'ACF RGBA Color Picker',
-			'slug'      => 'acf-rgba-color-picker',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'ACF RGBA Color Picker',
+            'slug'      => 'acf-rgba-color-picker',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		// Github Repo
-		array(
-			'name'      => 'ACF Image Select',
-			'slug'      => 'ACF-Image-Select',
-			'source'    => 'https://github.com/cyberwani/ACF-Image-Select/archive/master.zip',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        // Github Repo
+        array(
+            'name'      => 'ACF Image Select',
+            'slug'      => 'ACF-Image-Select',
+            'source'    => 'https://github.com/cyberwani/ACF-Image-Select/archive/master.zip',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		// TODO - Add ADMIN 2020 Pro Plugin
+        // TODO - Add ADMIN 2020 Pro Plugin
 
-		// From Github Repo
-		array(
-			'name'      => 'Advanced Custom Fields Pro', // The plugin name.
-			'slug'      => 'advanced-custom-fields-pro',
-			'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro/archive/master.zip',
-			'required'           => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        // From Github Repo
+        array(
+            'name'      => 'Advanced Custom Fields Pro', // The plugin name.
+            'slug'      => 'advanced-custom-fields-pro',
+            'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro/archive/master.zip',
+            'required'           => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Advanced Custom Fields: Table Field',
-			'slug'      => 'advanced-custom-fields-table-field',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Advanced Custom Fields: Table Field',
+            'slug'      => 'advanced-custom-fields-table-field',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Classic Editor',
-			'slug'      => 'classic-editor',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Classic Editor',
+            'slug'      => 'classic-editor',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Contact Form 7',
-			'slug'      => 'contact-form-7',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Contact Form 7',
+            'slug'      => 'contact-form-7',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Custom Post Type UI',
-			'slug'      => 'custom-post-type-ui',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Custom Post Type UI',
+            'slug'      => 'custom-post-type-ui',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'GDPR Cookie Consent (CCPA Ready)',
-			'slug'      => 'cookie-law-info',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'GDPR Cookie Consent (CCPA Ready)',
+            'slug'      => 'cookie-law-info',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Login IP & Country Restriction',
-			'slug'      => 'login-ip-country-restriction',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Login IP & Country Restriction',
+            'slug'      => 'login-ip-country-restriction',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Simple History',
-			'slug'      => 'simple-history',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Simple History',
+            'slug'      => 'simple-history',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'WP Smart Preloader',
-			'slug'      => 'wp-smart-preloader',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'WP Smart Preloader',
+            'slug'      => 'wp-smart-preloader',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		array(
-			'name'      => 'Yoast SEO',
-			'slug'      => 'wordpress-seo',
-			'required'  => true,
-			'force_activation'   => true,
-			'force_deactivation' => false,
-		),
+        array(
+            'name'      => 'Yoast SEO',
+            'slug'      => 'wordpress-seo',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
-		// External Source Plugin
-		// array(
-		// 	'name'         => 'ACF Image Select', // The plugin name.
-		// 	'slug'         => 'ACF-Image-Select', // The plugin slug (typically the folder name).
-		// 	'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
-		// 	'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-		// 	'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		// ),
+        // External Source Plugin
+        // array(
+        // 	'name'         => 'ACF Image Select', // The plugin name.
+        // 	'slug'         => 'ACF-Image-Select', // The plugin slug (typically the folder name).
+        // 	'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
+        // 	'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+        // 	'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+        // ),
 
-		// This is an example of how to include a plugin bundled with a theme.
-		// array(
-		// 	'name'               => 'TGM Example Plugin', // The plugin name.
-		// 	'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
-		// 	'source'             => get_template_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
-		// 	'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-		// 	'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-		// 	'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-		// 	'force_deactivation' => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-		// 	'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-		// 	'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-		// ),
+        // This is an example of how to include a plugin bundled with a theme.
+        // array(
+        // 	'name'               => 'TGM Example Plugin', // The plugin name.
+        // 	'slug'               => 'tgm-example-plugin', // The plugin slug (typically the folder name).
+        // 	'source'             => get_template_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source.
+        // 	'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+        // 	'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+        // 	'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+        // 	'force_deactivation' => true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+        // 	'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+        // 	'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+        // ),
 
-		// This is an example of how to include a plugin from an arbitrary external source in your theme.
-		// array(
-		// 	'name'         => 'TGM New Media Plugin', // The plugin name.
-		// 	'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
-		// 	'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
-		// 	'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-		// 	'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
-		// ),
+        // This is an example of how to include a plugin from an arbitrary external source in your theme.
+        // array(
+        // 	'name'         => 'TGM New Media Plugin', // The plugin name.
+        // 	'slug'         => 'tgm-new-media-plugin', // The plugin slug (typically the folder name).
+        // 	'source'       => 'https://s3.amazonaws.com/tgm/tgm-new-media-plugin.zip', // The plugin source.
+        // 	'required'     => true, // If false, the plugin is only 'recommended' instead of required.
+        // 	'external_url' => 'https://github.com/thomasgriffin/New-Media-Image-Uploader', // If set, overrides default API URL and points to an external URL.
+        // ),
 
-		// This is an example of the use of 'is_callable' functionality. A user could - for instance -
-		// have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
-		// 'wordpress-seo-premium'.
-		// By setting 'is_callable' to either a function from that plugin or a class method
-		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
-		// recognize the plugin as being installed.
-		// array(
-		// 	'name'        => 'WordPress SEO by Yoast',
-		// 	'slug'        => 'wordpress-seo',
-		// 	'is_callable' => 'wpseo_init',
-		// ),
-	);
+        // This is an example of the use of 'is_callable' functionality. A user could - for instance -
+        // have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
+        // 'wordpress-seo-premium'.
+        // By setting 'is_callable' to either a function from that plugin or a class method
+        // `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
+        // recognize the plugin as being installed.
+        // array(
+        // 	'name'        => 'WordPress SEO by Yoast',
+        // 	'slug'        => 'wordpress-seo',
+        // 	'is_callable' => 'wpseo_init',
+        // ),
+    );
 
-	/** Array of configuration settings. Amend each line as needed.** 
-	 * 
-	 * TGMPA will start providing localized text strings soon. If you already have translations of our standard strings available, please help us make TGMPA even better by giving us access to these translations or by sending in a pull-request with .po file(s) with the translations.
-	 *
-	 * Only uncomment the strings in the config array if you want to customize the strings.
-	 */
-	$config = array(
+    /** Array of configuration settings. Amend each line as needed.**
+     *
+     * TGMPA will start providing localized text strings soon. If you already have translations of our standard strings available, please help us make TGMPA even better by giving us access to these translations or by sending in a pull-request with .po file(s) with the translations.
+     *
+     * Only uncomment the strings in the config array if you want to customize the strings.
+     */
+    $config = array(
 
-		'id'           => 'educreate',                 // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path' => '',                      // Default absolute path to bundled plugins.
-		'menu'         => 'tgmpa-install-plugins', // Menu slug.
-		'parent_slug'  => 'themes.php',            // Parent menu slug.
-		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => 'Please ensure all plugins are installed and activated. If you are experiencing issues, please contact the Developer at stefan@blueappleuk.com',                      // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => true,                   // Automatically activate plugins after installation or not.
-		'message'      => 'Thank You for installing the EduCreate theme by Blue Apple Education',                      // Message to output right before the plugins table.
+        'id'           => 'educreate',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'default_path' => '',                      // Default absolute path to bundled plugins.
+        'menu'         => 'tgmpa-install-plugins', // Menu slug.
+        'parent_slug'  => 'themes.php',            // Parent menu slug.
+        'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+        'has_notices'  => true,                    // Show admin notices or not.
+        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg'  => 'Please ensure all plugins are installed and activated. If you are experiencing issues, please contact the Developer at stefan@blueappleuk.com',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => true,                   // Automatically activate plugins after installation or not.
+        'message'      => 'Thank You for installing the EduCreate theme by Blue Apple Education',                      // Message to output right before the plugins table.
 
-		/*
-		'strings'      => array(
-			'page_title'                      => __( 'Install Required Plugins', 'educreate' ),
-			'menu_title'                      => __( 'Install Plugins', 'educreate' ),
-			/* translators: %s: plugin name. * /
-			'installing'                      => __( 'Installing Plugin: %s', 'educreate' ),
-			/* translators: %s: plugin name. * /
-			'updating'                        => __( 'Updating Plugin: %s', 'educreate' ),
-			'oops'                            => __( 'Something went wrong with the plugin API.', 'educreate' ),
-			'notice_can_install_required'     => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'This theme requires the following plugin: %1$s.',
-				'This theme requires the following plugins: %1$s.',
-				'educreate'
-			),
-			'notice_can_install_recommended'  => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'This theme recommends the following plugin: %1$s.',
-				'This theme recommends the following plugins: %1$s.',
-				'educreate'
-			),
-			'notice_ask_to_update'            => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
-				'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-				'educreate'
-			),
-			'notice_ask_to_update_maybe'      => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'There is an update available for: %1$s.',
-				'There are updates available for the following plugins: %1$s.',
-				'educreate'
-			),
-			'notice_can_activate_required'    => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'The following required plugin is currently inactive: %1$s.',
-				'The following required plugins are currently inactive: %1$s.',
-				'educreate'
-			),
-			'notice_can_activate_recommended' => _n_noop(
-				/* translators: 1: plugin name(s). * /
-				'The following recommended plugin is currently inactive: %1$s.',
-				'The following recommended plugins are currently inactive: %1$s.',
-				'educreate'
-			),
-			'install_link'                    => _n_noop(
-				'Begin installing plugin',
-				'Begin installing plugins',
-				'educreate'
-			),
-			'update_link' 					  => _n_noop(
-				'Begin updating plugin',
-				'Begin updating plugins',
-				'educreate'
-			),
-			'activate_link'                   => _n_noop(
-				'Begin activating plugin',
-				'Begin activating plugins',
-				'educreate'
-			),
-			'return'                          => __( 'Return to Required Plugins Installer', 'educreate' ),
-			'plugin_activated'                => __( 'Plugin activated successfully.', 'educreate' ),
-			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'educreate' ),
-			/* translators: 1: plugin name. * /
-			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'educreate' ),
-			/* translators: 1: plugin name. * /
-			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'educreate' ),
-			/* translators: 1: dashboard link. * /
-			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'educreate' ),
-			'dismiss'                         => __( 'Dismiss this notice', 'educreate' ),
-			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'educreate' ),
-			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'educreate' ),
+        /*
+        'strings'      => array(
+            'page_title'                      => __( 'Install Required Plugins', 'educreate' ),
+            'menu_title'                      => __( 'Install Plugins', 'educreate' ),
+            /* translators: %s: plugin name. * /
+            'installing'                      => __( 'Installing Plugin: %s', 'educreate' ),
+            /* translators: %s: plugin name. * /
+            'updating'                        => __( 'Updating Plugin: %s', 'educreate' ),
+            'oops'                            => __( 'Something went wrong with the plugin API.', 'educreate' ),
+            'notice_can_install_required'     => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'This theme requires the following plugin: %1$s.',
+                'This theme requires the following plugins: %1$s.',
+                'educreate'
+            ),
+            'notice_can_install_recommended'  => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'This theme recommends the following plugin: %1$s.',
+                'This theme recommends the following plugins: %1$s.',
+                'educreate'
+            ),
+            'notice_ask_to_update'            => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
+                'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
+                'educreate'
+            ),
+            'notice_ask_to_update_maybe'      => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'There is an update available for: %1$s.',
+                'There are updates available for the following plugins: %1$s.',
+                'educreate'
+            ),
+            'notice_can_activate_required'    => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'The following required plugin is currently inactive: %1$s.',
+                'The following required plugins are currently inactive: %1$s.',
+                'educreate'
+            ),
+            'notice_can_activate_recommended' => _n_noop(
+                /* translators: 1: plugin name(s). * /
+                'The following recommended plugin is currently inactive: %1$s.',
+                'The following recommended plugins are currently inactive: %1$s.',
+                'educreate'
+            ),
+            'install_link'                    => _n_noop(
+                'Begin installing plugin',
+                'Begin installing plugins',
+                'educreate'
+            ),
+            'update_link' 					  => _n_noop(
+                'Begin updating plugin',
+                'Begin updating plugins',
+                'educreate'
+            ),
+            'activate_link'                   => _n_noop(
+                'Begin activating plugin',
+                'Begin activating plugins',
+                'educreate'
+            ),
+            'return'                          => __( 'Return to Required Plugins Installer', 'educreate' ),
+            'plugin_activated'                => __( 'Plugin activated successfully.', 'educreate' ),
+            'activated_successfully'          => __( 'The following plugin was activated successfully:', 'educreate' ),
+            /* translators: 1: plugin name. * /
+            'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'educreate' ),
+            /* translators: 1: plugin name. * /
+            'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'educreate' ),
+            /* translators: 1: dashboard link. * /
+            'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'educreate' ),
+            'dismiss'                         => __( 'Dismiss this notice', 'educreate' ),
+            'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'educreate' ),
+            'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'educreate' ),
 
-			'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
-		),
-		*/
-	);
+            'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
+        ),
+        */
+    );
 
-	tgmpa($plugins, $config);
+    tgmpa($plugins, $config);
 }
