@@ -79,6 +79,62 @@ function require_these_plugins_register_required_plugins()
             'force_deactivation' => false,
         ),
 
+        // Github Repo
+        array(
+            'name'      => 'ACF Audio Video Player',
+            'slug'      => 'acf-audio-video-player',
+            'source'    => 'https://github.com/virgo79/acf-audio-video-player/archive/refs/heads/master.zip',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'ACF Better Search',
+            'slug'      => 'acf-better-search',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        // Github Repo
+        array(
+            'name'      => 'ACF Color Palette',
+            'slug'      => 'acf-color-palette',
+            'source'    => 'https://github.com/7studio/acf-color-palette/archive/refs/heads/master.zip',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+
+        array(
+            'name'      => 'Advanced Custom Fields: Extended',
+            'slug'      => 'acf-extended',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Advanced Custom Fields: Image Aspect Ratio Crop Field',
+            'slug'      => 'acf-image-aspect-ratio-crop',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        // Github Repo
+        array(
+            'name'      => 'ACF Image Select',
+            'slug'      => 'ACF-Image-Select',
+            'source'    => 'https://github.com/cyberwani/ACF-Image-Select/archive/master.zip',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+
         array(
             'name'      => 'ACF Restrict Color Picker',
             'slug'      => 'acf-restrict-color-picker',
@@ -95,17 +151,44 @@ function require_these_plugins_register_required_plugins()
             'force_deactivation' => false,
         ),
 
-        // Github Repo
+        // From Github Repo
         array(
-            'name'      => 'ACF Image Select',
-            'slug'      => 'ACF-Image-Select',
-            'source'    => 'https://github.com/cyberwani/ACF-Image-Select/archive/master.zip',
-            'required'  => true,
+            'name'      => 'ACF YouTube Picker', // The plugin name.
+            'slug'      => 'acf-youtubepicker',
+            'source'    => 'https://github.com/airesvsg/acf-youtubepicker/archive/refs/heads/master.zip',
+            'required'           => true,
             'force_activation'   => true,
             'force_deactivation' => false,
         ),
 
         // TODO - Add ADMIN 2020 Pro Plugin
+
+        // From Github Repo
+        array(
+            'name'      => 'Admin Columns for ACF Fields', // The plugin name.
+            'slug'      => 'acf-admin-columns',
+            'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro/archive/master.zip',
+            'required'           => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+
+        array(
+            'name'      => 'Advanced Custom Fields',
+            'slug'      => 'advanced-custom-fields',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Advanced Custom Fields: Font Awesome Field',
+            'slug'      => 'advanced-custom-fields-font-awesome',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
 
         // From Github Repo
         array(
@@ -126,8 +209,48 @@ function require_these_plugins_register_required_plugins()
         ),
 
         array(
+            'name'      => 'Better Admin Bar',
+            'slug'      => 'better-admin-bar',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Better Search Replace',
+            'slug'      => 'better-search-replace',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'iThemes Security',
+            'slug'      => 'better-wp-security',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Cache Enabler',
+            'slug'      => 'cache-enabler',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
             'name'      => 'Classic Editor',
             'slug'      => 'classic-editor',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Admin Columns',
+            'slug'      => 'codepress-admin-columns',
             'required'  => true,
             'force_activation'   => true,
             'force_deactivation' => false,
@@ -142,8 +265,8 @@ function require_these_plugins_register_required_plugins()
         ),
 
         array(
-            'name'      => 'Custom Post Type UI',
-            'slug'      => 'custom-post-type-ui',
+            'name'      => 'Contact Form 7 Captcha',
+            'slug'      => 'contact-form-7-simple-recaptcha',
             'required'  => true,
             'force_activation'   => true,
             'force_deactivation' => false,
@@ -158,8 +281,105 @@ function require_these_plugins_register_required_plugins()
         ),
 
         array(
+            'name'      => 'Custom Post Type UI',
+            'slug'      => 'custom-post-type-ui',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Disable Admin Notices',
+            'slug'      => 'disable-admin-notices',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Disable Comments',
+            'slug'      => 'disable-comments',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'DNUI',
+            'slug'      => 'dnui-delete-not-used-image-wordpress',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Email Subscribers & Newsletters',
+            'slug'      => 'email-subscribers',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        // TODO Add EVENTON
+        // array(
+        //     'name'      => 'EventON',
+        //     'slug'      => '?',
+        //     'required'  => true,
+        //     'force_activation'   => true,
+        //     'force_deactivation' => false,
+        // ),
+
+        array(
+            'name'      => 'Google Analytics for Wordpress',
+            'slug'      => 'google-analytics-for-wordpress',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
             'name'      => 'Login IP & Country Restriction',
             'slug'      => 'login-ip-country-restriction',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Post Types Order',
+            'slug'      => 'post-types-order',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Post Type Switcher',
+            'slug'      => 'post-type-switcher',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Regenerate Thumbnails',
+            'slug'      => 'regenerate-thumbnails',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Resize Image After Upload',
+            'slug'      => 'resize-image-after-upload',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Simple Custom Post Order',
+            'slug'      => 'simple-custom-post-order',
             'required'  => true,
             'force_activation'   => true,
             'force_deactivation' => false,
@@ -174,8 +394,8 @@ function require_these_plugins_register_required_plugins()
         ),
 
         array(
-            'name'      => 'WP Smart Preloader',
-            'slug'      => 'wp-smart-preloader',
+            'name'      => 'SVG Support',
+            'slug'      => 'svg-support',
             'required'  => true,
             'force_activation'   => true,
             'force_deactivation' => false,
@@ -184,6 +404,22 @@ function require_these_plugins_register_required_plugins()
         array(
             'name'      => 'Yoast SEO',
             'slug'      => 'wordpress-seo',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'Nested Pages',
+            'slug'      => 'wp-nested-pages',
+            'required'  => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+        ),
+
+        array(
+            'name'      => 'WP Smart Preloader',
+            'slug'      => 'wp-smart-preloader',
             'required'  => true,
             'force_activation'   => true,
             'force_deactivation' => false,
