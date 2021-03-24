@@ -20,6 +20,12 @@ h2 {
   display: none !Important;
 }
 
+@media only screen and (max-width:768px) {
+  h2 {
+    font-size: 26px !important;
+  }
+}
+
 /**
 * Animation mixins
 */
@@ -28769,3 +28775,31 @@ style.min.c…606150817:2 .row-hero-01 .background-overlay, .row-hero-04 .backgr
 }
 
 /* END MOBILE MENU */
+a.ib-button {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border-style: solid;
+  padding: 12px 20px;
+  font-weight: 600;
+  height: 38px;
+  text-transform: capitalize !important;
+}
+
+a.ib-button:hover {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  border-color: <?php echo $primary;
+  ?>;
+  background-color: <?php echo $primary;
+  ?>;
+  border-radius: 12px;
+  border-style: solid;
+  padding: 12px 20px;
+  font-weight: 600;
+  text-transform: capitalize !important;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}

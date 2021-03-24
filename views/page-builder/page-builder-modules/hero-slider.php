@@ -3,8 +3,7 @@
 // This is best used on the Homepage Only
 
 // Heading
-$heading = get_sub_field('heading');
-$heading = strip_tags($heading, null);
+
 // Paragraph
 $paragraph = get_sub_field('paragraph');
 $paragraph = strip_tags($paragraph, null);
@@ -38,10 +37,10 @@ $paragraph = strip_tags($paragraph, null);
                 <!-- Inner Slider Content -->
                 <div class="uk-position-center <?php the_sub_field('content_position'); ?> uk-panel uk-hero-slider">
 
-                    <h1 class="uk-animation-<?php the_sub_field('heading_animation'); ?>"
+                    <h2 class="uk-animation-<?php the_sub_field('heading_animation'); ?>"
                         style="animation-delay:<?php the_sub_field('heading_animation_delay'); ?>ms;">
                         <?php the_sub_field('heading'); ?>
-                    </h1>
+                    </h2>
 
                     <p class="uk-animation-<?php the_sub_field('paragraph_animation'); ?>"
                         style="animation-delay:<?php the_sub_field('paragraph_animation_delay'); ?>ms;">
@@ -127,9 +126,17 @@ $paragraph = strip_tags($paragraph, null);
 }
 
 
-@media screen and(max-width:768px) {
+@media only screen and (max-width:768px) {
     .uk-hero-slider {
-        padding: 20px !important;
+        padding: 0px !important;
+    }
+
+
+    .uk-hero-slider h2 {
+    font-size: 26px!important;
+    }
+    .uk-hero-slider p{
+      font-size: 16px!important;
     }
 
     .uk-hero-slider-top-left {
@@ -188,5 +195,12 @@ $paragraph = strip_tags($paragraph, null);
         max-width: 50%;
         top: 75%;
     }
+}
+
+.uk-hero-slider h2 {
+font-size: 54px;
+}
+.uk-hero-slider p{
+  font-size: 22px;
 }
 </style>

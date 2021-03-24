@@ -64,7 +64,7 @@ uk-flex-middle" style="max-height: 440px;">
 
 
 
-@media screen and(max-width:768px) {
+@media only screen and(max-width:768px) {
     .uk-hero-slider {
         padding: 20px !important;
     }
@@ -74,5 +74,9 @@ uk-flex-middle" style="max-height: 440px;">
         max-width: 50%;
         top: 50%;
     }
+    .hero-nrw-01 h2{
+      font-size: 26px!important;
+    }
+
 }
 </style>

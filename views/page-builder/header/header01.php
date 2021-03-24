@@ -1,8 +1,8 @@
 <?php
 
-    $header_background_colour = get_field('header_background_colour', 'option');
+    $header_background_colour = get_field('header_bg_colour', 'option');
     if ($header_background_colour !== '') {
-        $header_background_colour = 'transparent';
+        $header_background_colour = 'transparent!important';
     }
 ?>
 <header class="header <?php echo $getHeader; ?> <?php echo $screen_size; ?> header-type-<?php echo $dropdown_menu_type; ?> search-not-active">
@@ -20,11 +20,6 @@
 
         <div class="flexbox row">
             <div class="flexboxitem block top viewport_check viewport_check-down">
-                <div class="hamburger hamburger--collapse ">
-                    <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                    </div>
-                </div>
 
                 <div class="socials">
                     <div class="header-ctas">
@@ -110,7 +105,6 @@
   background-color: <?php echo $header_bg_colour;?>;
   height: 15%;
 }
-
 @media only screen and (max-width:1024px){
   .header{
     height: auto;
@@ -123,24 +117,20 @@
 }
 @media only screen and (min-width:1024px){
   .header{
-    background-color: #0f0f0f;
     height: auto;
     padding-bottom: 70px;
   }
-
   .menu__toggler{
     opacity:0;
     z-index: 0;
   }
 }
-
 .wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 a{
   color:<?php echo $header_text_and_icon_colours;?>;
 }
 .new-search-wrap{
   display:none;
 }
-
 .socials {
   display: none;
 }
@@ -165,7 +155,6 @@ color:<?php echo $mc_hvtc;?>;
   -webkit-transform: translate(-100%, 0px)!important;
   transform: translate(-100%, 0px)!important;
 }
-
 .wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item ul.sub-menu {
   background-color: <?php echo $sm_bg;?>!important;
   overflow: visible;
@@ -173,7 +162,6 @@ color:<?php echo $mc_hvtc;?>;
 .wp-nav-wrap .menu-main-menu-container ul.menu li.level-0 ul.sub-menu{
 
 }
-
 .wp-nav-wrap .menu-main-menu-container ul.menu li.level-1:hover>ul.sub-menu,
 .wp-nav-wrap .menu-main-menu-container ul.menu li.level-2:hover>ul.sub-menu ,
 .wp-nav-wrap .menu-main-menu-container ul.menu li.level-3:hover>ul.sub-menu  {

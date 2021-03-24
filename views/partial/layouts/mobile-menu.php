@@ -14,6 +14,9 @@
   <!-- Menu elements-->
 
 <style>
+.menu__toggler.active span::before, .menu__toggler.active span::after{
+  background:#fff;
+}
 .new-mobile-menu a{
   color:#fff;
 }

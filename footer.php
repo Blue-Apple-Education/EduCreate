@@ -25,9 +25,6 @@
     \*------------------------------------*/
     $footer_colours = get_field('footer_colours', 'option');
     $main_text_colour = $footer_colours['main_text_colour'];
-    if ($main_text_colour == '') {
-        $main_text_colour = '#ffffff';
-    }
 
     $main_section_bg_colour = $footer_colours['main_section_bg_colour'];
 
@@ -43,7 +40,7 @@
 
 ?>
 <style>
-.footer01 .slide{
+.footer01 .slide p, .footer01 .slide span{
       color: <?php echo $main_text_colour;?>;
 }
 .footer01{

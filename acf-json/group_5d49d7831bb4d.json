@@ -62,7 +62,7 @@
                     "key": "field_5d49d78323494",
                     "label": "Desktop Image",
                     "name": "desktopImage",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "1988x380",
                     "required": 1,
                     "conditional_logic": 0,
@@ -71,10 +71,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 1988,
-                    "aspect_ratio_height": 380,
-                    "return_format": "array",
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -84,13 +83,13 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 },
                 {
                     "key": "field_5d49d783234ab",
                     "label": "Tablet Image",
                     "name": "tabletImage",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "636x380",
                     "required": 0,
                     "conditional_logic": 0,
@@ -99,10 +98,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 1279,
-                    "aspect_ratio_height": 380,
-                    "return_format": "array",
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -112,13 +110,13 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 },
                 {
                     "key": "field_5d49d783234bc",
                     "label": "Mobile Image",
                     "name": "mobileImage",
-                    "type": "image_aspect_ratio_crop",
+                    "type": "image",
                     "instructions": "636x380",
                     "required": 0,
                     "conditional_logic": 0,
@@ -127,10 +125,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_permissions": "",
-                    "aspect_ratio_width": 636,
-                    "aspect_ratio_height": 380,
-                    "return_format": "array",
+                    "uploader": "wp",
+                    "acfe_thumbnail": 0,
+                    "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -140,7 +137,7 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "crop_type": "aspect_ratio"
+                    "default_value": ""
                 }
             ]
         }
@@ -170,7 +167,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1615765499,
+    "modified": 1616426779,
     "acfe_categories": {
         "cta": "CTA"
     }
