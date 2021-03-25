@@ -24,7 +24,7 @@ $button_colours = get_field('button_colours', 'option');
 $bt_primary = get_sub_field('primary');
 $bt_secondary = get_sub_field('secondary');
 $bt_tertiary = get_sub_field('tertiary');
-$bt_quaternary = get_sub_field('quaternary');
+$bt_quarternary = get_sub_field('quarternary');
 
 ?>
 <div class="elliptical-welcome-slide-wrapper">

@@ -17,7 +17,7 @@ $branding_colours = get_field('button_colours', 'option');
 $primary = $branding_colours['primary'];
 $secondary = $branding_colours['secondary'];
 $tertiary = $branding_colours['tertiary'];
-$quaternary = $branding_colours['quaternary'];?>
+$quarternary = $branding_colours['quarternary'];?>
  <div class="container-fluid">
    <div class="row">
 
@@ -55,14 +55,15 @@ $quaternary = $branding_colours['quaternary'];?>
  </div>
 <style>
 .interactive-banners{
-  padding: 50px 0px;
+  padding: 0;
 }
 .content {max-height: 500px;}
 .content-1-grid {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   position: relative;
   position: relative;
   height: 346px;
+  padding: 0;
 }
 .content-1-grid .content {
   position: relative;

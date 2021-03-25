@@ -42,7 +42,7 @@ $branding_colours = get_field('branding_colours', 'option');
 $primary = $branding_colours['primary'];
 $secondary = $branding_colours['secondary'];
 $tertiary = $branding_colours['tertiary'];
-$quaternary = $branding_colours['quaternary'];
+$quarternary = $branding_colours['quarternary'];
 
 /*------------------------------------*\
 BUTTON COLOURS
@@ -52,7 +52,7 @@ $button_colours = get_field('button_colours', 'option');
 $bt_primary = $button_colours['primary'];
 $bt_secondary = $button_colours['secondary'];
 $bt_tertiary = $button_colours['tertiary'];
-$bt_quaternary = $button_colours['quaternary'];
+$bt_quarternary = $button_colours['quarternary'];
 
 /*------------------------------------*\
 HEADER COLOURS
@@ -176,22 +176,22 @@ footer {}
 }
 
 /* 4th Colour */
-.button-default.bt-quaternary {
-    background-color: <?php echo $bt_quaternary;
+.button-default.bt-quarternary {
+    background-color: <?php echo $bt_quarternary;
     ?>;
-    border-color: <?php echo $bt_quaternary;
-    ?>;
-}
-
-.button-default.bt-quaternary:hover {
-    border-color: <?php echo $bt_quaternary;
+    border-color: <?php echo $bt_quarternary;
     ?>;
 }
 
-.button-default.bt-quaternary:hover span {
-    color: <?php echo $bt_quaternary;
+.button-default.bt-quarternary:hover {
+    border-color: <?php echo $bt_quarternary;
     ?>;
-    border-color: <?php echo $bt_quaternary;
+}
+
+.button-default.bt-quarternary:hover span {
+    color: <?php echo $bt_quarternary;
+    ?>;
+    border-color: <?php echo $bt_quarternary;
     ?>;
 }
 
@@ -221,7 +221,7 @@ footer {}
 }
 
 .eventon_events_list .eventon_list_event:nth-child(4n-4) {
-    background-color: <?php echo $quaternary;
+    background-color: <?php echo $quarternary;
     ?> !important;
 }
 

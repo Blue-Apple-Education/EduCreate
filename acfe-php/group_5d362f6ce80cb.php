@@ -141,7 +141,7 @@ acf_add_local_field_group(array(
 						'bt-primary' => 'Primary',
 						'bt-secondary' => 'Secondary',
 						'bt-tertiary' => 'Tertiary',
-						'bt-quaternary' => 'Quaternary',
+						'bt-quarternary' => 'quarternary',
 					),
 					'default_value' => false,
 					'allow_null' => 0,

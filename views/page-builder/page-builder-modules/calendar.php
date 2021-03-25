@@ -7,7 +7,13 @@
     $navigation_options = 'show_options';
     if ($hide_calendar_navigation == 1) {
         $navigation_options = 'hide_options';
-    } ?>
+    }
+    $branding_colours = get_field('branding_colours', 'option');
+    $primary = $branding_colours['primary'];
+    $secondary = $branding_colours['secondary'];
+    $tertiary = $branding_colours['tertiary'];
+    $quarternary = $branding_colours['quarternary'];
+    ?>
 
     <?php if ($title) { ?>
         <div class="col-lg-12 col-md-12 col-sm-12 calendar-title">
@@ -52,5 +58,29 @@
 }
 .eventon_events_list .eventon_list_event .evcal_cblock em{
   color:#fff;
+}
+.eventon_events_list .eventon_list_event:nth-child(1){
+  background:<?php echo $branding_colours['primary'];?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(2){
+  background:<?php echo $secondary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(3){
+  background:<?php echo $tertiary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(4){
+  background:<?php echo $quarternary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(5){
+  background:<?php echo $primary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(6){
+  background:<?php echo $secondary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(7){
+  background:<?php echo $tertiary;?>!important;
+}
+.eventon_events_list .eventon_list_event:nth-child(8){
+  background:<?php echo $quarternary;?>!important;
 }
 </style>
