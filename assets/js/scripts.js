@@ -1,10 +1,3 @@
-/*!
- * BlueAppleEducation v0.1.0
- * Wordpress Setup & Theme boilerplate
- * (c) 2020 Graeme Wetenhall
- * MIT License
- * https://bitbucket.org/grazzeee/
- */
 
 $(document).ready(function() {
   // previous
