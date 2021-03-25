@@ -1,8 +1,6 @@
 <?php /* Custom EDUCREATE Functions */
 
 // Link Global Styles
-function my_custom_css_styles()
-{
     /* Global Styles */
     wp_enqueue_style(
         'global-styles',
@@ -10,8 +8,7 @@ function my_custom_css_styles()
         'plugin-styles',
         get_template_directory_uri() . ('/assets/css/plugin-styles.min.css')
     );
-}
-add_action('wp_enqueue_scripts', 'my_custom_css_styles');
+
 
 // Acf Settings
 require_once get_stylesheet_directory() . "/config/acf-settings.php";
@@ -34,12 +31,9 @@ require_once(get_stylesheet_directory() . "/config/theme-menus.php");
 require_once(get_stylesheet_directory() . "/config/animate-characters.php");
 
 // Load Javascript
-function load_js_script()
-{
+
     wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js');
     wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/lib.js');
-}
-add_action('wp_enqueue_scripts', 'load_js_script');
 
     /*
     * LOAD THIRD PARTY SCRIPTS
