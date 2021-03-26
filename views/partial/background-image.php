@@ -41,13 +41,7 @@
             echo '<div class="fill-container background-colour" style="background-color: '. $background_colour.'"></div>';
         endif;
 
-        if ($image):
-            echo '<img class="desktop fill-container animated fast fadeIn" srcset="'. generate_srcset($image, $size, $ratio) .'" alt="background image" />';
-
-            echo '<div class="background-ie">';
-                echo '<div class="fill-container background-image animated slow fadeIn exspand-over-time" style="background-image: url('. aq_resize($image, 1920, 1200, true, true, true) .')"></div>';
-            echo '</div>';
-        endif;
+        
     ?>
 
 </div>

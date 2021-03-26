@@ -1,9 +1,7 @@
 <?php
 
     $header_background_colour = get_field('header_bg_colour', 'option');
-    if ($header_background_colour !== '') {
-        $header_background_colour = 'transparent!important';
-    }
+  
 ?>
 <header class="header <?php echo $getHeader; ?> <?php echo $screen_size; ?> header-type-<?php echo $dropdown_menu_type; ?> search-not-active">
 
@@ -102,7 +100,7 @@
     background-color: <?php echo $background_header;?>!important;
 }
 .header{
-    background-color: <?php echo $header_bg_colour;?>;
+    background-color: <?php echo $header_bg_colour;?>!important;
     height: 15%;
 }
 .scrolled-header header {
