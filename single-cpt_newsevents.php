@@ -1,5 +1,8 @@
 <?php
 
+$branding_colours = get_field('branding_colours', 'option');
+$primary = $branding_colours['primary'];
+
 // Header
 get_header();
 
@@ -9,7 +12,7 @@ echo'<div style="height:200px;background:#fff;"></div>';
 ?>
 <style>
 .header {
-    background-color: #66afdb!important;
+    background-color: <?php echo $primary;?>!important;
   }
 </style>
 <?php

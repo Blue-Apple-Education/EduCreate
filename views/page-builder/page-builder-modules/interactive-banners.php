@@ -62,7 +62,7 @@ $quarternary = $branding_colours['quarternary'];?>
   margin-bottom: 0;
   position: relative;
   position: relative;
-  height: 346px;
+      height: 446px;
   padding: 0;
 }
 .content-1-grid .content {

@@ -32,7 +32,7 @@ $post_featured_image = get_field('post_featured_image');
             <h2><?php echo $preview; ?></h2>
 
             <!-- File to Download -->
-            <p><?php /* echo $file; */?></p>
+            <p><?php  echo $file; ?></p>
 
             <!-- Featured Image -->
             <div class="featured-image">
