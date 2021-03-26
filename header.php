@@ -64,7 +64,7 @@ $header_options = get_field('header_options', 'option');
 
 ?>
 
-<body>
+<body id="body">
     <header class="">
       <!-- Include Header Styles -->
       <?php include(get_stylesheet_directory() . "/views/page-builder/header/header-styles.php"); ?>

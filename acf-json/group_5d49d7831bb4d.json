@@ -147,7 +147,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "cpt_cta"
             }
         ]
     ],
@@ -167,7 +167,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1616426779,
+    "modified": 1616748483,
     "acfe_categories": {
         "cta": "CTA"
     }

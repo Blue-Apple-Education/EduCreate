@@ -9,9 +9,6 @@ $heading = strip_tags($heading, null);
 $paragraph = get_sub_field('paragraph');
 $paragraph = strip_tags($paragraph, null);
 
-// Test wpPusher Update
-
-
 ?>
 
 <!-- Outer Div -->

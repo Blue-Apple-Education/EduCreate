@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 });
 
-// Detext browser version and osx in html
+// Detect browser version and osx in html
 $(function() {
   function slugify(text) {
     return text
@@ -1776,6 +1776,9 @@ $(document).ready(function() {
   }
 });
 $(document).ready(function() {
+
+
+
   if ($(".login.wp-core-ui")[0]) {
     setTimeout(function() {
       $(".login.wp-core-ui").addClass("login-page-loaded");

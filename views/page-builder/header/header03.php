@@ -20,11 +20,6 @@
 
         <div class="flexbox row">
             <div class="flexboxitem block top viewport_check viewport_check-down">
-                <div class="hamburger hamburger--collapse ">
-                    <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                    </div>
-                </div>
 
                 <div class="socials">
                     <div class="header-ctas">
@@ -94,7 +89,7 @@
         </div>
 
         <div class="wp-nav-wrap">
-            <?php /* wp_nav_menu(array( 'theme_location' => 'main-menu' )); */?>
+            <?php wp_nav_menu(array( 'theme_location' => 'main-menu' )); ?>
         </div>
 
     </div>
@@ -103,6 +98,18 @@
 </header>
 
 <style>
+
+.wp-nav-wrap{
+  right: auto!important;
+width: 100%;
+left: 5%;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu{
+  float: none!important;
+}
+.wp-nav-wrap .menu-main-menu-container ul.menu li.menu-item:nth-last-child(3){
+  margin-right: 35%;
+}
 .logo-outer-wrap{
   left: 50%!important;
   transform: translateX(-50%)!important;
@@ -210,5 +217,16 @@ color:<?php echo $mc_hvtc;?>;
   top: 0px;
   z-index: 1000;
 }
+
+@media only screen and (min-width:1022px){
+  .menu__toggler{
+    display:none!important;
+  }
+}
+@media only screen and (max-width:1022px){
+  .menu__toggler{
+    display:block;
+  }
+}
 </style>
-<?php include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>
+<?php  include(get_stylesheet_directory() . "/views/partial/layouts/navigation.php"); ?>

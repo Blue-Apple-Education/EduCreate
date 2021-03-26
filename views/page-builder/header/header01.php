@@ -102,9 +102,13 @@
     background-color: <?php echo $background_header;?>!important;
 }
 .header{
-  background-color: <?php echo $header_bg_colour;?>;
-  height: 15%;
+    background-color: <?php echo $header_bg_colour;?>;
+    height: 15%;
 }
+.scrolled-header header {
+    background-color: <?php echo $header_bg_colour; ?>!important;
+}
+
 @media only screen and (max-width:1024px){
   .header{
     height: auto;

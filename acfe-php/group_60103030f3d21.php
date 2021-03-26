@@ -142,9 +142,9 @@ acf_add_local_field_group(array(
 					'sub_fields' => array(
 						array(
 							'key' => 'field_604f3618276bf',
-							'label' => 'Clone',
-							'name' => 'clone',
-							'type' => 'clone',
+							'label' => 'Post Object',
+							'name' => 'Post Object',
+							'type' => 'post_object',
 							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => 0,
@@ -153,14 +153,22 @@ acf_add_local_field_group(array(
 								'class' => '',
 								'id' => '',
 							),
-							'clone' => array(
-								0 => 'group_60215f9deab75',
+							'acfe_permissions' => '',
+							'post_type' => array(
+								0 => 'cpt_cta',
 							),
-							'display' => 'seamless',
-							'layout' => 'block',
-							'prefix_label' => 0,
-							'prefix_name' => 0,
+							'taxonomy' => '',
+							'allow_null' => 0,
+							'multiple' => 0,
+							'return_format' => 'object',
+							'save_custom' => 0,
+							'save_post_status' => 'publish',
+							'acfe_bidirectional' => array(
+								'acfe_bidirectional_enabled' => '0',
+							),
 							'acfe_settings' => '',
+							'acfe_validate' => '',
+							'ui' => 1,
 						),
 					),
 					'min' => '',
@@ -1146,7 +1154,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'page-building' => 'Page Building',
 	),
-	'modified' => 1616151860,
+	'modified' => 1616753403,
 ));
 
 endif;

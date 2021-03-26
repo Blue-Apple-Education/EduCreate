@@ -151,7 +151,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'post_type',
 				'operator' => '==',
-				'value' => 'post',
+				'value' => 'cpt_cta',
 			),
 		),
 	),
@@ -174,7 +174,7 @@ acf_add_local_field_group(array(
 	'acfe_categories' => array(
 		'cta' => 'CTA',
 	),
-	'modified' => 1616426779,
+	'modified' => 1616748483,
 ));
 
 endif;
